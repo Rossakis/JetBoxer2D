@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{EFCF35EB-6E8D-4E36-B074-B23E011754EB}|Default">
+  <MonoDevelop.Ide.ItemProperties.Vertical_220Shooter PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Systems/Core/BaseGameState.cs">
+    <Files>
+      <File FileName="MainGame.cs" Line="74" Column="16" />
+      <File FileName="Systems/Core/GameObject.cs" Line="24" Column="1" />
+      <File FileName="Systems/Core/BaseGameState.cs" Line="38" Column="17" />
+      <File FileName="Systems/GameplayState.cs" Line="21" Column="24" />
+      <File FileName="../../GitHub/monogame-mastery/chapter-04/end/States/SplashState.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="chapter-04">
+            <Node name="chapter-04">
+              <Node name="Objects" expanded="True" />
+              <Node name="States" expanded="True" />
+            </Node>
+          </Node>
+          <Node name="Vertical Shooter" expanded="True">
+            <Node name="Vertical Shooter" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Content" expanded="True" />
+              <Node name="Systems" expanded="True">
+                <Node name="Core" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

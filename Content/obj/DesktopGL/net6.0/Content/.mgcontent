@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/Barren.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/City Background.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/Empty.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/Pixel City.jpg</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/Splash Screen.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/splash.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Denji - Knockup Attack.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Denji-Basic Attack (Correct).png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Denji-Idle.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Denji-Walking.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Elania - Pixel.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Fighter.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Effects/Energy Blast.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
