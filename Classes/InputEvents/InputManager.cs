@@ -60,6 +60,7 @@ public class InputManager
     public void UpdateGameplayInput()
     {
         // _currentGameplayInputMap = GameplayInputMap.UpdateInput();
+        _currentGameplayInputMap.UpdateInput();
     }
 
     public void UpdateSplashInput()

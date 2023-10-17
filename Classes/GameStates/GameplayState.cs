@@ -28,26 +28,6 @@ public class GameplayState : BaseGameState
 
     public override void HandleInput(GameTime gameTime)
     {
-        //     InputManager.GetCommands(cmd =>
-        //     {
-        //         KeepPlayerInBounds();
-        //
-        //         if (cmd is GameplayInputCommand.GameExit)
-        //             NotifyEvent(Events.GAME_QUIT);
-        //
-        //         if (cmd is GameplayInputCommand.PlayerMoveLeft)
-        //             _player.SwitchState(PlayerState.MovingLeft);
-        //
-        //         if (cmd is GameplayInputCommand.PlayerMoveRight)
-        //             _player.SwitchState(PlayerState.MovingRight);
-        //
-        //         if (cmd is GameplayInputCommand.PlayerShoots)
-        //             _player.SwitchState(PlayerState.Shooting);
-        //
-        //         // if (cmd is GameplayInputCommand.None && _player.CurrentState != PlayerState.Shooting)
-        //         //     _player.SwitchState(PlayerState.Idle);
-        //     });
-
         InputManager.UpdateGameplayInput();
     }
 

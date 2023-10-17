@@ -39,7 +39,7 @@ public class SplashInputMap : BaseInputMap
     public void UpdateInput(KeyboardState keyboardState)
     {
         //moveHorAxis.UpdateKeyboardValue(keyboardState.IsKeyDown(Keys.A), keyboardState.IsKeyDown(Keys.D));
-        Console.WriteLine($"Keyboard Axis: {moveHorAxis.KeyboardValue}");
+        Console.WriteLine($"Keyboard Axis: {moveHorAxis.Value}");
     }
 
     public void AssignInput(BaseInput newInput, SplashInputActions inputAction)

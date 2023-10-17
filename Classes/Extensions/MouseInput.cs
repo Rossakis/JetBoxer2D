@@ -7,17 +7,18 @@ namespace Super_Duper_Shooter.Classes.Extensions;
 /// A wrapper class for Mouse Input, so that we input information from it in the same way we do for Keyboard and Gamepad
 ///classes (e.g. Mouse.IsButtonDown(MouseButton.RightButton)
 /// </summary>
-public enum MouseButtons
+
+public enum MouseButtons : short
 {
-    RightButton,
-    MiddleButton,
-    LeftButton
+    RightButton = 0,
+    MiddleButton = 1,
+    LeftButton = 2
 }
 
-public enum MouseAxis
+public enum MouseAxis : short
 {
-    Horizontal,
-    Vertical
+    Horizontal = 0,
+    Vertical = 1
 }
 
 public class MouseInput

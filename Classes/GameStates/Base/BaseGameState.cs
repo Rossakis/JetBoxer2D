@@ -77,7 +77,7 @@ public abstract class BaseGameState
     }
 
     public event EventHandler<BaseGameState> OnStateSwitched;
-    public event EventHandler<Events> OnEventNotification;
+    public event EventHandler<GameEvents> OnEventNotification;
 
     /// <summary>
     /// Invokes the <see cref="OnStateSwitched"/> event
@@ -93,7 +93,7 @@ public abstract class BaseGameState
     /// </summary>
     /// <param name="eventType"></param>
     /// <param name="argument">Specifies that if a caller does not provide a value for the "argument" parameter when calling the method, it defaults to "null".</param>
-    protected void NotifyEvent(Events eventType, object argument = null)
+    protected void NotifyEvent(GameEvents eventType, object argument = null)
     {
         OnEventNotification?.Invoke(this, eventType);
 

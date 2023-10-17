@@ -125,11 +125,11 @@ public class MainGame : Game
         //now tied to the new game state, and not the previous one 
     }
 
-    private void CurrentGameState_OnEventNotification(object sender, Events eventType)
+    private void CurrentGameState_OnEventNotification(object sender, GameEvents eventType)
     {
         switch (eventType)
         {
-            case Events.GAME_QUIT:
+            case GameEvents.GAME_QUIT:
                 Exit();
                 break;
         }

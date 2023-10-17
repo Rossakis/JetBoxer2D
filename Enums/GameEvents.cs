@@ -1,6 +1,6 @@
 ﻿namespace Super_Duper_Shooter.Enums
 {
-    public enum Events
+    public enum GameEvents
     {
         GAME_QUIT
     }

@@ -18,7 +18,7 @@ public class SplashState : BaseGameState
 
         //OnNotify - Exit the game
         if (gamepadState.Buttons.Back == ButtonState.Pressed || keyboardState.IsKeyDown(Keys.Escape))
-            NotifyEvent(Events.GAME_QUIT);
+            NotifyEvent(GameEvents.GAME_QUIT);
 
         //OnSwitch - Switch to Gameplay
         if (keyboardState.IsKeyDown(Keys.Enter))
@@ -34,11 +34,4 @@ public class SplashState : BaseGameState
     {
         AddGameObject(new SplashImage(LoadTexture(SplashScreen)));
     }
-
-    // public override void Initialize(ContentManager contentManager, Game game, SpriteBatch spriteBatch)
-    // {
-    //     base.Initialize(contentManager, game, spriteBatch);
-    //
-    //     game.IsMouseVisible = true;
-    // }
 }
