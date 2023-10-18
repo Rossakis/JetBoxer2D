@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -29,6 +30,9 @@ public class GameplayState : BaseGameState
     public override void HandleInput(GameTime gameTime)
     {
         InputManager.UpdateGameplayInput();
+
+        Console.WriteLine($"Move Horizontal: {InputManager.GetAxis(GameplayInputMap._moveHorAxis)}");
+        Console.WriteLine($"Move Pressed");
     }
 
     public override void Initialize(ContentManager contentManager, int viewportWidth, int viewportHeight)

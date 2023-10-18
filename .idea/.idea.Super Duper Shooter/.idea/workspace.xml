@@ -8,25 +8,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="918e4fcc-b4f8-4137-9d97-30dcba5635b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Enums/InputDevices.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Extensions/MouseInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Extensions/MouseInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/GameObjects/Base/BaseGameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameObjects/Base/BaseGameObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/GameStates/Base/BaseGameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameStates/Base/BaseGameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Extensions/SingletonManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Extensions/SingletonManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/GameStates/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameStates/GameplayState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/GameStates/SplashState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameStates/SplashState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputEvents/Enums/InputTypes.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/InputEvents/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputEvents/InputManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/InputEvents/InputMaps/GameplayInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputEvents/InputMaps/GameplayInputMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputEvents/InputMaps/SplashInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputEvents/InputMaps/SplashInputMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputEvents/InputTypes/AxisInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputEvents/InputTypes/AxisInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputEvents/InputTypes/ValueInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputEvents/InputTypes/ValueInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enums/Events.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Enums/GameEvents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Super Duper Shooter.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Super Duper Shooter.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/InputEvents/InputTypes/ButtonInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputEvents/InputTypes/ButtonInput.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/Super Duper Shooter.dll" afterDir="false" />
@@ -107,7 +96,8 @@
       <workItem from="1697411657359" duration="44000" />
       <workItem from="1697412318755" duration="606000" />
       <workItem from="1697482911895" duration="1221000" />
-      <workItem from="1697491662860" duration="10751000" />
+      <workItem from="1697491662860" duration="10918000" />
+      <workItem from="1697531632398" duration="1334000" />
     </task>
     <servers />
   </component>

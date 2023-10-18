@@ -26,7 +26,7 @@ namespace Super_Duper_Shooter.Classes.InputEvents.InputMaps
         }
 
         //Input Axis
-        private static AxisInput _moveHorAxis;
+        public static AxisInput _moveHorAxis;
         private static AxisInput _shootAxis; //-1 for left shooting, 1 for right shooting
 
         public GameplayInputMap()
@@ -119,7 +119,7 @@ namespace Super_Duper_Shooter.Classes.InputEvents.InputMaps
             UpdateGamepadState();
             UpdateMouseInput();
 
-            Console.WriteLine($"Move Horizontal: {_moveHorAxis.Value}");
+            //Console.WriteLine($"Move Horizontal: {_moveHorAxis.Value}");
         }
 
         private static void UpdateKeyboardInput()

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework;
 using Super_Duper_Shooter.Classes.InputEvents.Base;
 using Super_Duper_Shooter.Classes.InputEvents.InputMaps;
 using Super_Duper_Shooter.Classes.InputEvents.InputTypes;
@@ -25,33 +26,28 @@ public class InputManager
     //between _currentKeyboardState and _previousKeyboardState, to create
     //the PressedDown and ReleasedUp methods
 
-    private GameplayInputMap _currentGameplayInputMap;
-    private GameplayInputMap _previousGameplayInputMap;
-
+    private GameplayInputMap _gameplayInputMap;
     private SplashInputMap _splashInputMap;
+    
+    private ButtonInput _previousButtonState;//for GetButtonDown
 
-    private InputManager _currentState;
-    private InputManager _previousState;
-
-    // private static InputManager _instance;
-    //
-    // public static InputManager Instance
-    // {
-    //     get //if instance = null, create new
-    //     {
-    //         if (_instance == null)
-    //             throw new Exception("InputManager.Instance wasn't instantiated");
-    //
-    //         return _instance;
-    //     }
-    //     set => _instance = value;
-    // }
+    private static InputManager _instance;
+    
+    public static InputManager Instance
+    {
+        get //if instance = null, create new
+        {
+            if (_instance == null)
+                throw new Exception("InputManager.Instance wasn't instantiated");
+    
+            return _instance;
+        }
+        set => _instance = value;
+    }
 
     public InputManager()
     {
-        _currentGameplayInputMap = new GameplayInputMap();
-        _previousGameplayInputMap = new GameplayInputMap();
-
+        _gameplayInputMap = new GameplayInputMap();
         _splashInputMap = new SplashInputMap();
     }
 
@@ -59,8 +55,7 @@ public class InputManager
     
     public void UpdateGameplayInput()
     {
-        // _currentGameplayInputMap = GameplayInputMap.UpdateInput();
-        _currentGameplayInputMap.UpdateInput();
+        _gameplayInputMap.UpdateInput();
     }
 
     public void UpdateSplashInput()
@@ -72,20 +67,28 @@ public class InputManager
     {
     }
 
-    public void GetButtonDown(ButtonInput button)
+    public bool GetButtonDown(ButtonInput button)
+    {
+        if (!button.Pressed && _previousButtonState.Pressed)
+        {
+            _previousButtonState = button;
+            return true;
+        }
+        _previousButtonState = button;
+        return false;
+    }
+
+    public static void GetButtonUp(ButtonInput button)
     {
     }
 
-    public void GetButtonUp(ButtonInput button)
+    public static Vector2 GetAxis(AxisInput axis)
     {
-    }
-
-    public void GetAxis(AxisInput axis)
-    {
+        return axis.Value;
     }
 
     // See which input is currently active (gamepad has priority)
-    public void GetActiveInput(BaseInput input)
-    {
-    }
+    // public object GetActiveInput(BaseInput input)
+    // {
+    // }
 }
