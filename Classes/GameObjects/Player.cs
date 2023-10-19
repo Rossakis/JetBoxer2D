@@ -4,6 +4,8 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Super_Duper_Shooter.Classes.Extensions;
 using Super_Duper_Shooter.Classes.GameObjects.Base;
+using Super_Duper_Shooter.Classes.InputEvents;
+using Super_Duper_Shooter.Classes.InputEvents.InputMaps;
 using Super_Duper_Shooter.ContentGeneration;
 
 namespace Super_Duper_Shooter.Classes.GameObjects;
@@ -39,15 +41,17 @@ public class Player : BaseGameObject
     private Animation _shooting;
 
     private const float MoveSpeed = 500;
+    private InputManager _inputManager;
 
     public Texture2D Texture => _texture;
 
-    public Player(Vector2 playerPos, SpriteBatch spriteBatch, ContentManager contentManager)
+    public Player(Vector2 playerPos, SpriteBatch spriteBatch, ContentManager contentManager, InputManager inputManager)
     {
         _position = playerPos;
         _spriteBatch = spriteBatch;
         _contentManager = contentManager;
-
+        _inputManager = inputManager;
+        
         _texture = contentManager.Load<Texture2D>(DefaultSprite); //default texture
         SwitchState(PlayerState.Idle); //default state
         InitializeAnimator();
@@ -92,6 +96,13 @@ public class Player : BaseGameObject
     private void Idle()
     {
         _animator.Play(_idle);
+        if (_inputManager.GetAxis(GameplayInputMap.MoveHorizontal.InputAction).X < 0)
+            CurrentState = PlayerState.MovingLeft;
+        if (_inputManager.GetAxis(GameplayInputMap.MoveHorizontal.InputAction).X > 0)
+            CurrentState = PlayerState.MovingRight;
+        
+        if (_inputManager.GetButtonDown(GameplayInputMap.ShootLeft.InputAction) || _inputManager.GetButtonDown(GameplayInputMap.ShootRight.InputAction))
+            CurrentState = PlayerState.Shooting;
     }
 
     private void MoveLeft()
@@ -99,6 +110,15 @@ public class Player : BaseGameObject
         _animator.Play(_walking);
         _animator.IsFlipped = true;
         PlayerPos = new Vector2(PlayerPos.X - MoveSpeed * Time.DeltaTime, PlayerPos.Y);
+        
+        if (_inputManager.GetAxis(GameplayInputMap.MoveHorizontal.InputAction).X == 0)
+            CurrentState = PlayerState.Idle;
+        
+        if (_inputManager.GetAxis(GameplayInputMap.MoveHorizontal.InputAction).X > 0)
+            CurrentState = PlayerState.MovingRight;
+        
+        if (_inputManager.GetButtonDown(GameplayInputMap.ShootLeft.InputAction) || _inputManager.GetButtonDown(GameplayInputMap.ShootRight.InputAction))
+            CurrentState = PlayerState.Shooting;
     }
 
     private void MoveRight()
@@ -106,6 +126,15 @@ public class Player : BaseGameObject
         _animator.Play(_walking);
         _animator.IsFlipped = false;
         PlayerPos = new Vector2(PlayerPos.X + MoveSpeed * Time.DeltaTime, PlayerPos.Y);
+        
+        if (_inputManager.GetAxis(GameplayInputMap.MoveHorizontal.InputAction).X == 0)
+            CurrentState = PlayerState.Idle;
+        
+        if (_inputManager.GetAxis(GameplayInputMap.MoveHorizontal.InputAction).X < 0)
+            CurrentState = PlayerState.MovingLeft;
+        
+        if (_inputManager.GetButtonDown(GameplayInputMap.ShootLeft.InputAction) || _inputManager.GetButtonDown(GameplayInputMap.ShootRight.InputAction))
+            CurrentState = PlayerState.Shooting;
     }
 
     private void ShootProjectile()

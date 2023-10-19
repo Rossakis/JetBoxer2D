@@ -15,7 +15,7 @@ public class Time
         get //if instance = null, create new
         {
             if (_instance == null)
-                throw new Exception("Time.Instance wasn't instantiated");
+                _instance = new Time();
 
             return _instance;
         }

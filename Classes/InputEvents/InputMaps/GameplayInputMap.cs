@@ -9,179 +9,258 @@ using Super_Duper_Shooter.Enums;
 
 namespace Super_Duper_Shooter.Classes.InputEvents.InputMaps
 {
+    //Input Actions
+    public class  MoveHorizontal : BaseInputAction
+    {
+        public AxisInput InputAction { get; private set; }
+        public MoveHorizontal(AxisInput inputAction)
+        {
+            InputAction = inputAction;
+        }
+        public readonly Dictionary<InputDevices, List<Enum>> MoveHorLeftDict = new();
+        public readonly Dictionary<InputDevices, List<Enum>> MoveHorRightDict = new();
+    }
+
+    public class MoveVertical : BaseInputAction
+    {
+        public AxisInput InputAction { get; private set; }
+        public MoveVertical(AxisInput inputAction)
+        {
+            InputAction = inputAction;
+        }
+        public readonly Dictionary<InputDevices, List<Enum>> MoveVertUpDict = new(); 
+        public readonly Dictionary<InputDevices, List<Enum>> MoveVertDownDict = new();
+    }
+
+    public class ShootLeft : BaseInputAction
+    {
+        public ButtonInput InputAction { get; private set; }
+
+        public ShootLeft(ButtonInput inputAction)
+        {
+            InputAction = inputAction;
+        }
+        public readonly Dictionary<InputDevices, List<Enum>> ShootLeftDict = new(); 
+    }
+
+    public class ShootRight : BaseInputAction
+    {
+        public ButtonInput InputAction { get; private set; }
+
+        public ShootRight(ButtonInput inputAction)
+        {
+            InputAction = inputAction;
+        }
+        public readonly Dictionary<InputDevices, List<Enum>> ShootRightDict = new();
+    }
+    
     public class GameplayInputMap : BaseInputMap
     {
-        //Accessed by BaseInput classes
-        private static class GameplayInputActions
-        {
-            //Make InputActions dictionaries agnostic to the input value (e.g. Keys, Buttons, etc...)
-            //For each InputAction (e.g. Move Left) exists a dictionary, where for each input device (keyboard, mouse, etc...)
-            //exists an Enum list containing all the input names for each device (e.g. Keys for Keyboard, Buttons for Gamepad, etc...)
-
-            public static readonly Dictionary<InputDevices, List<Enum>> MoveHorizontalLeft = new(); //Axis
-            public static readonly Dictionary<InputDevices, List<Enum>> MoveHorizontalRight = new();
-
-            public static readonly Dictionary<InputDevices, List<Enum>> ShootLeft = new(); //Axis
-            public static readonly Dictionary<InputDevices, List<Enum>> ShootRight = new();
-        }
-
-        //Input Axis
-        public static AxisInput _moveHorAxis;
-        private static AxisInput _shootAxis; //-1 for left shooting, 1 for right shooting
+        public static MoveHorizontal MoveHorizontal;
+        public static MoveVertical MoveVertical;
+        public static ShootLeft ShootLeft;
+        public static ShootRight ShootRight;
 
         public GameplayInputMap()
         {
             InitializeInputActions();
-            InitializeInputButtons();
+            InitializeInputActionDictionaries();
         }
 
         //Assign the default Input keys/buttons
         private void InitializeInputActions()
         {
-            //MoveHorizontal - Keyboard
-            var leftKeys = new List<Enum>() {Keys.A, Keys.Left};//Keys responsible for performing the left move action
-            var rightKeys = new List<Enum>() {Keys.D, Keys.Right};
-            GameplayInputActions.MoveHorizontalLeft.TryAdd(InputDevices.Keyboard, leftKeys); 
-            GameplayInputActions.MoveHorizontalRight.TryAdd(InputDevices.Keyboard, rightKeys);
-
-            //MoveHorizontal - Gamepad
-            var leftGpButtons = new List<Enum>() {Buttons.LeftThumbstickLeft};//Gamepad buttons responsible for performing the left move action
-            var rightGpButtons = new List<Enum>() {Buttons.LeftThumbstickRight};
-            GameplayInputActions.MoveHorizontalLeft.TryAdd(InputDevices.Gamepad, leftGpButtons);
-            GameplayInputActions.MoveHorizontalRight.TryAdd(InputDevices.Gamepad, rightGpButtons);
-
-            //MoveHorizontal - Mouse
-            var leftMsAxis = new List<Enum>() {MouseAxis.Horizontal};//Gamepad buttons responsible for performing the left move action
-            var rightMsAxis = new List<Enum>() {MouseAxis.Vertical};
-            GameplayInputActions.MoveHorizontalLeft.TryAdd(InputDevices.Mouse, leftMsAxis); //Mouse
-            GameplayInputActions.MoveHorizontalRight.TryAdd(InputDevices.Mouse, rightMsAxis);
-
-
-            // //Shoot
-            // GameplayInputActions.ShootLeft.TryAdd(InputDevices.Keyboard, Keys.J); //Keyboard
-            // GameplayInputActions.ShootRight.TryAdd(InputDevices.Keyboard, Keys.K);
-            //
-            // GameplayInputActions.ShootLeft.TryAdd(InputDevices.Gamepad, Buttons.LeftTrigger); //Gamepad
-            // GameplayInputActions.ShootRight.TryAdd(InputDevices.Gamepad, Buttons.RightTrigger);
-            //
-            // GameplayInputActions.ShootLeft.TryAdd(InputDevices.Mouse, MouseButtons.LeftButton); //Mouse
-            // GameplayInputActions.ShootRight.TryAdd(InputDevices.Mouse, MouseButtons.RightButton);
+            MoveHorizontal = new MoveHorizontal(new AxisInput());
+            MoveVertical = new MoveVertical(new AxisInput());
+            ShootLeft = new ShootLeft(new ButtonInput());
+            ShootRight = new ShootRight(new ButtonInput());
         }
-
-        private void InitializeInputButtons()
+        
+        private void InitializeInputActionDictionaries()//Each Input Action Dictionary contains the InputActions table as values for each type of input
         {
-            _moveHorAxis = new AxisInput();
-            _shootAxis = new AxisInput();
+            //Move Horizontal
+            InitializeInputActionDictionary(MoveHorizontal.MoveHorLeftDict, InputDevices.Keyboard, new List<Enum>{Keys.A, Keys.Left});
+            InitializeInputActionDictionary(MoveHorizontal.MoveHorLeftDict, InputDevices.Gamepad, new List<Enum>{Buttons.LeftThumbstickLeft});
+            InitializeInputActionDictionary(MoveHorizontal.MoveHorRightDict, InputDevices.Keyboard, new List<Enum>{Keys.D, Keys.Right});
+            InitializeInputActionDictionary(MoveHorizontal.MoveHorRightDict, InputDevices.Gamepad, new List<Enum>{Buttons.LeftThumbstickRight});
+            
+            //Move Vertical
+            InitializeInputActionDictionary(MoveVertical.MoveVertUpDict, InputDevices.Keyboard, new List<Enum>{Keys.W, Keys.Up});
+            InitializeInputActionDictionary(MoveVertical.MoveVertUpDict, InputDevices.Gamepad, new List<Enum>{Buttons.LeftThumbstickUp});
+            InitializeInputActionDictionary(MoveVertical.MoveVertDownDict, InputDevices.Keyboard, new List<Enum>{Keys.S, Keys.Down});
+            InitializeInputActionDictionary(MoveVertical.MoveVertDownDict, InputDevices.Gamepad, new List<Enum>{Buttons.LeftThumbstickDown});
+            
+            //Shoot Left
+            InitializeInputActionDictionary(ShootLeft.ShootLeftDict, InputDevices.Mouse, new List<Enum>{MouseInputTypes.LeftButton});
+            InitializeInputActionDictionary(ShootLeft.ShootLeftDict, InputDevices.Gamepad, new List<Enum>{Buttons.LeftTrigger});
+            
+            //Shoot Right
+            InitializeInputActionDictionary(ShootRight.ShootRightDict, InputDevices.Mouse, new List<Enum>{MouseInputTypes.RightButton});
+            InitializeInputActionDictionary(ShootRight.ShootRightDict, InputDevices.Gamepad, new List<Enum>{Buttons.RightTrigger});
         }
 
         #region Input Dictionary Finders
 
-        private static List<Enum> InputMoveLeft(InputDevices inputType)
+        private List<Enum> GetMoveLeftInput(InputDevices inputType)
         {
             // Check if the key exists in the dictionary
-            if (GameplayInputActions.MoveHorizontalLeft.TryGetValue(inputType, out var value))
+            if (MoveHorizontal.MoveHorLeftDict.TryGetValue(inputType, out var value))
                 return value; // Return the value associated with the key
             else
-                throw new KeyNotFoundException($"InputTypes.{inputType} not found in MoveHorizontalLeft dictionary");
+                throw new KeyNotFoundException($"{inputType} not found in {MoveHorizontal} dictionary");
         }
 
-        private static List<Enum> InputMoveRight(InputDevices inputType)
+        private List<Enum> GetMoveRightInput(InputDevices inputType)
         {
-            if (GameplayInputActions.MoveHorizontalRight.TryGetValue(inputType, out var value))
+            if (MoveHorizontal.MoveHorRightDict.TryGetValue(inputType, out var value))
                 return value;
             else
-                throw new KeyNotFoundException($"InputTypes.{inputType} not found in MoveHorizontalRight dictionary");
+                throw new KeyNotFoundException($"{inputType} not found in {MoveHorizontal} dictionary");
+        }
+        
+        private List<Enum> GetMoveUpInput(InputDevices inputType)
+        {
+            // Check if the key exists in the dictionary
+            if (MoveVertical.MoveVertUpDict.TryGetValue(inputType, out var value))
+                return value; // Return the value associated with the key
+            else
+                throw new KeyNotFoundException($"{inputType} not found in {MoveVertical} dictionary");
+        }
+
+        private List<Enum> GetMoveDownInput(InputDevices inputType)
+        {
+            if (MoveVertical.MoveVertDownDict.TryGetValue(inputType, out var value))
+                return value;
+            else
+                throw new KeyNotFoundException($"{inputType} not found in {MoveVertical} dictionary");
         }
 
         //The reason we make this generic, is because the ButtonState return that we need for the mouse is not 
-        private static List<Enum> InputShootLeft(InputDevices inputType)
+        private List<Enum> GetShootLeftInput(InputDevices inputType)
         {
-            if (GameplayInputActions.ShootLeft.TryGetValue(inputType, out var value))
+            if (ShootLeft.ShootLeftDict.TryGetValue(inputType, out var value))
                 return value;
             else
-                throw new KeyNotFoundException($"InputTypes.{inputType} not found in Shoot dictionary");
+                throw new KeyNotFoundException($"InputTypes.{inputType} not found in {ShootLeft} dictionary");
         }
         
-        private static List<Enum> InputShootRight(InputDevices inputType)
+        private List<Enum> GetShootRightInput(InputDevices inputType)
         {
-            if (GameplayInputActions.ShootRight.TryGetValue(inputType, out var value))
+            if (ShootRight.ShootRightDict.TryGetValue(inputType, out var value))
                 return value;
             else
-                throw new KeyNotFoundException($"InputTypes.{inputType} not found in Shoot dictionary");
+                throw new KeyNotFoundException($"InputTypes.{inputType} not found in {ShootRight} dictionary");
         }
         #endregion
 
         #region Input Updates
         //Update all input states
-        public void UpdateInput()
+        public override void UpdateInput()
         {
             UpdateKeyboardInput();
-            UpdateGamepadState();
+            UpdateGamepadInput();
             UpdateMouseInput();
-
-            //Console.WriteLine($"Move Horizontal: {_moveHorAxis.Value}");
         }
 
-        private static void UpdateKeyboardInput()
+        protected override void UpdateKeyboardInput()
         {
             var keyboardState = Keyboard.GetState();
             
-            #region MoveHorizontal
-            //Left
-            foreach (Keys leftInput in InputMoveLeft(InputDevices.Keyboard))
+            //MoveHorizontal - Left
+            foreach (Keys leftInput in GetMoveLeftInput(InputDevices.Keyboard))
             {
                 if (keyboardState.IsKeyDown(leftInput))
                 {
-                    _moveHorAxis.UpdateKeyboardValueX(true, _moveHorAxis.CurrentY); 
+                    MoveHorizontal.InputAction.UpdateKeyboardValueX(true, MoveHorizontal.InputAction.CurrentY); 
                     break;
                 }
-                _moveHorAxis.UpdateKeyboardValueX(false, _moveHorAxis.CurrentY);
+                MoveHorizontal.InputAction.UpdateKeyboardValueX(false, MoveHorizontal.InputAction.CurrentY);
             }
-            //Right
-            foreach (Keys rightInput in InputMoveRight(InputDevices.Keyboard))
+            //MoveHorizontal - Right
+            foreach (Keys rightInput in GetMoveRightInput(InputDevices.Keyboard))
             {
                 if (keyboardState.IsKeyDown(rightInput))
                 {
-                    _moveHorAxis.UpdateKeyboardValueX(_moveHorAxis.CurrentX, true); 
+                    MoveHorizontal.InputAction.UpdateKeyboardValueX(MoveHorizontal.InputAction.CurrentX, true); 
                     break;
                 }
-                _moveHorAxis.UpdateKeyboardValueX(_moveHorAxis.CurrentX, false); 
+                MoveHorizontal.InputAction.UpdateKeyboardValueX(MoveHorizontal.InputAction.CurrentX, false); 
             }
-            #endregion
             
         }
 
-        private static void UpdateMouseInput()
+        protected override void UpdateMouseInput()
         {
+            //Shoot Right
+            foreach (MouseInputTypes rightClick in GetShootRightInput(InputDevices.Mouse))
+            {
+                if (MouseInput.IsButtonPressed(rightClick))
+                {
+                    ShootRight.InputAction.UpdateMouseValue(true);
+                    break;
+                }
+                ShootRight.InputAction.UpdateMouseValue(false);
+            }
+            
+            //Shoot Left
+            foreach (MouseInputTypes leftClick in GetShootLeftInput(InputDevices.Mouse))
+            {
+                if (MouseInput.IsButtonPressed(leftClick))
+                {
+                    ShootLeft.InputAction.UpdateMouseValue(true);
+                    break;
+                }
+                ShootLeft.InputAction.UpdateMouseValue(false);
+            }
         }
 
-        private static void UpdateGamepadState()
+        protected override void UpdateGamepadInput()
         {
             var gamepadState = GamePad.GetState(0);
 
-            #region MoveHorizontal
-            //Left
-            foreach (Buttons leftInput in InputMoveLeft(InputDevices.Gamepad))
+            //MoveHorizontal - Left
+            foreach (Buttons leftInput in GetMoveLeftInput(InputDevices.Gamepad))
             {
                 if (gamepadState.IsButtonDown(leftInput))
                 {
-                    _moveHorAxis.UpdateGamepadValueX(true, _moveHorAxis.CurrentY); 
+                    MoveHorizontal.InputAction.UpdateGamepadValueX(true, MoveHorizontal.InputAction.CurrentY); 
                     break;
                 }
-                _moveHorAxis.UpdateGamepadValueX(false, _moveHorAxis.CurrentY); 
+                MoveHorizontal.InputAction.UpdateGamepadValueX(false, MoveHorizontal.InputAction.CurrentY); 
             }
             
-            //Right
-            foreach (Buttons rightInput in InputMoveRight(InputDevices.Gamepad))
+            //MoveHorizontal - Right
+            foreach (Buttons rightInput in GetMoveRightInput(InputDevices.Gamepad))
             {
                 if (gamepadState.IsButtonDown(rightInput))
                 {
-                    _moveHorAxis.UpdateGamepadValueX(_moveHorAxis.CurrentX, true); 
+                    MoveHorizontal.InputAction.UpdateGamepadValueX(MoveHorizontal.InputAction.CurrentX, true); 
                     break;
                 }
-                _moveHorAxis.UpdateGamepadValueX(_moveHorAxis.CurrentX, false); 
+                MoveHorizontal.InputAction.UpdateGamepadValueX(MoveHorizontal.InputAction.CurrentX, false); 
             }
-            #endregion
+            
+            //Shoot Right
+            foreach (Buttons rightTrigger in GetShootRightInput(InputDevices.Gamepad))
+            {
+                if (gamepadState.IsButtonDown(rightTrigger))
+                {
+                    ShootRight.InputAction.UpdateGamepadValue(true);
+                    break;
+                }
+                ShootRight.InputAction.UpdateGamepadValue(false);
+            }
+            
+            //Shoot Left
+            foreach (Buttons leftTrigger in GetShootLeftInput(InputDevices.Gamepad))
+            {
+                if (gamepadState.IsButtonDown(leftTrigger))
+                {
+                    ShootLeft.InputAction.UpdateGamepadValue(true);
+                    break;
+                }
+                ShootLeft.InputAction.UpdateGamepadValue(false);
+            }
             
         }
 
@@ -190,16 +269,15 @@ namespace Super_Duper_Shooter.Classes.InputEvents.InputMaps
         #region Input Remapping
 
         /// <summary>
-        /// Remap the <see cref="GameplayInputActions.MoveHorizontalLeft"/> dictionary's input action to a desired new one
+        /// Remap the an Input Action Dictionary key's value
         /// </summary>
         /// <param name="inputType"></param>
         /// <param name="newInput">Keys, Buttons, MouseButtons</param>
-        public void RemapMoveLeft(InputDevices inputType, List<Enum> newInput)
+        public override void RemapInputAction(Dictionary<InputDevices, List<Enum>> inputActionDict, InputDevices inputType, List<Enum> newInput)
         {
-            //E.g. GameplayInputMap.RemapMoveLeft(InputTypes.Keyboard, Keys.Left)
-
-            GameplayInputActions.MoveHorizontalLeft.Remove(inputType);
-            GameplayInputActions.MoveHorizontalLeft.Add(inputType, newInput);
+            //E.g. RemapInputAction(MoveHorizontal.MoveHorLeftDict, InputTypes.Keyboard, Keys.Left)
+            inputActionDict.Remove(inputType);
+            inputActionDict.TryAdd(inputType, newInput);
         }
 
         #endregion

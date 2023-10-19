@@ -8,14 +8,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="918e4fcc-b4f8-4137-9d97-30dcba5635b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Classes/InputEvents/Base/BaseInputAction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Extensions/MouseInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Extensions/MouseInput.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/Extensions/SingletonManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Extensions/SingletonManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Extensions/Time.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Extensions/Time.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/GameObjects/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameObjects/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/GameStates/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameStates/GameplayState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/GameStates/SplashState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameStates/SplashState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/InputEvents/Base/BaseInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputEvents/Base/BaseInputMap.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/InputEvents/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputEvents/InputManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/InputEvents/InputMaps/GameplayInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputEvents/InputMaps/GameplayInputMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputEvents/InputTypes/ButtonInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputEvents/InputTypes/ButtonInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/InputEvents/InputMaps/SplashInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputEvents/InputMaps/SplashInputMap.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/Super Duper Shooter.dll" afterDir="false" />
@@ -30,8 +37,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Classes/InputEvents/InputMaps/GameplayInputMap.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Classes/InputEvents/InputMaps/GameplayInputMap.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Classes/InputEvents/InputMaps/GameplayInputMap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/777f4218e4a0469dbc075c5f54bf5f721c5a00/61/662530e9/Buttons.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/777f4218e4a0469dbc075c5f54bf5f721c5a00/63/04aff20a/Keys.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -98,11 +111,49 @@
       <workItem from="1697482911895" duration="1221000" />
       <workItem from="1697491662860" duration="10918000" />
       <workItem from="1697531632398" duration="1334000" />
+      <workItem from="1697664921865" duration="9090000" />
+      <workItem from="1697720056395" duration="16753000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="c9c8429c-b069-4797-96bf-9e325518ee2b" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="c9c8429c-b069-4797-96bf-9e325518ee2b">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
