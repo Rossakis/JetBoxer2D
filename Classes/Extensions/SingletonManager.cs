@@ -1,4 +1,5 @@
 using Microsoft.Xna.Framework;
+using Super_Duper_Shooter.Classes.InputEvents;
 
 namespace Super_Duper_Shooter.Classes.Extensions;
 
@@ -11,6 +12,7 @@ public static class SingletonManager
     {
         MouseInput.Instance = new MouseInput();
         Time.Instance = new Time();
+        // InputManager.Instance = new InputManager();
     }
 
     public static void UpdateSingletons(GameTime gameTime)

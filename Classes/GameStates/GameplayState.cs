@@ -1,10 +1,12 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Super_Duper_Shooter.Classes.GameObjects;
 using Super_Duper_Shooter.Classes.GameStates.Base;
 using Super_Duper_Shooter.Classes.InputEvents;
+using Super_Duper_Shooter.Classes.InputEvents.Base;
 using Super_Duper_Shooter.Classes.InputEvents.InputMaps;
 
 namespace Super_Duper_Shooter.Classes.GameStates;
@@ -17,52 +19,21 @@ public class GameplayState : BaseGameState
     private Player _player;
     private SpriteBatch _spriteBatch;
 
-    private GameplayInputMap _inputActionMap;
-
-    //Initiate the Input Manager
     protected override void SetInputManager()
     {
-        _inputActionMap = new GameplayInputMap();
-        InputManager = new InputManager();
+        InputManager = new InputManager(new GameplayInputMap());
     }
-
+    
     public override void HandleInput(GameTime gameTime)
     {
-        //     InputManager.GetCommands(cmd =>
-        //     {
-        //         KeepPlayerInBounds();
-        //
-        //         if (cmd is GameplayInputCommand.GameExit)
-        //             NotifyEvent(Events.GAME_QUIT);
-        //
-        //         if (cmd is GameplayInputCommand.PlayerMoveLeft)
-        //             _player.SwitchState(PlayerState.MovingLeft);
-        //
-        //         if (cmd is GameplayInputCommand.PlayerMoveRight)
-        //             _player.SwitchState(PlayerState.MovingRight);
-        //
-        //         if (cmd is GameplayInputCommand.PlayerShoots)
-        //             _player.SwitchState(PlayerState.Shooting);
-        //
-        //         // if (cmd is GameplayInputCommand.None && _player.CurrentState != PlayerState.Shooting)
-        //         //     _player.SwitchState(PlayerState.Idle);
-        //     });
-
-        InputManager.UpdateGameplayInput();
+        InputManager.UpdateInput();
+        KeepPlayerInBounds();
     }
 
-    public override void Initialize(ContentManager contentManager, int viewportWidth, int viewportHeight)
-    {
-        _contentManager = contentManager;
-        _viewportWidth = viewportWidth;
-        _viewportHeight = viewportHeight;
-
-        SetInputManager();
-    }
 
     public override void LoadContent(SpriteBatch spriteBatch)
     {
-        _player = new Player(Vector2.Zero, spriteBatch, _contentManager)
+        _player = new Player(Vector2.Zero, spriteBatch, _contentManager, InputManager)
             {zIndex = 1};
         _player.PlayerPos = new Vector2(_viewportWidth / 2f - _player.Texture.Height,
             _viewportHeight / 2f - _player.Texture.Height);

@@ -7,17 +7,14 @@ namespace Super_Duper_Shooter.Classes.Extensions;
 /// A wrapper class for Mouse Input, so that we input information from it in the same way we do for Keyboard and Gamepad
 ///classes (e.g. Mouse.IsButtonDown(MouseButton.RightButton)
 /// </summary>
-public enum MouseButtons
-{
-    RightButton,
-    MiddleButton,
-    LeftButton
-}
 
-public enum MouseAxis
+public enum MouseInputTypes
 {
-    Horizontal,
-    Vertical
+    RightButton = 0,
+    MiddleButton = 1,
+    LeftButton = 2,
+    Horizontal = 3,
+    Vertical = 4
 }
 
 public class MouseInput
@@ -32,7 +29,7 @@ public class MouseInput
         get //if instance = null, create new
         {
             if (_instance == null)
-                throw new Exception("MouseInput.Instance wasn't instantiated");
+                return _instance = new MouseInput();
 
             return _instance;
         }
@@ -45,39 +42,29 @@ public class MouseInput
         _instance._currentMouseState = Mouse.GetState();
     }
 
-    public static bool IsButtonPressed(MouseButtons button)
+    public static bool IsButtonPressed(MouseInputTypes button)
     {
-        switch (button)
+        return button switch
         {
-            case MouseButtons.LeftButton:
-                return _instance._currentMouseState.LeftButton == ButtonState.Pressed;
-            case MouseButtons.MiddleButton:
-                return _instance._currentMouseState.MiddleButton == ButtonState.Pressed;
-            case MouseButtons.RightButton:
-                return _instance._currentMouseState.RightButton == ButtonState.Pressed;
-            // Add cases for other buttons if needed
-            default:
-                return false;
-        }
+            MouseInputTypes.LeftButton => _instance._currentMouseState.LeftButton == ButtonState.Pressed,
+            MouseInputTypes.MiddleButton => _instance._currentMouseState.MiddleButton == ButtonState.Pressed,
+            MouseInputTypes.RightButton => _instance._currentMouseState.RightButton == ButtonState.Pressed,
+            _ => false
+        };
     }
 
-    public static bool IsButtonReleased(MouseButtons button)
+    public static bool IsButtonReleased(MouseInputTypes button)
     {
-        switch (button)
+        return button switch
         {
-            case MouseButtons.LeftButton:
-                return _instance._currentMouseState.LeftButton == ButtonState.Released &&
-                       _instance._previousMouseState.LeftButton == ButtonState.Pressed;
-            case MouseButtons.MiddleButton:
-                return _instance._currentMouseState.MiddleButton == ButtonState.Released &&
-                       _instance._previousMouseState.MiddleButton == ButtonState.Pressed;
-            case MouseButtons.RightButton:
-                return _instance._currentMouseState.RightButton == ButtonState.Released &&
-                       _instance._previousMouseState.RightButton == ButtonState.Pressed;
-            // Add cases for other buttons if needed
-            default:
-                return false;
-        }
+            MouseInputTypes.LeftButton => _instance._currentMouseState.LeftButton == ButtonState.Released &&
+                                          _instance._previousMouseState.LeftButton == ButtonState.Pressed,
+            MouseInputTypes.MiddleButton => _instance._currentMouseState.MiddleButton == ButtonState.Released &&
+                                            _instance._previousMouseState.MiddleButton == ButtonState.Pressed,
+            MouseInputTypes.RightButton => _instance._currentMouseState.RightButton == ButtonState.Released &&
+                                           _instance._previousMouseState.RightButton == ButtonState.Pressed,
+            _ => false
+        };
     }
 
     /// <summary>
@@ -85,23 +72,18 @@ public class MouseInput
     /// </summary>
     /// <param name="button"></param>
     /// <returns></returns>
-    public static bool WasButtonPressed(MouseButtons button)
+    public static bool WasButtonPressed(MouseInputTypes button)
     {
-        switch (button)
+        return button switch
         {
-            case MouseButtons.LeftButton:
-                return _instance._currentMouseState.LeftButton == ButtonState.Pressed &&
-                       _instance._previousMouseState.LeftButton == ButtonState.Released;
-            case MouseButtons.MiddleButton:
-                return _instance._currentMouseState.MiddleButton == ButtonState.Pressed &&
-                       _instance._previousMouseState.MiddleButton == ButtonState.Released;
-            case MouseButtons.RightButton:
-                return _instance._currentMouseState.RightButton == ButtonState.Pressed &&
-                       _instance._previousMouseState.RightButton == ButtonState.Released;
-            // Add cases for other buttons if needed
-            default:
-                return false;
-        }
+            MouseInputTypes.LeftButton => _instance._currentMouseState.LeftButton == ButtonState.Pressed &&
+                                          _instance._previousMouseState.LeftButton == ButtonState.Released,
+            MouseInputTypes.MiddleButton => _instance._currentMouseState.MiddleButton == ButtonState.Pressed &&
+                                            _instance._previousMouseState.MiddleButton == ButtonState.Released,
+            MouseInputTypes.RightButton => _instance._currentMouseState.RightButton == ButtonState.Pressed &&
+                                           _instance._previousMouseState.RightButton == ButtonState.Released,
+            _ => false
+        };
     }
 
     /// <summary>
@@ -109,18 +91,15 @@ public class MouseInput
     /// </summary>
     /// <param name="mouseDelta">The type of mouse axis input</param>
     /// <returns></returns>
-    public static int GetMouseAxis(MouseAxis mouseDelta)
+    public static int GetMouseAxis(MouseInputTypes mouseDelta)
     {
-        switch (mouseDelta)
+        return mouseDelta switch
         {
             //Clamp the value of mouse axis between -1 to 1
-            case MouseAxis.Horizontal:
-                return Math.Clamp(_instance._currentMouseState.X - _instance._previousMouseState.X, -1, 1);
-            case MouseAxis.Vertical:
-                return Math.Clamp(_instance._currentMouseState.Y - _instance._previousMouseState.Y, -1, 1);
-            default:
-                return 0;
-        }
+            MouseInputTypes.Horizontal => Math.Clamp(_instance._currentMouseState.X - _instance._previousMouseState.X, -1, 1),
+            MouseInputTypes.Vertical => Math.Clamp(_instance._currentMouseState.Y - _instance._previousMouseState.Y, -1, 1),
+            _ => 0
+        };
     }
 
     /// <summary>
@@ -129,16 +108,13 @@ public class MouseInput
     /// </summary>
     /// <param name="mouseDelta"></param>
     /// <returns></returns>
-    public static int GetMouseScreenPosition(MouseAxis mouseDelta)
+    public static int GetMouseScreenPosition(MouseInputTypes mouseDelta)
     {
-        switch (mouseDelta)
+        return mouseDelta switch
         {
-            case MouseAxis.Horizontal:
-                return _instance._currentMouseState.Position.X;
-            case MouseAxis.Vertical:
-                return _instance._currentMouseState.Position.Y;
-            default:
-                return 0;
-        }
+            MouseInputTypes.Horizontal => _instance._currentMouseState.Position.X,
+            MouseInputTypes.Vertical => _instance._currentMouseState.Position.Y,
+            _ => 0
+        };
     }
 }

@@ -1,37 +1,20 @@
 using System;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework;
 using Super_Duper_Shooter.Classes.InputEvents.Base;
 using Super_Duper_Shooter.Classes.InputEvents.InputMaps;
 using Super_Duper_Shooter.Classes.InputEvents.InputTypes;
+using Super_Duper_Shooter.Enums;
 
 namespace Super_Duper_Shooter.Classes.InputEvents;
 
 public class InputManager
 {
-    private enum ActiveInput
-    {
-        KeyboardMouse,
-        Gamepad
-    }
+    private readonly GameplayInputMap _gameplayInputMap;
+    private readonly SplashInputMap _splashInputMap;
+    private BaseInputMap _currentInputMap;
 
-    // public GameplayInputMap InputActionMap => _gameplayInputMap;
-    // public SplashInputMap SplashInputMap => _splashInputMap;
-
-    private ActiveInput _currentActiveInput;
-    private List<ValueType> _currentInputStates; //store KeyboardState, MouseState adn GamepadState here
-    private List<ValueType> _previousInputStates;
-
-    //Using these three states, we  will be able to learn the differences
-    //between _currentKeyboardState and _previousKeyboardState, to create
-    //the PressedDown and ReleasedUp methods
-
-    private GameplayInputMap _currentGameplayInputMap;
-    private GameplayInputMap _previousGameplayInputMap;
-
-    private SplashInputMap _splashInputMap;
-
-    private InputManager _currentState;
-    private InputManager _previousState;
+    private ButtonInput _previousButtonState;//for GetButtonDown
 
     // private static InputManager _instance;
     //
@@ -40,51 +23,67 @@ public class InputManager
     //     get //if instance = null, create new
     //     {
     //         if (_instance == null)
-    //             throw new Exception("InputManager.Instance wasn't instantiated");
-    //
+    //             return _instance = new InputManager();
+    //         
     //         return _instance;
     //     }
     //     set => _instance = value;
     // }
 
-    public InputManager()
+    public InputManager(BaseInputMap inputMap)
     {
-        _currentGameplayInputMap = new GameplayInputMap();
-        _previousGameplayInputMap = new GameplayInputMap();
+        // _gameplayInputMap = new GameplayInputMap();
+        // _splashInputMap = new SplashInputMap();
 
-        _splashInputMap = new SplashInputMap();
+        //Default Input Map
+        _currentInputMap = inputMap;
+        _previousButtonState = new ButtonInput();
     }
-
-    //Update all the input states
     
-    public void UpdateGameplayInput()
+    public void SetInputMap(BaseInputMap inputMap)
     {
-        // _currentGameplayInputMap = GameplayInputMap.UpdateInput();
+        if (inputMap is GameplayInputMap)
+            _currentInputMap = _gameplayInputMap;
+        else if (inputMap is SplashInputMap)
+            _currentInputMap = _splashInputMap;
+        else
+            throw new ArgumentException("Wrong Input Map assignment");
+    }
+    
+    public void UpdateInput()
+    {
+        _currentInputMap.UpdateInput();
+    }
+    
+
+    public bool GetButton(ButtonInput button)
+    {
+        return button.Pressed;
     }
 
-    public void UpdateSplashInput()
+    public bool GetButtonDown(ButtonInput button)
     {
-        //_splashInputMap.UpdateInput();
-    }
-
-    public void GetButton(ButtonInput button)
-    {
-    }
-
-    public void GetButtonDown(ButtonInput button)
-    {
+        if (button.Pressed && !_previousButtonState.Pressed)
+        {
+            _previousButtonState = button;
+            return true;
+        }
+        
+        _previousButtonState = button;
+        return false;
     }
 
     public void GetButtonUp(ButtonInput button)
     {
     }
 
-    public void GetAxis(AxisInput axis)
+    public Vector2 GetAxis(AxisInput axis)
     {
+        return axis.Value;
     }
 
-    // See which input is currently active (gamepad has priority)
-    public void GetActiveInput(BaseInput input)
+    public  void RemapInput(Dictionary<InputDevices,List<Enum>> inputActionDict, InputDevices inputDevice, List<Enum> newButtons)
     {
+       _currentInputMap.RemapInputAction(inputActionDict, inputDevice, newButtons);
     }
 }

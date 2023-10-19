@@ -18,7 +18,7 @@ public class BaseGameObject
 
     public int zIndex;
 
-    public virtual void OnNotify(Events eventType)
+    public virtual void OnNotify(GameEvents eventType)
     {
     }
 

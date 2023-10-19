@@ -18,7 +18,6 @@ public class ValueInput : BaseInput
     public void UpdateKeyboardValue(bool value)
     {
         //E.g. AxisInput MoveHor.KeyboardValue = -1 aka player moves to the left
-
         _keyboardValue = value ? 1 : 0;
     }
 

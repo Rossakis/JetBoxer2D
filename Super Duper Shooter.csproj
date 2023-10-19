@@ -35,7 +35,6 @@
     </ItemGroup>
     <ItemGroup>
         <Folder Include="AI\" />
-        <Folder Include="Enums\" />
     </ItemGroup>
     <ItemGroup>
         <None Remove="Content\Content.mgcb" />
