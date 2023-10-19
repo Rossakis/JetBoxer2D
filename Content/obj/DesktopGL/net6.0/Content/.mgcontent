@@ -12,6 +12,7 @@
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/splash.png</File>
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Denji - Knockup Attack.png</File>
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Denji-Basic Attack (Correct).png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Denji-Idle (Hand Drawn).png</File>
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Denji-Idle.png</File>
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Denji-Walking.png</File>
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Elania - Pixel.png</File>
@@ -19,6 +20,7 @@
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Effects/Energy Blast.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -53,23 +53,22 @@ public class AnimationPlayer : BaseGameObject
 
         var sourceRectangle = new Rectangle(_currentFrame * animation.Width, 0,
             animation.Width,
-            animation.Height); //animation.Width and animation.Height are the same in this instance
+            animation.Height);
 
+        var destinationRectangle = new Rectangle((int) _player.PlayerPos.X, (int) _player.PlayerPos.Y,
+            animation.Width,
+            animation.Height);
+        
         if (IsFlipped)
         {
-            var destinationRectangle = new Rectangle((int) _player.PlayerPos.X, (int) _player.PlayerPos.Y,
-                animation.Width,
-                animation.Height);
-            _spriteBatch.Draw(animation.Texture, destinationRectangle, sourceRectangle, Color.White, 0, Vector2.Zero,
-                SpriteEffects.FlipHorizontally, 0);
+            _spriteBatch.Draw(animation.Texture, destinationRectangle, sourceRectangle, Color.White, 0,
+                new Vector2(animation.Width / 2f, animation.Height / 2f),
+                SpriteEffects.FlipHorizontally, 1);
         }
         else
         {
-            var destinationRectangle = new Rectangle((int) _player.PlayerPos.X, (int) _player.PlayerPos.Y,
-                animation.Height,
-                animation.Height);
             _spriteBatch.Draw(animation.Texture, destinationRectangle, sourceRectangle, Color.White, 0,
-                animation.CenterTexture(),
+                new Vector2(animation.Width / 2f, animation.Height / 2f),
                 SpriteEffects.None, 1);
         }
     }

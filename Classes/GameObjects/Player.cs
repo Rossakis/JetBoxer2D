@@ -32,7 +32,7 @@ public class Player : BaseGameObject
     //The sprite that will be shown by default if no animation is yet set
     private const string DefaultSprite = "Characters/Denji-Walking";
 
-    private const string IdleSprite = "Characters/Denji-Idle";
+    private const string IdleSprite = "Characters/Denji-Idle (Hand Drawn)";
     private const string WalkingSprite = "Characters/Denji-Walking";
     private const string ShootingSprite = "Characters/Denji - Knockup Attack (Correct)";
     private const string AttackingSprite = "Characters/Denji - Knockup Attack";
@@ -61,7 +61,7 @@ public class Player : BaseGameObject
     {
         _animator = new AnimationPlayer(_spriteBatch, this);
 
-        _idle = new Animation(_contentManager.Load<Texture2D>(IdleSprite), 0.1f, true);
+        _idle = new Animation(_contentManager.Load<Texture2D>(IdleSprite), 1026, 738, 0.1f, true);
         _walking = new Animation(_contentManager.Load<Texture2D>(WalkingSprite), 0.1f, true);
         _shooting = new Animation(_contentManager.Load<Texture2D>(AttackingSprite), 96, 80, 0.1f, false);
     }

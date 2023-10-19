@@ -8,25 +8,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="918e4fcc-b4f8-4137-9d97-30dcba5635b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Classes/InputEvents/Base/BaseInputAction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mgstats" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Characters/Denji-Idle (Hand Drawn).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Denji-Idle (1026 × 738).xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Denji-Idle (Hand Drawn).xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Denji-Idle (1026 × 738).mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Denji-Idle (Hand Drawn).mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Denji-Idle (1026 × 738).xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Denji-Idle (Hand Drawn).xnb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Extensions/MouseInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Extensions/MouseInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Extensions/SingletonManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Extensions/SingletonManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Extensions/Time.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Extensions/Time.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/GameObjects/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameObjects/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/GameStates/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameStates/GameplayState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/GameStates/SplashState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameStates/SplashState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputEvents/Base/BaseInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputEvents/Base/BaseInputMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputEvents/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputEvents/InputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputEvents/InputMaps/GameplayInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputEvents/InputMaps/GameplayInputMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputEvents/InputMaps/SplashInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputEvents/InputMaps/SplashInputMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Content.mgcb" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Content.mgcb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/.mgstats" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/.mgstats" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContentGeneration/AnimationPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContentGeneration/AnimationPlayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/Super Duper Shooter.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/Super Duper Shooter.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,31 +50,36 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2WolHMqy8196XaI0Y3ASnFYgdZT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Input-System&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/giorgos_tsolakidis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/giorgos_tsolakidis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
-      &quot;/Users/giorgos_tsolakidis/.local/share/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/giorgos_tsolakidis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
+      "/Users/giorgos_tsolakidis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
+      "/Users/giorgos_tsolakidis/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Super Duper Shooter" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter" />
@@ -113,6 +118,7 @@
       <workItem from="1697531632398" duration="1334000" />
       <workItem from="1697664921865" duration="9090000" />
       <workItem from="1697720056395" duration="16753000" />
+      <workItem from="1697750399696" duration="2128000" />
     </task>
     <servers />
   </component>
@@ -156,6 +162,26 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Classes/GameObjects/Player.cs</url>
+          <line>55</line>
+          <properties documentPath="$PROJECT_DIR$/Classes/GameObjects/Player.cs" initialLine="55" containingFunctionPresentation="Constructor 'Player'">
+            <startOffsets>
+              <option value="1844" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1890" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
