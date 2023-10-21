@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Super_Duper_Shooter.Enums;
 
-namespace Super_Duper_Shooter.Classes.InputEvents.Base;
+namespace Super_Duper_Shooter.Classes.InputSystem.Base;
 
 public abstract class BaseInputMap
 {

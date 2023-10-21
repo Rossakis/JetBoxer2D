@@ -4,8 +4,8 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Super_Duper_Shooter.Classes.Extensions;
 using Super_Duper_Shooter.Classes.GameObjects.Base;
-using Super_Duper_Shooter.Classes.InputEvents;
-using Super_Duper_Shooter.Classes.InputEvents.InputMaps;
+using Super_Duper_Shooter.Classes.InputSystem;
+using Super_Duper_Shooter.Classes.InputSystem.InputMaps;
 using Super_Duper_Shooter.ContentGeneration;
 
 namespace Super_Duper_Shooter.Classes.GameObjects;

@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Super_Duper_Shooter.Classes.GameObjects.Base;
-using Super_Duper_Shooter.Classes.InputEvents;
+using Super_Duper_Shooter.Classes.InputSystem;
 using Super_Duper_Shooter.Enums;
 
 namespace Super_Duper_Shooter.Classes.GameStates.Base;

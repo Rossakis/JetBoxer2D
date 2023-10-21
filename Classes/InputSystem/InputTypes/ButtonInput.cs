@@ -1,6 +1,6 @@
-using Super_Duper_Shooter.Classes.InputEvents.Base;
+using Super_Duper_Shooter.Classes.InputSystem.Base;
 
-namespace Super_Duper_Shooter.Classes.InputEvents.InputTypes;
+namespace Super_Duper_Shooter.Classes.InputSystem.InputTypes;
 
 public class ButtonInput : BaseInput
 {

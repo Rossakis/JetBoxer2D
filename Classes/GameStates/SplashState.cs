@@ -1,12 +1,9 @@
-﻿using System;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Content;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 using Super_Duper_Shooter.Classes.GameObjects;
 using Super_Duper_Shooter.Classes.GameStates.Base;
-using Super_Duper_Shooter.Classes.InputEvents;
-using Super_Duper_Shooter.Classes.InputEvents.InputMaps;
+using Super_Duper_Shooter.Classes.InputSystem;
+using Super_Duper_Shooter.Classes.InputSystem.InputMaps;
 using Super_Duper_Shooter.Enums;
 
 namespace Super_Duper_Shooter.Classes.GameStates;

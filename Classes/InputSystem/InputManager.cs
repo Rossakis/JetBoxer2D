@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
-using Super_Duper_Shooter.Classes.InputEvents.Base;
-using Super_Duper_Shooter.Classes.InputEvents.InputMaps;
-using Super_Duper_Shooter.Classes.InputEvents.InputTypes;
+using Super_Duper_Shooter.Classes.InputSystem.Base;
+using Super_Duper_Shooter.Classes.InputSystem.InputMaps;
+using Super_Duper_Shooter.Classes.InputSystem.InputTypes;
 using Super_Duper_Shooter.Enums;
 
-namespace Super_Duper_Shooter.Classes.InputEvents;
+namespace Super_Duper_Shooter.Classes.InputSystem;
 
 public class InputManager
 {

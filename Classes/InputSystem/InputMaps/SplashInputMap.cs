@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework.Input;
-using Super_Duper_Shooter.Classes.InputEvents.Base;
-using Super_Duper_Shooter.Classes.InputEvents.InputTypes;
+using Super_Duper_Shooter.Classes.InputSystem.Base;
+using Super_Duper_Shooter.Classes.InputSystem.InputTypes;
 using Super_Duper_Shooter.Enums;
 
-namespace Super_Duper_Shooter.Classes.InputEvents.InputMaps;
+namespace Super_Duper_Shooter.Classes.InputSystem.InputMaps;
 
 public class EnterGame : BaseInputAction
 {

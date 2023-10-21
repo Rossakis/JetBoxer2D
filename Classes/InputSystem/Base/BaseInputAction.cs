@@ -1,4 +1,4 @@
-namespace Super_Duper_Shooter.Classes.InputEvents.Base;
+namespace Super_Duper_Shooter.Classes.InputSystem.Base;
 
 public class BaseInputAction
 {
