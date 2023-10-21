@@ -1,4 +1,4 @@
-namespace Super_Duper_Shooter.Classes.InputEvents.Base;
+namespace Super_Duper_Shooter.Classes.InputSystem.Base;
 
 /// <summary>
 /// Each input will have its own 

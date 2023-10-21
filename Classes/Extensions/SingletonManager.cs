@@ -1,5 +1,4 @@
 using Microsoft.Xna.Framework;
-using Super_Duper_Shooter.Classes.InputEvents;
 
 namespace Super_Duper_Shooter.Classes.Extensions;
 

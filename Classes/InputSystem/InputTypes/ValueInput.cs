@@ -1,6 +1,6 @@
-using Super_Duper_Shooter.Classes.InputEvents.Base;
+using Super_Duper_Shooter.Classes.InputSystem.Base;
 
-namespace Super_Duper_Shooter.Classes.InputEvents.InputTypes;
+namespace Super_Duper_Shooter.Classes.InputSystem.InputTypes;
 
 //Input that varies between a singular value (e.g. from -1 to 1 or from 0 to 1, etc...)
 public class ValueInput : BaseInput
