@@ -114,3 +114,5 @@
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/obj/Debug/net6.0/ref/Super Duper Shooter.dll
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Denji-Idle (1026 × 738).xnb
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Denji-Idle (Hand Drawn).xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Denji-Idle (Hand Drawn) Small.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Placeholder Texture.xnb

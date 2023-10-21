@@ -109,6 +109,18 @@
 /processorParam:TextureFormat=Color
 /build:Characters/Denji-Basic Attack (Correct).png
 
+#begin Characters/Denji-Idle (Hand Drawn) Small.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Characters/Denji-Idle (Hand Drawn) Small.png
+
 #begin Characters/Denji-Idle (Hand Drawn).png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -180,4 +192,16 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Effects/Energy Blast.png
+
+#begin Placeholder Texture.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Placeholder Texture.png
 

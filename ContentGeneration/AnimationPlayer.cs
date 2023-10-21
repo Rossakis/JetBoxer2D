@@ -14,11 +14,12 @@ public class AnimationPlayer : BaseGameObject
 
     private int _currentFrame;
     private float _timer; //Timer to calculate the duration of _currentFrame
-
+    
     public float AnimationSpeed { get; set; }
     public Animation Animation { get; private set; }
     public float NormalizedTime { get; private set; } //E.g. 0.5f would be considered the animation at its half time
     public bool IsFlipped { get; set; }
+    public bool IsStopped { get; set; }
 
 
     public AnimationPlayer(SpriteBatch spriteBatch, Player player)
@@ -32,13 +33,16 @@ public class AnimationPlayer : BaseGameObject
 
     public void Play(Animation animation)
     {
+        if(IsStopped)
+            return;
+        
         //Error handling
         Animation = animation ?? throw new Exception($"{ToString()} Animation instance wasn't defined");
 
         _texture = animation.Texture;
         _timer += Time.DeltaTime;
         CalculateNormalizedTime(animation);
-
+        
         while (_timer > animation.FrameTime)
         {
             //reset timer
@@ -50,12 +54,12 @@ public class AnimationPlayer : BaseGameObject
             else //leave current frame as is
                 _currentFrame = Math.Min(_currentFrame + 1, animation.AmountOfFrames);
         }
-
+        
         var sourceRectangle = new Rectangle(_currentFrame * animation.Width, 0,
             animation.Width,
             animation.Height);
 
-        var destinationRectangle = new Rectangle((int) _player.PlayerPos.X, (int) _player.PlayerPos.Y,
+       var destinationRectangle = new Rectangle((int) _player.PlayerPos.X, (int) _player.PlayerPos.Y,
             animation.Width,
             animation.Height);
         
