@@ -1,3 +1,4 @@
+using System;
 using Super_Duper_Shooter.Classes.InputSystem.Base;
 
 namespace Super_Duper_Shooter.Classes.InputSystem.InputTypes;
@@ -5,29 +6,41 @@ namespace Super_Duper_Shooter.Classes.InputSystem.InputTypes;
 //Input that varies between a singular value (e.g. from -1 to 1 or from 0 to 1, etc...)
 public class ValueInput : BaseInput
 {
-    public int KeyboardValue => _keyboardValue; //For example, AxisInput.Keyboard = new Vector2(Keys.A, Keys.D)
-    public int MouseValue => _mouseValue;
-    public int GamepadValue => _gamepadValue;
-
+    public int Value
+    {
+        get
+        {
+            if (_keyboardValue != 0)
+                return _keyboardValue;
+            if (_mouseValue != 0)
+                return _mouseValue;
+            if (_gamepadValue != 0)
+                return _gamepadValue;
+            return 0;
+        }
+    }
+    
     private int _keyboardValue;
     private int _mouseValue;
     private int _gamepadValue;
 
-
     //Call this method through the InputMaps.UpdateInput(), to update this input's axis values
-    public void UpdateKeyboardValue(bool value)
+    public void UpdateKeyboardValue(int value)
     {
         //E.g. AxisInput MoveHor.KeyboardValue = -1 aka player moves to the left
-        _keyboardValue = value ? 1 : 0;
+
+        _keyboardValue = Math.Clamp(value, -1, 1);
+
+
     }
 
-    public void UpdateMouseValue(bool value)
+    public void UpdateMouseValue(int value)
     {
-        _mouseValue = value ? 1 : 0;
+        _mouseValue = Math.Clamp(value, -1, 1);
     }
 
-    public void UpdateGamepadValue(bool value)
+    public void UpdateGamepadValue(int value)
     {
-        _gamepadValue = value ? 1 : 0;
+        _gamepadValue = Math.Clamp(value, -1, 1);
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Super_Duper_Shooter.Classes.GameObjects;
 using Super_Duper_Shooter.Classes.GameStates.Base;
@@ -11,26 +12,29 @@ namespace Super_Duper_Shooter.Classes.GameStates;
 public class SplashState : BaseGameState
 {
     private const string SplashScreen = "Backgrounds/Splash Screen";
-    
+    private int count;
     protected override void SetInputManager()
     {
         InputManager = new InputManager(new SplashInputMap());
+        count = 0;
     }
     
     public override void HandleInput(GameTime gameTime)
     {
         InputManager.UpdateInput();
-        
-        //OnNotify - Exit the game
-        if (InputManager.GetButtonDown(SplashInputMap.ExitGame.InputAction))
+
+        //OnSwitch - Switch to Gameplay
+        if (InputManager.GetButtonDown(SplashInputMap.EnterGame))
         {
-            NotifyEvent(GameEvents.GAME_QUIT);
+            // count++;
+            // Console.WriteLine($"Enter was pressed {count} times");
+            SwitchState(new GameplayState());
         }
         
-        //OnSwitch - Switch to Gameplay
-        if (InputManager.GetButtonDown(SplashInputMap.EnterGame.InputAction))
+        //OnNotify - Exit the game
+        if (InputManager.GetButtonDown(SplashInputMap.ExitGame))
         {
-            SwitchState(new GameplayState());
+            NotifyEvent(GameEvents.GAME_QUIT);
         }
        
     }

@@ -10,11 +10,12 @@ namespace Super_Duper_Shooter.Classes.Extensions;
 
 public enum MouseInputTypes
 {
-    RightButton = 0,
-    MiddleButton = 1,
-    LeftButton = 2,
-    Horizontal = 3,
-    Vertical = 4
+    None,
+    RightButton,
+    MiddleButton,
+    LeftButton,
+    Horizontal,
+    Vertical,
 }
 
 public class MouseInput
@@ -42,7 +43,7 @@ public class MouseInput
         _instance._currentMouseState = Mouse.GetState();
     }
 
-    public static bool IsButtonPressed(MouseInputTypes button)
+    public static bool IsButtonDown(MouseInputTypes button)
     {
         return button switch
         {
@@ -53,7 +54,7 @@ public class MouseInput
         };
     }
 
-    public static bool IsButtonReleased(MouseInputTypes button)
+    public static bool IsButtonUp(MouseInputTypes button)
     {
         return button switch
         {
@@ -72,7 +73,7 @@ public class MouseInput
     /// </summary>
     /// <param name="button"></param>
     /// <returns></returns>
-    public static bool WasButtonPressed(MouseInputTypes button)
+    public static bool GetButtonDown(MouseInputTypes button)
     {
         return button switch
         {
@@ -95,9 +96,9 @@ public class MouseInput
     {
         return mouseDelta switch
         {
-            //Clamp the value of mouse axis between -1 to 1
+            //Clamp the delta value of mouse from -1 to 1, calculated by the difference from its previous position
             MouseInputTypes.Horizontal => Math.Clamp(_instance._currentMouseState.X - _instance._previousMouseState.X, -1, 1),
-            MouseInputTypes.Vertical => Math.Clamp(_instance._currentMouseState.Y - _instance._previousMouseState.Y, -1, 1),
+            MouseInputTypes.Vertical => Math.Clamp(-1*(_instance._currentMouseState.Y - _instance._previousMouseState.Y), -1, 1),
             _ => 0
         };
     }

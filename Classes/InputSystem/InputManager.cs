@@ -15,26 +15,9 @@ public class InputManager
     private BaseInputMap _currentInputMap;
 
     private ButtonInput _previousButtonState;//for GetButtonDown
-
-    // private static InputManager _instance;
-    //
-    // public static InputManager Instance
-    // {
-    //     get //if instance = null, create new
-    //     {
-    //         if (_instance == null)
-    //             return _instance = new InputManager();
-    //         
-    //         return _instance;
-    //     }
-    //     set => _instance = value;
-    // }
-
+    
     public InputManager(BaseInputMap inputMap)
     {
-        // _gameplayInputMap = new GameplayInputMap();
-        // _splashInputMap = new SplashInputMap();
-
         //Default Input Map
         _currentInputMap = inputMap;
         _previousButtonState = new ButtonInput();
@@ -56,30 +39,65 @@ public class InputManager
     }
     
 
-    public bool GetButton(ButtonInput button)
+    public bool GetButton(BaseInputAction inputAction)
     {
-        return button.Pressed;
-    }
-
-    public bool GetButtonDown(ButtonInput button)
-    {
-        if (button.Pressed && !_previousButtonState.Pressed)
-        {
-            _previousButtonState = button;
-            return true;
-        }
+        if (inputAction.ButtonInputDictionaries == null)
+            throw new ArgumentException($"The Button Dictionary of {inputAction} is empty");
         
-        _previousButtonState = button;
+        foreach (var list in inputAction.ButtonInputDictionaries)
+        {
+            //Item2 is ButtonInput in this instance
+            if(list.Item2.Pressed)
+                return list.Item2.Pressed;
+        }
+
         return false;
     }
 
-    public void GetButtonUp(ButtonInput button)
+    public bool GetButtonDown(BaseInputAction inputAction)
     {
+        //return inputAction.ButtonInputDictionaries[0].Item2.PressedDown ||  inputAction.ButtonInputDictionaries[1].Item2.PressedDown;
+        if (inputAction.ButtonInputDictionaries == null)
+            throw new ArgumentException($"The Button Dictionary of {nameof(inputAction)} is empty");
+        
+        foreach (var list in inputAction.ButtonInputDictionaries)
+        {
+            //Item2 is ButtonInput in this instance
+            if (list.Item2.PressedDown)
+                return true;
+        }
+        
+        return false;
     }
 
-    public Vector2 GetAxis(AxisInput axis)
+    public Vector2 GetAxisValue(BaseInputAction inputAction)
     {
-        return axis.Value;
+        if (inputAction.AxisInputDictionaries == null)
+            throw new ArgumentException($"The Axis Dictionary of {inputAction} is empty");
+        
+        foreach (var list in inputAction.AxisInputDictionaries)
+        {
+            //Item2 is ButtonInput in this instance
+            if(list.Item2.Value != Vector2.Zero)
+                return list.Item2.Value;
+        }
+
+        return Vector2.Zero;
+    }
+
+    public int GetValue(BaseInputAction inputAction)
+    {
+        if (inputAction.ValueInputDictionaries == null)
+            throw new ArgumentException($"The Value Dictionary of {inputAction} is empty");
+        
+        foreach (var list in inputAction.ValueInputDictionaries)
+        {
+            //Item2 is ButtonInput in this instance
+            if(list.Item2.Value != 0)
+                return list.Item2.Value;
+        }
+        
+        return 0;
     }
 
     public  void RemapInput(Dictionary<InputDevices,List<Enum>> inputActionDict, InputDevices inputDevice, List<Enum> newButtons)

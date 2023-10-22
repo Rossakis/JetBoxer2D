@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 using Super_Duper_Shooter.Classes.Extensions;
 using Super_Duper_Shooter.Classes.GameStates;
 using Super_Duper_Shooter.Classes.GameStates.Base;
@@ -27,8 +28,7 @@ public class MainGame : Game
         graphics = new GraphicsDeviceManager(this);
 
         Content.RootDirectory = "Content";
-        IsMouseVisible = true;
-
+        IsMouseVisible = false;
         //Responsible for initializing and updating many singleton classes such as Time and MouseInput
         SingletonManager.InitializeSingletons();
     }
@@ -46,7 +46,7 @@ public class MainGame : Game
             RenderTargetUsage.DiscardContents);
 
         renderScaleRectangle = GetScaleRectangle();
-
+        
         base.Initialize();
     }
 
