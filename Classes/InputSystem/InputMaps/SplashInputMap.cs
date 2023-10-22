@@ -1,106 +1,129 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.Xna.Framework.Input;
+using Super_Duper_Shooter.Classes.Extensions;
 using Super_Duper_Shooter.Classes.InputSystem.Base;
 using Super_Duper_Shooter.Classes.InputSystem.InputTypes;
 using Super_Duper_Shooter.Enums;
 
 namespace Super_Duper_Shooter.Classes.InputSystem.InputMaps;
 
-public class EnterGame : BaseInputAction
-{
-    public ButtonInput InputAction { get; private set; }
-
-    public EnterGame(ButtonInput inputAction)
-    {
-        InputAction = inputAction;
-    }
-    public static readonly Dictionary<InputDevices, List<Enum>> EnterGameDict = new();
-}
-
-public class ExitGame : BaseInputAction
-{
-    public ButtonInput InputAction { get; private set; }
-
-    public ExitGame(ButtonInput inputAction)
-    {
-        InputAction = inputAction;
-    }
-    public static readonly Dictionary<InputDevices, List<Enum>> ExitGameDict = new();
-}
+public class EnterGame : BaseInputAction { }
+public class ExitGame : BaseInputAction { }
 
 public class SplashInputMap : BaseInputMap
 {
     public static EnterGame EnterGame;
     public static ExitGame ExitGame;
     
-        public SplashInputMap()
-        {
-            InitializeInputActions();
-            InitializeInputActionDictionaries();
-        }
+    public SplashInputMap()
+    { 
+        InitializeInputActions();
+        InitializeInputActionDictionaries();
+    }
 
         //Assign the default Input keys/buttons
         private void InitializeInputActions()
         {
-            EnterGame = new EnterGame(new ButtonInput());
-            ExitGame = new ExitGame(new ButtonInput());
+            EnterGame = new EnterGame();
+            ExitGame = new ExitGame();
         }
         
         private void InitializeInputActionDictionaries()
         {
-            //Enter
-            InitializeInputActionDictionary(EnterGame.EnterGameDict, InputDevices.Keyboard, new List<Enum>{Keys.Enter, Keys.Space});
-            InitializeInputActionDictionary(EnterGame.EnterGameDict, InputDevices.Gamepad, new List<Enum>{Buttons.Start, Buttons.A});
+            //EnterGame - First Dictionary
+            EnterGame.AddButtonToInputDictionary(new Dictionary<InputDevices, Enum>(), new ButtonInput());//Initialize Dictionary along with the InputType
+            InitializeInputActionDictionary(EnterGame.ButtonInputDictionaries[0].Item1, InputDevices.Keyboard, Keys.Space);
+            InitializeInputActionDictionary(EnterGame.ButtonInputDictionaries[0].Item1, InputDevices.Mouse, MouseInputTypes.LeftButton);
+            InitializeInputActionDictionary(EnterGame.ButtonInputDictionaries[0].Item1, InputDevices.Gamepad, Buttons.Start);
+
+            //EnterGame - Second Dictionary
+            EnterGame.AddButtonToInputDictionary(new Dictionary<InputDevices, Enum>(), new ButtonInput());
+            InitializeInputActionDictionary(EnterGame.ButtonInputDictionaries[1].Item1, InputDevices.Keyboard, Keys.Enter);
+            InitializeInputActionDictionary(EnterGame.ButtonInputDictionaries[1].Item1, InputDevices.Mouse, MouseInputTypes.RightButton);
+            InitializeInputActionDictionary(EnterGame.ButtonInputDictionaries[1].Item1, InputDevices.Gamepad, Buttons.A);
             
-            //Exit
-            InitializeInputActionDictionary(ExitGame.ExitGameDict, InputDevices.Keyboard, new List<Enum>{Keys.Escape});
-            InitializeInputActionDictionary(ExitGame.ExitGameDict, InputDevices.Gamepad, new List<Enum>{Buttons.B});
+            //ExitGame
+            ExitGame.AddButtonToInputDictionary(new Dictionary<InputDevices, Enum>(), new ButtonInput());
+            InitializeInputActionDictionary(ExitGame.ButtonInputDictionaries[0].Item1, InputDevices.Keyboard, Keys.Escape);//First Dictionary
+            InitializeInputActionDictionary(ExitGame.ButtonInputDictionaries[0].Item1, InputDevices.Gamepad, Buttons.Back);
         }
 
-        private List<Enum> GetEnterGameInput(InputDevices inputType)
+        #region  Input Retrieval
+        private Keys GetInputFromKeyboard(Dictionary<InputDevices, Enum> inputDict)
         {
             // Check if the key exists in the dictionary
-            if (EnterGame.EnterGameDict.TryGetValue(inputType, out var value))
-                return value; // Return the value associated with the key
+            if (inputDict.TryGetValue(InputDevices.Keyboard, out var value))
+                return (Keys)value; // Return the value associated with the key
             else
-                throw new KeyNotFoundException($"{inputType} not found in EnterGameDict dictionary");
+                throw new KeyNotFoundException($"{InputDevices.Keyboard} not found in {inputDict} dictionary");
         }
-
-        private List<Enum> GetExitGameInput(InputDevices inputType)
+        
+        private MouseInputTypes GetInputFromMouse(Dictionary<InputDevices, Enum> inputDict)
         {
-            if (ExitGame.ExitGameDict.TryGetValue(inputType, out var value))
-                return value;
+            // Check if the key exists in the dictionary
+            if (inputDict.TryGetValue(InputDevices.Mouse, out var value))
+                return (MouseInputTypes)value; // Return the value associated with the key
             else
-                throw new KeyNotFoundException($"{inputType} not found in ExitGameDict dictionary");
+                throw new KeyNotFoundException($"{InputDevices.Mouse} not found in {inputDict} dictionary");
         }
+        
+        private Buttons GetInputFromGamepad(Dictionary<InputDevices, Enum> inputDict)
+        {
+            // Check if the key exists in the dictionary
+            if (inputDict.TryGetValue(InputDevices.Gamepad, out var value))
+                return (Buttons)value; // Return the value associated with the key
+            else
+                throw new KeyNotFoundException($"{InputDevices.Gamepad} not found in {inputDict} dictionary");
+        }
+        #endregion
+        
         
         protected override void UpdateKeyboardInput()
         {
             var keyboardState = Keyboard.GetState();
-
-            //EnterGame
-            foreach (Keys enterInput in GetEnterGameInput(InputDevices.Keyboard))
+            
+            //Enter Game - Button Dictionaries loop
+            foreach (var dictionaryPair in EnterGame.ButtonInputDictionaries)
             {
-                if (keyboardState.IsKeyDown(enterInput))
+                var inputDictionary = dictionaryPair.Item1;
+                if (keyboardState.IsKeyDown(GetInputFromKeyboard(inputDictionary)))
                 {
-                    EnterGame.InputAction.UpdateKeyboardValue(true);
+                    dictionaryPair.Item2.UpdateKeyboardValue(true);
                     break;
                 }
 
-                EnterGame.InputAction.UpdateKeyboardValue(false);
+                dictionaryPair.Item2.UpdateKeyboardValue(false);
             }
 
             //Exit Game
-            foreach (Keys exitInput in GetExitGameInput(InputDevices.Keyboard))
+            foreach (var dictionaryPair in ExitGame.ButtonInputDictionaries)
             {
-                if (keyboardState.IsKeyDown(exitInput))
+                var inputDictionary = dictionaryPair.Item1;
+                if (keyboardState.IsKeyDown(GetInputFromKeyboard(inputDictionary)))
                 {
-                    ExitGame.InputAction.UpdateKeyboardValue(true);
+                    dictionaryPair.Item2.UpdateKeyboardValue(true);
                     break;
                 }
 
-                ExitGame.InputAction.UpdateKeyboardValue(false);
+                dictionaryPair.Item2.UpdateKeyboardValue(false);
+            }
+        }
+
+        protected override void UpdateMouseInput()
+        {
+            //EnterGame
+            foreach (var dictionaryPair in EnterGame.ButtonInputDictionaries)
+            {
+                var inputDictionary = dictionaryPair.Item1;
+                if (MouseInput.IsButtonDown(GetInputFromMouse(inputDictionary)))
+                {
+                    dictionaryPair.Item2.UpdateMouseValue(true);
+                    break;
+                }
+
+                dictionaryPair.Item2.UpdateMouseValue(false);
             }
         }
 
@@ -108,32 +131,35 @@ public class SplashInputMap : BaseInputMap
         {
             var gamepadState = GamePad.GetState(0);
 
-            //EnterGame - Left
-            foreach (Buttons enterInput in GetEnterGameInput(InputDevices.Gamepad))
+            //EnterGame
+            foreach (var dictionaryPair in EnterGame.ButtonInputDictionaries)
             {
-                if (gamepadState.IsButtonDown(enterInput))
+                var inputDictionary = dictionaryPair.Item1;
+                if (gamepadState.IsButtonDown(GetInputFromGamepad(inputDictionary)))
                 {
-                    EnterGame.InputAction.UpdateGamepadValue(true); 
+                    dictionaryPair.Item2.UpdateGamepadValue(true);
                     break;
                 }
-                EnterGame.InputAction.UpdateGamepadValue(false); 
+
+                dictionaryPair.Item2.UpdateGamepadValue(false);
             }
             
             //Exit Game
-            foreach (Buttons exitInput in GetExitGameInput(InputDevices.Gamepad))
+            foreach (var dictionaryPair in ExitGame.ButtonInputDictionaries)
             {
-                if (gamepadState.IsButtonDown(exitInput))
+                var inputDictionary = dictionaryPair.Item1;
+                if (gamepadState.IsButtonDown(GetInputFromGamepad(inputDictionary)))
                 {
-                    ExitGame.InputAction.UpdateGamepadValue(true); 
+                    dictionaryPair.Item2.UpdateGamepadValue(true);
                     break;
                 }
-                ExitGame.InputAction.UpdateGamepadValue(false); 
+
+                dictionaryPair.Item2.UpdateGamepadValue(false);
             }
             
         }
     public override void RemapInputAction(Dictionary<InputDevices, List<Enum>> inputActionDict, InputDevices inputType, List<Enum> newInput)
     {
-        //E.g. GameplayInputMap.RemapMoveLeft(InputTypes.Keyboard, Keys.Left)
         inputActionDict.Remove(inputType);
         inputActionDict.TryAdd(inputType, newInput);
     }

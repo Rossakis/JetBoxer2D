@@ -45,6 +45,8 @@ public class Player : BaseGameObject
 
     public Texture2D Texture => _texture;
 
+    private Vector2 _moveInput;// (horizontal, vertical)
+
     public Player(Vector2 playerPos, SpriteBatch spriteBatch, ContentManager contentManager, InputManager inputManager)
     {
         _position = playerPos;
@@ -53,6 +55,8 @@ public class Player : BaseGameObject
         _inputManager = inputManager;
         
         _texture = contentManager.Load<Texture2D>(DefaultSprite); //default texture
+        _moveInput = Vector2.Zero;
+        
         InitializeAnimator();
         SwitchState(PlayerState.Idle); //default state
     }
@@ -65,9 +69,23 @@ public class Player : BaseGameObject
         _walking = new Animation(_contentManager.Load<Texture2D>(WalkingSprite), 0.1f, true);
         _shooting = new Animation(_contentManager.Load<Texture2D>(AttackingSprite), 96, 80, 0.1f, false);
     }
-
+    
     public override void Render(SpriteBatch spriteBatch)
     {
+        if (_inputManager.GetValue(GameplayInputMap.MoveLeft) != 0)
+            _moveInput.X = _inputManager.GetValue(GameplayInputMap.MoveLeft);
+        else if(_inputManager.GetValue(GameplayInputMap.MoveRight) != 0)
+            _moveInput.X = _inputManager.GetValue(GameplayInputMap.MoveRight);
+        else 
+            _moveInput.X = 0;
+        
+        if (_inputManager.GetValue(GameplayInputMap.MoveDown) != 0)
+            _moveInput.Y = _inputManager.GetValue(GameplayInputMap.MoveDown);
+        else if(_inputManager.GetValue(GameplayInputMap.MoveUp) != 0)
+            _moveInput.Y = _inputManager.GetValue(GameplayInputMap.MoveUp);
+        else 
+            _moveInput.Y = 0;
+        
         if (_animator == null)
             throw new Exception($"Animation player wasn't defined");
 
@@ -86,6 +104,9 @@ public class Player : BaseGameObject
                 ShootProjectile();
                 break;
         }
+
+        Vector2.Normalize(_moveInput);
+        PlayerPos = new Vector2(PlayerPos.X, PlayerPos.Y - MoveSpeed * Time.DeltaTime * _moveInput.Y);
     }
 
     private void SwitchState(PlayerState state)
@@ -103,12 +124,12 @@ public class Player : BaseGameObject
     {
         _animator.Play(_idle);
         
-        if (_inputManager.GetAxis(GameplayInputMap.MoveHorizontal.InputAction).X < 0)
+        if (_moveInput.X < 0)
             SwitchState(PlayerState.MovingLeft);
-        if (_inputManager.GetAxis(GameplayInputMap.MoveHorizontal.InputAction).X > 0)
+        if (_moveInput.X > 0)
             SwitchState(PlayerState.MovingRight);
         
-        if (_inputManager.GetButtonDown(GameplayInputMap.ShootLeft.InputAction) || _inputManager.GetButtonDown(GameplayInputMap.ShootRight.InputAction))
+        if (_inputManager.GetButtonDown(GameplayInputMap.ShootLeft) || _inputManager.GetButtonDown(GameplayInputMap.ShootRight))
             SwitchState(PlayerState.Shooting);
     }
 
@@ -118,13 +139,13 @@ public class Player : BaseGameObject
         _animator.IsFlipped = true;
         PlayerPos = new Vector2(PlayerPos.X - MoveSpeed * Time.DeltaTime, PlayerPos.Y);
 
-        if (_inputManager.GetAxis(GameplayInputMap.MoveHorizontal.InputAction).X == 0)
+        if (_moveInput == Vector2.Zero)//if not moving
             SwitchState(PlayerState.Idle);
         
-        if (_inputManager.GetAxis(GameplayInputMap.MoveHorizontal.InputAction).X > 0)
+        if (_moveInput.X > 0)
             SwitchState(PlayerState.MovingRight);
         
-        if (_inputManager.GetButtonDown(GameplayInputMap.ShootLeft.InputAction) || _inputManager.GetButtonDown(GameplayInputMap.ShootRight.InputAction))
+        if (_inputManager.GetButtonDown(GameplayInputMap.ShootLeft) || _inputManager.GetButtonDown(GameplayInputMap.ShootRight))
             SwitchState(PlayerState.Shooting);
     }
 
@@ -134,13 +155,13 @@ public class Player : BaseGameObject
         _animator.IsFlipped = false;
         PlayerPos = new Vector2(PlayerPos.X + MoveSpeed * Time.DeltaTime, PlayerPos.Y);
 
-        if (_inputManager.GetAxis(GameplayInputMap.MoveHorizontal.InputAction).X == 0)
+        if (_moveInput.X == 0)
             SwitchState(PlayerState.Idle);
         
-        if (_inputManager.GetAxis(GameplayInputMap.MoveHorizontal.InputAction).X < 0)
+        if (_moveInput.X < 0)
             SwitchState(PlayerState.MovingLeft);
         
-        if (_inputManager.GetButtonDown(GameplayInputMap.ShootLeft.InputAction) || _inputManager.GetButtonDown(GameplayInputMap.ShootRight.InputAction))
+        if (_inputManager.GetButtonDown(GameplayInputMap.ShootLeft) || _inputManager.GetButtonDown(GameplayInputMap.ShootRight))
             SwitchState(PlayerState.Shooting);    }
 
     private void ShootProjectile()

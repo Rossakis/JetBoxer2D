@@ -7,12 +7,12 @@ namespace Super_Duper_Shooter.Classes.InputSystem.Base;
 public abstract class BaseInputMap
 {
     /// <summary>
-    /// Assign input keys/buttons to an Input Action Dictionary. For each <c>InputAction</c> (e.g. EnterGame) exists a dictionary, where for each <c>Key</c> <see cref="InputDevices"/>
+    /// Assign input Keys/Buttons/MouseInputTypes to an Input Action Dictionary. For each <c>InputAction</c> (e.g. EnterGame) exists a dictionary, where for each <c>Key</c> <see cref="InputDevices"/>
     /// exists an <c>Enum</c> List containing all the inputs that can trigger the input action
     /// E.g. {Keys.A, Keys.Left} for InputDevices.Keyboard, or {Buttons.LeftTrigger} for InputDevices.Gamepad)
     /// </summary>
-    protected void InitializeInputActionDictionary(Dictionary<InputDevices, List<Enum>> inputActionDict, InputDevices inputDevice,
-        List<Enum> inputButtons)
+    protected void InitializeInputActionDictionary(Dictionary<InputDevices, Enum> inputActionDict, InputDevices inputDevice,
+       Enum inputButtons)
     {
         inputActionDict.TryAdd(inputDevice, inputButtons);
     }

@@ -1,5 +1,7 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 using Super_Duper_Shooter.Classes.GameObjects;
 using Super_Duper_Shooter.Classes.GameStates.Base;
 using Super_Duper_Shooter.Classes.InputSystem;

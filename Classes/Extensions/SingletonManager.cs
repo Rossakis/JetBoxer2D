@@ -11,7 +11,6 @@ public static class SingletonManager
     {
         MouseInput.Instance = new MouseInput();
         Time.Instance = new Time();
-        // InputManager.Instance = new InputManager();
     }
 
     public static void UpdateSingletons(GameTime gameTime)
