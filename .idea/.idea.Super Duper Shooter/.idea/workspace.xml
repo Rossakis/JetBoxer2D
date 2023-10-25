@@ -8,22 +8,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="918e4fcc-b4f8-4137-9d97-30dcba5635b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Classes/Physics/Collider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Characters/Jet Boxer - Idle (128px).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Characters/Jet Boxer - Idle (256px).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Jet Boxer - Idle (128px).xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Jet Boxer - Idle (256px)-export.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Jet Boxer - Idle (256px).xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Jet Boxer - Idle (128px).mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Jet Boxer - Idle (256px)-export.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Jet Boxer - Idle (256px).mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Jet Boxer - Idle (128px).xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Jet Boxer - Idle (256px)-export.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Jet Boxer - Idle (256px).xnb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Extensions/MouseInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Extensions/MouseInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Extensions/SingletonManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Extensions/SingletonManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/GameObjects/Base/BaseGameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameObjects/Base/BaseGameObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/GameObjects/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameObjects/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/GameObjects/TerrainBackground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameObjects/TerrainBackground.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/GameStates/Base/BaseGameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameStates/Base/BaseGameState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/GameStates/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameStates/GameplayState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/GameStates/SplashState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameStates/SplashState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputSystem/Base/BaseInputAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputSystem/Base/BaseInputAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputSystem/Base/BaseInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputSystem/Base/BaseInputMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputSystem/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputSystem/InputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputSystem/InputMaps/GameplayInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputSystem/InputMaps/GameplayInputMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputSystem/InputMaps/SplashInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputSystem/InputMaps/SplashInputMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputSystem/InputTypes/ButtonInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputSystem/InputTypes/ButtonInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputSystem/InputTypes/ValueInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/InputSystem/InputTypes/ValueInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Content.mgcb" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Content.mgcb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/.mgstats" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/.mgstats" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContentGeneration/Animation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Extensions/ContentGeneration/Animation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContentGeneration/AnimationPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Extensions/ContentGeneration/AnimationPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Enums/GameEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Enums/GameEvents.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainGame.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/Super Duper Shooter.dll" afterDir="false" />
@@ -46,6 +60,7 @@
     <setting file="file://$PROJECT_DIR$/Classes/InputSystem/InputTypes/ValueInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/777f4218e4a0469dbc075c5f54bf5f721c5a00/61/662530e9/Buttons.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/777f4218e4a0469dbc075c5f54bf5f721c5a00/63/04aff20a/Keys.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/777f4218e4a0469dbc075c5f54bf5f721c5a00/68/2bc84dbf/Texture.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -67,13 +82,13 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Fireball&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Physics-Collision&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -129,7 +144,11 @@
       <workItem from="1697902535596" duration="6522000" />
       <workItem from="1697919656282" duration="11520000" />
       <workItem from="1697978424713" duration="2526000" />
-      <workItem from="1697981296280" duration="18872000" />
+      <workItem from="1697981296280" duration="19253000" />
+      <workItem from="1698007250796" duration="1653000" />
+      <workItem from="1698096723372" duration="33000" />
+      <workItem from="1698096817155" duration="1379000" />
+      <workItem from="1698243064807" duration="5370000" />
     </task>
     <servers />
   </component>
@@ -180,5 +199,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

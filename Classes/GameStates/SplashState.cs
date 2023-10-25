@@ -34,13 +34,17 @@ public class SplashState : BaseGameState
         //OnNotify - Exit the game
         if (InputManager.GetButtonDown(SplashInputMap.ExitGame))
         {
-            NotifyEvent(GameEvents.GAME_QUIT);
+            NotifyEvent(GameEvents.GameQuit);
         }
        
     }
 
     public override void LoadContent(SpriteBatch spriteBatch)
     {
+        if (_viewportWidth <= 720)
+        {
+            
+        }
         AddGameObject(new SplashImage(LoadTexture(SplashScreen)));
     }
 }

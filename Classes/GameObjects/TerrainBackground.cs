@@ -8,15 +8,13 @@ namespace Super_Duper_Shooter.Classes.GameObjects;
 public class TerrainBackground : BaseGameObject
 {
     private const float ScrollingSpeed = 2.0f;
-
     private Player player;
-
     private SpriteBatch _spriteBatch;
 
     public TerrainBackground(Texture2D texture)
     {
         _texture = texture;
-        _position = new Vector2(0, 0);
+        Position = new Vector2(0, 0);
     }
 
     public override void Render(SpriteBatch spriteBatch)
@@ -34,11 +32,11 @@ public class TerrainBackground : BaseGameObject
              numVert < viewport.Height / _texture.Height + 1;
              numVert++) //numVert = number of vertical tiles
         {
-            var y = (int) _position.Y + numVert * _texture.Height;
+            var y = (int) Position.Y + numVert * _texture.Height;
 
             for (var numHor = -1; numHor < viewport.Width / _texture.Width + 1; numHor++)
             {
-                var x = (int) _position.X + numHor * _texture.Width;
+                var x = (int) Position.X + numHor * _texture.Width;
                 var destinationRectangle =
                     new Rectangle(x, y, _texture.Width, _texture.Height);
                 _spriteBatch.Draw(_texture, destinationRectangle, sourceRectangle, Color.White, 0,
@@ -47,6 +45,6 @@ public class TerrainBackground : BaseGameObject
         }
 
         //Scrolling
-        _position.Y = (int) (_position.Y + ScrollingSpeed) % _texture.Height;
+        _position.Y = (int) (Position.Y + ScrollingSpeed) % _texture.Height;
     }
 }

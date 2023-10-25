@@ -129,7 +129,7 @@ public class MainGame : Game
     {
         switch (eventType)
         {
-            case GameEvents.GAME_QUIT:
+            case GameEvents.GameQuit:
                 Exit();
                 break;
         }

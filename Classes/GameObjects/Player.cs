@@ -3,10 +3,10 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Super_Duper_Shooter.Classes.Extensions;
+using Super_Duper_Shooter.Classes.Extensions.ContentGeneration;
 using Super_Duper_Shooter.Classes.GameObjects.Base;
 using Super_Duper_Shooter.Classes.InputSystem;
 using Super_Duper_Shooter.Classes.InputSystem.InputMaps;
-using Super_Duper_Shooter.ContentGeneration;
 
 namespace Super_Duper_Shooter.Classes.GameObjects;
 
@@ -21,8 +21,6 @@ public enum PlayerState
 
 public class Player : BaseGameObject
 {
-    public Vector2 PlayerPos { get; set; }
-
     private SpriteBatch _spriteBatch;
     private ContentManager _contentManager; //to load animation textures
     public PlayerState CurrentState;
@@ -32,7 +30,7 @@ public class Player : BaseGameObject
     //The sprite that will be shown by default if no animation is yet set
     private const string DefaultSprite = "Placeholder Texture";
 
-    private const string IdleSprite = "Characters/Denji-Idle (Hand Drawn) Small";
+    private const string IdleSprite = "Characters/Jet Boxer - Idle (128px)";
     private const string WalkingSprite = "Characters/Denji-Walking";
     private const string ShootingSprite = "Characters/Denji - Knockup Attack (Correct)";
     private const string AttackingSprite = "Characters/Denji - Knockup Attack";
@@ -49,22 +47,21 @@ public class Player : BaseGameObject
 
     public Player(Vector2 playerPos, SpriteBatch spriteBatch, ContentManager contentManager, InputManager inputManager)
     {
-        _position = playerPos;
+        Position = playerPos;
         _spriteBatch = spriteBatch;
         _contentManager = contentManager;
         _inputManager = inputManager;
         
         _texture = contentManager.Load<Texture2D>(DefaultSprite); //default texture
         _moveInput = Vector2.Zero;
+        _animator = new AnimationPlayer(_spriteBatch, this);
         
-        InitializeAnimator();
+        SetAnimations();
         SwitchState(PlayerState.Idle); //default state
     }
-
-    private void InitializeAnimator()
+    
+    private void SetAnimations()//based on the resolution, accordingly sized sprites will be rendered
     {
-        _animator = new AnimationPlayer(_spriteBatch, this);
-
         _idle = new Animation(_contentManager.Load<Texture2D>(IdleSprite), 0.1f, true);
         _walking = new Animation(_contentManager.Load<Texture2D>(WalkingSprite), 0.1f, true);
         _shooting = new Animation(_contentManager.Load<Texture2D>(AttackingSprite), 96, 80, 0.1f, false);
@@ -72,6 +69,7 @@ public class Player : BaseGameObject
     
     public override void Render(SpriteBatch spriteBatch)
     {
+        //Horizontal Input
         if (_inputManager.GetValue(GameplayInputMap.MoveLeft) != 0)
             _moveInput.X = _inputManager.GetValue(GameplayInputMap.MoveLeft);
         else if(_inputManager.GetValue(GameplayInputMap.MoveRight) != 0)
@@ -79,6 +77,7 @@ public class Player : BaseGameObject
         else 
             _moveInput.X = 0;
         
+        //Vertical Input
         if (_inputManager.GetValue(GameplayInputMap.MoveDown) != 0)
             _moveInput.Y = _inputManager.GetValue(GameplayInputMap.MoveDown);
         else if(_inputManager.GetValue(GameplayInputMap.MoveUp) != 0)
@@ -105,8 +104,10 @@ public class Player : BaseGameObject
                 break;
         }
 
+        //Normalize moveInput so that diagonal movement isn't faster than horizontal or vertical
         Vector2.Normalize(_moveInput);
-        PlayerPos = new Vector2(PlayerPos.X, PlayerPos.Y - MoveSpeed * Time.DeltaTime * _moveInput.Y);
+        
+        _position = new Vector2(_position.X, _position.Y - MoveSpeed * Time.DeltaTime * _moveInput.Y);
     }
 
     private void SwitchState(PlayerState state)
@@ -137,7 +138,7 @@ public class Player : BaseGameObject
     {
         _animator.Play(_walking);
         _animator.IsFlipped = true;
-        PlayerPos = new Vector2(PlayerPos.X - MoveSpeed * Time.DeltaTime, PlayerPos.Y);
+        _position = new Vector2(_position.X - MoveSpeed * Time.DeltaTime, _position.Y);
 
         if (_moveInput == Vector2.Zero)//if not moving
             SwitchState(PlayerState.Idle);
@@ -153,7 +154,7 @@ public class Player : BaseGameObject
     {
         _animator.Play(_walking);
         _animator.IsFlipped = false;
-        PlayerPos = new Vector2(PlayerPos.X + MoveSpeed * Time.DeltaTime, PlayerPos.Y);
+        _position = new Vector2(_position.X + MoveSpeed * Time.DeltaTime, _position.Y);
 
         if (_moveInput.X == 0)
             SwitchState(PlayerState.Idle);
