@@ -22,9 +22,16 @@ public class GameplayState : BaseGameState
         InputManager = new InputManager(new GameplayInputMap());
     }
     
-    public override void HandleInput(GameTime gameTime)
+    public override void Update()
     {
+        base.Update();
         InputManager.UpdateInput();
+        // KeepPlayerInBounds();
+    }
+
+    public override void Render(SpriteBatch spriteBatch)
+    {
+        base.Render(spriteBatch);
         KeepPlayerInBounds();
     }
 
@@ -32,7 +39,7 @@ public class GameplayState : BaseGameState
     {
         _player = new Player(Vector2.Zero, spriteBatch, _contentManager, InputManager)
             {zIndex = 1};
-        _player.Position = new Vector2(_viewportWidth / 2f - _player.Texture.Height,
+        _player.Position = new Vector2(_viewportWidth / 2f - _player.Texture.Width,
             _viewportHeight / 2f - _player.Texture.Height);
         AddGameObject(_player);
 

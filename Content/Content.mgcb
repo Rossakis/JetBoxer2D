@@ -193,7 +193,7 @@
 /processorParam:TextureFormat=Color
 /build:Characters/Jet Boxer - Idle (128px).png
 
-#begin Characters/Jet Boxer - Idle (256px)-export.png
+#begin Characters/Jet Boxer - Idle (256px).png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -204,6 +204,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Characters/Jet Boxer - Idle (256px).png
+
+#begin Characters/Jet Boxer (Idle).png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Characters/Jet Boxer (Idle).png
 
 #begin Effects/Energy Blast.png
 /importer:TextureImporter

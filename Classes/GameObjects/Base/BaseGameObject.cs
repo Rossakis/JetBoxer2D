@@ -25,14 +25,19 @@ public class BaseGameObject
         Notify?.Invoke(this, eventType);
     }
 
-    public virtual void OnEnable()
+    protected virtual void OnEnable()
     {
     }
 
-    public virtual void OnDisable()
+    protected virtual void OnDisable()
     {
     }
 
+    public virtual void Update()
+    {
+        
+    }
+    
     /// <summary>
     /// Render this gameObject's sprites
     /// </summary>

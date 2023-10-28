@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Jet Boxer - Idle (128px).png</SourceFile>
-  <SourceTime>2023-10-25T17:57:32.6904275+03:00</SourceTime>
+  <SourceTime>2023-10-28T21:30:09.0381226+03:00</SourceTime>
   <DestFile>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/bin/DesktopGL/content/Characters/Jet Boxer - Idle (128px).xnb</DestFile>
-  <DestTime>2023-10-25T18:00:05.3120821+03:00</DestTime>
+  <DestTime>2023-10-28T21:31:03.2114168+03:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T14:44:56+03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

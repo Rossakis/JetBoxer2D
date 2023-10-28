@@ -67,13 +67,7 @@ public abstract class BaseGameState
     {
         _contentManager.Unload();
     }
-
-    public virtual void Update(GameTime gameTime)
-    {
-    }
-
-    public abstract void HandleInput(GameTime gameTime);
-
+    
     //TODO:Both LoadContent() and UnloadContent() should be called though the currentGameState in the MainGame
     protected Texture2D LoadTexture(string textureName)
     {
@@ -117,11 +111,18 @@ public abstract class BaseGameState
         GameObjects?.Remove(gameObject);
     }
 
+    public virtual void Update()
+    {
+        foreach (var gameObject in GameObjects.OrderBy(gameObj => gameObj.zIndex)) 
+            gameObject.Update();
+    }
+    
     //To be called from the Draw() method
-    public void Render(SpriteBatch spriteBatch)
+    public virtual void Render(SpriteBatch spriteBatch)
     {
         //render gameObjects (using LINQ query) based on their zIndex, so that they
         //are shown in the correct order
-        foreach (var gameObject in GameObjects.OrderBy(gameObj => gameObj.zIndex)) gameObject.Render(spriteBatch);
+        foreach (var gameObject in GameObjects.OrderBy(gameObj => gameObj.zIndex)) 
+            gameObject.Render(spriteBatch);
     }
 }
