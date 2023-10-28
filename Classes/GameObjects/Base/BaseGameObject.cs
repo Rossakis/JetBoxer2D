@@ -9,19 +9,35 @@ public class BaseGameObject
 {
     protected Texture2D _texture;
     protected Vector2 _position;
+    public Vector2 Position { get => _position; set => _position = value; }
     public int Width;
     public int Height;
+    public Vector2 Centre => new Vector2(Width / 2f, Height / 2f);
 
     private Rectangle _destinationRectangle;
     private Rectangle _sourceRectangle;
-
-
+    
     public int zIndex;
 
+    public event EventHandler<GameEvents> Notify;
     public virtual void OnNotify(GameEvents eventType)
+    {
+        Notify?.Invoke(this, eventType);
+    }
+
+    protected virtual void OnEnable()
     {
     }
 
+    protected virtual void OnDisable()
+    {
+    }
+
+    public virtual void Update()
+    {
+        
+    }
+    
     /// <summary>
     /// Render this gameObject's sprites
     /// </summary>
@@ -30,7 +46,7 @@ public class BaseGameObject
     {
         // TODO: Drawing call here
         if (_texture != null)
-            spriteBatch.Draw(_texture, _position, Color.White);
+            spriteBatch.Draw(_texture, Position, Color.White);
         else
             throw new Exception($"{ToString()} texture field wasn't defined");
     }
@@ -38,7 +54,7 @@ public class BaseGameObject
     /// <summary>
     /// Get the texture's center point, used when calling the Draw() method
     /// </summary>
-    public Vector2 CenterTexture()
+    public virtual Vector2 CenterTexture()
     {
         return new Vector2(Width / 2f, Height / 2f);
     }

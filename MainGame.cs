@@ -66,8 +66,7 @@ public class MainGame : Game
     protected override void Update(GameTime gameTime)
     {
         SingletonManager.UpdateSingletons(gameTime);
-
-        currentGameState?.HandleInput(gameTime);
+        currentGameState?.Update();
 
         base.Update(gameTime);
     }
@@ -129,7 +128,7 @@ public class MainGame : Game
     {
         switch (eventType)
         {
-            case GameEvents.GAME_QUIT:
+            case GameEvents.GameQuit:
                 Exit();
                 break;
         }

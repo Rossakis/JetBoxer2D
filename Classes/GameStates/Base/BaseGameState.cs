@@ -16,7 +16,7 @@ namespace Super_Duper_Shooter.Classes.GameStates.Base;
 public abstract class BaseGameState
 {
     //All the gameObject present in this GameState
-    private readonly List<BaseGameObject> _gameObjects = new();
+    public List<BaseGameObject> GameObjects { get; set; }
 
     protected InputManager InputManager { get; set; }
     protected abstract void SetInputManager();
@@ -26,6 +26,12 @@ public abstract class BaseGameState
 
     //the name of the texture that will be shown if ContentManager doesn't find the desired texture
     private const string FallbackTexture = "Empty";
+    
+    public event EventHandler<int> ResolutionChanged;//when resolution changes, switch sprites for animation (e.g. when resolution gets bigger, use 256px sprite and not 128px).
+    public void OnResolutionChanged(int resolutionWidth)
+    {
+        ResolutionChanged?.Invoke(this, resolutionWidth);
+    }
 
     //instead of using ContentManager's Load and Unload methods like singletons, 
     //we will make a local ContentManager for each BaseGameState instance in the game (e.g. GameplayState)
@@ -43,6 +49,7 @@ public abstract class BaseGameState
         _viewportWidth = viewportWidth;
         _viewportHeight = viewportHeight;
 
+        GameObjects = new List<BaseGameObject>();
         SetInputManager();
     }
 
@@ -60,13 +67,7 @@ public abstract class BaseGameState
     {
         _contentManager.Unload();
     }
-
-    public virtual void Update(GameTime gameTime)
-    {
-    }
-
-    public abstract void HandleInput(GameTime gameTime);
-
+    
     //TODO:Both LoadContent() and UnloadContent() should be called though the currentGameState in the MainGame
     protected Texture2D LoadTexture(string textureName)
     {
@@ -97,24 +98,31 @@ public abstract class BaseGameState
     {
         OnEventNotification?.Invoke(this, eventType);
 
-        foreach (var gameObject in _gameObjects) gameObject.OnNotify(eventType);
+        foreach (var gameObject in GameObjects) gameObject.OnNotify(eventType);
     }
 
     protected void AddGameObject(BaseGameObject gameObject)
     {
-        _gameObjects.Add(gameObject);
+        GameObjects.Add(gameObject);
     }
 
     protected void RemoveGameObject(BaseGameObject gameObject)
     {
-        _gameObjects?.Remove(gameObject);
+        GameObjects?.Remove(gameObject);
     }
 
+    public virtual void Update()
+    {
+        foreach (var gameObject in GameObjects.OrderBy(gameObj => gameObj.zIndex)) 
+            gameObject.Update();
+    }
+    
     //To be called from the Draw() method
-    public void Render(SpriteBatch spriteBatch)
+    public virtual void Render(SpriteBatch spriteBatch)
     {
         //render gameObjects (using LINQ query) based on their zIndex, so that they
         //are shown in the correct order
-        foreach (var gameObject in _gameObjects.OrderBy(gameObj => gameObj.zIndex)) gameObject.Render(spriteBatch);
+        foreach (var gameObject in GameObjects.OrderBy(gameObj => gameObj.zIndex)) 
+            gameObject.Render(spriteBatch);
     }
 }

@@ -2,7 +2,8 @@
 {
     public enum GameEvents
     {
-        GAME_QUIT
+        ResolutionChanged,
+        GameQuit
     }
 }
 

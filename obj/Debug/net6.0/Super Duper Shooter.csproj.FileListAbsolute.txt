@@ -116,3 +116,7 @@
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Denji-Idle (Hand Drawn).xnb
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Denji-Idle (Hand Drawn) Small.xnb
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Placeholder Texture.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Jet Boxer - Idle (128px).xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Jet Boxer - Idle (256px)-export.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Jet Boxer - Idle (256px).xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Jet Boxer (Idle).xnb
