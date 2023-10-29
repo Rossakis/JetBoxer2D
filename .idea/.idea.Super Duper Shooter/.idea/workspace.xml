@@ -8,27 +8,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="918e4fcc-b4f8-4137-9d97-30dcba5635b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Classes/GameObjects/Projectile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Characters/Jet Boxer (Idle).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Jet Boxer (Idle).xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Jet Boxer (Idle).mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Jet Boxer (Idle).xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Characters/Jet Boxer (Move Right).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Characters/Jet Boxer (Shoot Right).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Jet Boxer (Move Right).xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Jet Boxer (Shoot Right).xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Jet Boxer (Move Right).mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Jet Boxer (Shoot Right).mgcontent" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Extensions/ContentGeneration/Animation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Extensions/ContentGeneration/Animation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/GameObjects/Base/BaseGameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameObjects/Base/BaseGameObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Extensions/ContentGeneration/AnimationPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Extensions/ContentGeneration/AnimationPlayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/GameObjects/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameObjects/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/GameStates/Base/BaseGameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameStates/Base/BaseGameState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/GameStates/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameStates/GameplayState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/GameStates/SplashState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/GameStates/SplashState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Denji - Knockup Attack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Denji-Basic Attack (Correct).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Denji-Idle (Hand Drawn) Small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Denji-Idle (Hand Drawn).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Denji-Idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Denji-Walking.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Elania - Pixel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Fighter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Jet Boxer - Idle (128px).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Characters/Jet Boxer - Idle (256px).png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Content.mgcb" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Content.mgcb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Denji - Knockup Attack.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Denji-Basic Attack (Correct).xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Denji-Idle (Hand Drawn) Small.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Denji-Idle (Hand Drawn).xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Denji-Idle.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Denji-Walking.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Elania - Pixel.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Fighter.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Jet Boxer - Idle (128px).xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Jet Boxer - Idle (256px).xnb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/.mgcontent" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/.mgstats" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/.mgstats" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Jet Boxer - Idle (128px).mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Jet Boxer - Idle (128px).mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Jet Boxer - Idle (256px).mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Jet Boxer - Idle (256px).mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Denji - Knockup Attack.mgcontent" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Denji-Basic Attack (Correct).mgcontent" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Denji-Idle (Hand Drawn) Small.mgcontent" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Denji-Idle (Hand Drawn).mgcontent" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Denji-Idle.mgcontent" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Denji-Walking.mgcontent" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Elania - Pixel.mgcontent" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Fighter.mgcontent" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Jet Boxer (Idle).mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Jet Boxer (Idle).mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Jet Boxer - Idle (128px).mgcontent" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net6.0/Content/Characters/Jet Boxer - Idle (256px).mgcontent" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Denji - Knockup Attack.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Denji-Basic Attack (Correct).xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Denji-Idle (Hand Drawn) Small.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Denji-Idle (Hand Drawn).xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Denji-Idle.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Denji-Walking.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Elania - Pixel.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Fighter.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Jet Boxer - Idle (128px).xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Jet Boxer - Idle (256px).xnb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.pdb" afterDir="false" />
@@ -80,7 +115,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Physics-Collision&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -147,6 +182,7 @@
       <workItem from="1698096723372" duration="33000" />
       <workItem from="1698096817155" duration="1379000" />
       <workItem from="1698243064807" duration="5370000" />
+      <workItem from="1698612606389" duration="3417000" />
     </task>
     <servers />
   </component>

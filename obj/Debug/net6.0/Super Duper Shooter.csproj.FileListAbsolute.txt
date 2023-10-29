@@ -80,12 +80,6 @@
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Backgrounds/Pixel City.xnb
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Backgrounds/Splash Screen.xnb
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Backgrounds/splash.xnb
-/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Denji - Knockup Attack.xnb
-/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Denji-Basic Attack (Correct).xnb
-/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Denji-Idle.xnb
-/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Denji-Walking.xnb
-/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Elania - Pixel.xnb
-/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Fighter.xnb
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Effects/Energy Blast.xnb
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Super Duper Shooter
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Super Duper Shooter.deps.json
@@ -113,10 +107,8 @@
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/obj/Debug/net6.0/Super Duper Shooter.genruntimeconfig.cache
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/obj/Debug/net6.0/ref/Super Duper Shooter.dll
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Denji-Idle (1026 × 738).xnb
-/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Denji-Idle (Hand Drawn).xnb
-/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Denji-Idle (Hand Drawn) Small.xnb
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Placeholder Texture.xnb
-/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Jet Boxer - Idle (128px).xnb
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Jet Boxer - Idle (256px)-export.xnb
-/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Jet Boxer - Idle (256px).xnb
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Jet Boxer (Idle).xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Jet Boxer (Move Right).xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net6.0/Content/Characters/Jet Boxer (Shoot Right).xnb

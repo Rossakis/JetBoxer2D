@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
@@ -33,11 +34,10 @@ public class Player : BaseGameObject
     private const string DefaultSprite = "Placeholder Texture";
 
     private const string IdleSprite = "Characters/Jet Boxer (Idle)";
-    private const string WalkingSprite = "Characters/Denji-Walking";
-    private const string ShootingSprite = "Characters/Denji - Knockup Attack (Correct)";
-    private const string AttackingSprite = "Characters/Denji - Knockup Attack";
+    private const string MovingSprite = "Characters/Jet Boxer (Move Right)";
+    private const string ShootingSprite = "Characters/Jet Boxer (Shoot Right)";
     private Animation _idle;
-    private Animation _walking;
+    private Animation _moving;
     private Animation _shooting;
 
     private const float MoveSpeed = 500;
@@ -71,10 +71,9 @@ public class Player : BaseGameObject
     private void SetAnimations()//based on the resolution, accordingly sized sprites will be rendered
     {
         _idle = new Animation(_contentManager.Load<Texture2D>(IdleSprite), 80, 96, 0.1f, true);
-        _walking = new Animation(_contentManager.Load<Texture2D>(WalkingSprite), 0.1f, true);
-        _shooting = new Animation(_contentManager.Load<Texture2D>(AttackingSprite), 96, 80, 0.1f, false);
+        _moving = new Animation(_contentManager.Load<Texture2D>(MovingSprite), 80, 96, 0.1f, true);
+        _shooting = new Animation(_contentManager.Load<Texture2D>(ShootingSprite), 80, 96, 0.1f, false);
     }
-
     public override void Update()
     {
         //Horizontal Input
@@ -96,7 +95,7 @@ public class Player : BaseGameObject
         //Normalize moveInput so that diagonal movement isn't faster than horizontal or vertical
         Vector2.Normalize(_moveInput);
         
-        _position = new Vector2(_position.X, _position.Y - MoveSpeed * Time.DeltaTime * _moveInput.Y);
+        _position = new Vector2(_position.X + MoveSpeed * Time.DeltaTime * _moveInput.X, _position.Y - MoveSpeed * Time.DeltaTime * _moveInput.Y);
     }
 
     public override void Render(SpriteBatch spriteBatch)
@@ -123,15 +122,18 @@ public class Player : BaseGameObject
                 break;
         }
 
-        foreach (var projectile in Projectiles)
+        // if (Projectiles.Count <= 0)
+        //     return;
+        //Select only the projectiles still on the screen
+        for (int i = 0; i <= Projectiles.Count - 1; i++)
         {
-            projectile.MoveUp();
+            Projectiles[i].MoveUp();
             
-            //If projectile is outside the boundaries of the screen, remove it from list
-            if (projectile.Position.Y > spriteBatch.GraphicsDevice.Viewport.Height)
+            if (Projectiles[i].Position.Y < -spriteBatch.GraphicsDevice.Viewport.Height)
             {
-                Projectiles.Remove(projectile);
+                // Add the index of the item to be removed
                 Console.WriteLine("Projectile was deleted");
+                Projectiles.RemoveAt(i);
             }
         }
     }
@@ -165,9 +167,8 @@ public class Player : BaseGameObject
 
     private void MoveLeft()
     {
-        _animator.Play(_walking);
+        _animator.Play(_moving);
         _animator.IsFlipped = true;
-        _position = new Vector2(_position.X - MoveSpeed * Time.DeltaTime, _position.Y);
 
         if (_moveInput == Vector2.Zero)//if not moving
             SwitchState(PlayerState.Idle);
@@ -183,9 +184,8 @@ public class Player : BaseGameObject
 
     private void MoveRight()
     {
-        _animator.Play(_walking);
+        _animator.Play(_moving);
         _animator.IsFlipped = false;
-        _position = new Vector2(_position.X + MoveSpeed * Time.DeltaTime, _position.Y);
 
         if (_moveInput.X == 0)
             SwitchState(PlayerState.Idle);
@@ -201,6 +201,7 @@ public class Player : BaseGameObject
 
     private void ShootLeft()
     {
+        _animator.IsFlipped = true;
         _animator.Play(_shooting);
         
         if(!hasFiredLeft)
@@ -213,7 +214,7 @@ public class Player : BaseGameObject
             hasFiredLeft = true;
         }
 
-        if (_animator.NormalizedTime >= 1.0f) //if the shooting animation ended, return to normal
+        if (_animator.HasEnded) //if the shooting animation ended, return to normal
         {
             SwitchState(PlayerState.Idle);
             hasFiredLeft = false;
@@ -222,6 +223,7 @@ public class Player : BaseGameObject
     
     private void ShootRight()
     {
+        _animator.IsFlipped = false;
         _animator.Play(_shooting);
 
         if (!hasFireRight)
@@ -234,7 +236,7 @@ public class Player : BaseGameObject
             hasFireRight = true;
         }
 
-        if (_animator.NormalizedTime >= 1.0f) //if the shooting animation ended, return to normal
+        if (_animator.HasEnded) //if the shooting animation ended, return to normal
         {
             SwitchState(PlayerState.Idle);
             hasFireRight = false;

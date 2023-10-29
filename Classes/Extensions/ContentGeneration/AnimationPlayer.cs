@@ -18,6 +18,7 @@ public class AnimationPlayer : BaseGameObject
     public float NormalizedTime { get; private set; } //E.g. 0.5f would be considered the animation at its half time
     public bool IsFlipped { get; set; }
     public bool IsStopped { get; set; }
+    public bool HasEnded { get; private set; }
 
 
     public AnimationPlayer(SpriteBatch spriteBatch, BaseGameObject animatedGameObj)
@@ -35,9 +36,16 @@ public class AnimationPlayer : BaseGameObject
             return;
         
         //Error handling
-        Animation = animation ?? throw new Exception($"{ToString()} Animation instance wasn't defined");
+        if(animation == null) throw new Exception($"Animation instance wasn't defined");
 
-        _texture = animation.Texture;
+        //If new animation is set
+        if (animation != Animation)
+        {
+            _currentFrame = 0;
+            _timer = 0f;
+            _texture = animation.Texture;
+            Animation = animation;
+        }
         _timer += Time.DeltaTime;
         CalculateNormalizedTime(animation);
         
@@ -52,6 +60,7 @@ public class AnimationPlayer : BaseGameObject
             else //leave current frame as is
                 _currentFrame = Math.Min(_currentFrame + 1, animation.AmountOfFrames);
         }
+        
         //Animation frame target
         var sourceRectangle = new Rectangle(_currentFrame * animation.Width, 0,
             animation.Width,
@@ -72,6 +81,8 @@ public class AnimationPlayer : BaseGameObject
             _spriteBatch.Draw(animation.Texture, destinationRectangle, sourceRectangle, Color.White, 
                 0, animation.Centre, SpriteEffects.None, 1);
         }
+        
+        HasEnded = _currentFrame >= animation.AmountOfFrames;
     }
 
     //Calculate the normalizedTime of the animation

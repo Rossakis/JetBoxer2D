@@ -1,5 +1,4 @@
-﻿using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
+﻿using Microsoft.Xna.Framework.Graphics;
 using Super_Duper_Shooter.Classes.GameObjects;
 using Super_Duper_Shooter.Classes.GameStates.Base;
 using Super_Duper_Shooter.Classes.InputSystem;
@@ -38,10 +37,6 @@ public class SplashState : BaseGameState
 
     public override void LoadContent(SpriteBatch spriteBatch)
     {
-        // if (_viewportWidth <= 720)
-        // {
-        //     
-        // }
         AddGameObject(new SplashImage(LoadTexture(SplashScreen)));
     }
 }

@@ -10,29 +10,13 @@
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/Pixel City.jpg</File>
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/Splash Screen.png</File>
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/splash.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Denji - Knockup Attack.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Denji-Basic Attack (Correct).png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Denji-Idle (Hand Drawn) Small.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Denji-Idle (Hand Drawn).png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Denji-Idle.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Denji-Walking.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Elania - Pixel.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Fighter.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Jet Boxer - Idle (128px).png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Jet Boxer - Idle (256px).png</File>
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Jet Boxer (Idle).png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Jet Boxer (Move Right).png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Jet Boxer (Shoot Right).png</File>
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Effects/Energy Blast.png</File>
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Placeholder Texture.png</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
