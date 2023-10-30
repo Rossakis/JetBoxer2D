@@ -59,9 +59,12 @@ public class Player : BaseGameObject
         
         //The texture will define the actual size of the player sprite
         _texture = contentManager.Load<Texture2D>(IdleSprite); //default texture
+        Width = Texture.Width;
+        Height = Texture.Height;
         _moveInput = Vector2.Zero;
         _animator = new AnimationPlayer(_spriteBatch, this);
         Projectiles = new List<Projectile>();
+        
         
         SetAnimations();
         SwitchState(PlayerState.Idle); //default state

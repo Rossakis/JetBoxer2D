@@ -8,102 +8,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="918e4fcc-b4f8-4137-9d97-30dcba5635b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgstats" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Backgrounds/Barren.mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Backgrounds/City Background.mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Backgrounds/Empty.mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Backgrounds/Pixel City.mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Backgrounds/Splash Screen.mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Backgrounds/splash.mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Characters/Jet Boxer (Idle).mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Characters/Jet Boxer (Move Right).mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Characters/Jet Boxer (Shoot Right).mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Effects/Energy Blast.mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Placeholder Texture.mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Engine/Input/Objects/BaseInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Backgrounds/Barren.xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Backgrounds/City Background.xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Backgrounds/Empty.xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Backgrounds/Pixel City.xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Backgrounds/Splash Screen.xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Backgrounds/splash.xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Characters/Denji-Idle (1026 × 738).xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Characters/Jet Boxer (Idle).xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Characters/Jet Boxer (Move Right).xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Characters/Jet Boxer (Shoot Right).xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Characters/Jet Boxer - Idle (256px)-export.xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Effects/Energy Blast.xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Placeholder Texture.xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/MonoGame.Framework.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/runtimes/linux-x64/native/libSDL2-2.0.so.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/runtimes/linux-x64/native/libopenal.so.1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/runtimes/osx/native/libSDL2.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/runtimes/osx/native/libopenal.1.dylib" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/runtimes/win-x64/native/SDL2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/runtimes/win-x64/native/soft_oal.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/runtimes/win-x86/native/SDL2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/runtimes/win-x86/native/soft_oal.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.CopyComplete" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net7.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/Super Duper Shooter.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/Super Duper Shooter.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Extensions/ContentGeneration/Animation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Animation/AnimationClip.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Extensions/ContentGeneration/AnimationPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Animation/AnimationPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Extensions/MouseInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Extensions/MouseInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Extensions/SingletonManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Extensions/SingletonManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Extensions/Time.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Extensions/Time.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/GameObjects/Base/BaseGameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Objects/BaseGameObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/GameObjects/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameObjects/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/GameObjects/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameObjects/Projectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/GameObjects/SplashImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameObjects/SplashImage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/GameObjects/TerrainBackground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameObjects/TerrainBackground.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/GameStates/Base/BaseGameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/States/BaseGameState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/GameStates/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameStates/GameplayState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/GameStates/SplashState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/GameStates/SplashState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputSystem/Base/BaseInput.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputSystem/Base/BaseInputAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Input/Objects/BaseInputAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputSystem/Base/BaseInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Input/Objects/BaseInputMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputSystem/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Input/InputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputSystem/InputMaps/GameplayInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/InputMaps/GameplayInputMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputSystem/InputMaps/SplashInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/InputMaps/SplashInputMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputSystem/InputTypes/AxisInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Input/InputTypes/AxisInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputSystem/InputTypes/ButtonInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Input/InputTypes/ButtonInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/InputSystem/InputTypes/ValueInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Input/InputTypes/ValueInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Physics/Collider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Physics/Collider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/MainGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Super Duper Shooter.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Super Duper Shooter.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/Super Duper Shooter.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/ref/Super Duper Shooter.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net6.0/refint/Super Duper Shooter.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Super Duper Shooter.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Super Duper Shooter.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Input/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Input/InputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Input/Objects/BaseInputAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Input/Objects/BaseInputAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Input/Objects/BaseInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Input/Objects/BaseInputMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/MainGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/MainGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Objects/BaseGameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Objects/BaseGameObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/States/BaseGameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/States/BaseGameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Enums/GameEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Enums/GameEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Enums/InputDevices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Input/Enums/InputDevices.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/InputMaps/GameplayInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/InputMaps/GameplayInputMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/InputMaps/SplashInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/InputMaps/SplashInputMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/States/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/States/GameplayState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/States/SplashState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/States/SplashState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/Super Duper Shooter.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/refint/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/Super Duper Shooter.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +141,7 @@
       <workItem from="1698243064807" duration="5370000" />
       <workItem from="1698612606389" duration="4262000" />
       <workItem from="1698674380937" duration="1069000" />
-      <workItem from="1698675757045" duration="4433000" />
+      <workItem from="1698675757045" duration="7892000" />
     </task>
     <servers />
   </component>

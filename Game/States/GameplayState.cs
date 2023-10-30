@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Super_Duper_Shooter.Engine.Input;
@@ -54,16 +55,22 @@ public class GameplayState : BaseGameState
 
     private void KeepPlayerInBounds()
     {
-        if (_player.Position.X < 0) //Below zero means that player exits the left side of the screen
-            _player.Position = new Vector2(0, _player.Position.Y);
+        //We subtract from the player position either "player.Texture.Width" or "player.Texture.Height" due to the player sprite being centered
+        
+        //Left Side
+        if (_player.Position.X - _player.Width/2f < 0)
+            _player.Position = new Vector2(_player.Width/2f, _player.Position.Y);
 
-        if (_player.Position.X > _viewportWidth - _player.Texture.Height) //Player Width and Height are the same of the 64x64 pixels player sprite
-            _player.Position = new Vector2(_viewportWidth - _player.Texture.Height, _player.Position.Y);
+        //Right side
+        if (_player.Position.X  > _viewportWidth - _player.Width/2f)
+            _player.Position = new Vector2(_viewportWidth - _player.Width/2f, _player.Position.Y);
 
-        if (_player.Position.Y < 0) //Below zero means that player exits the down side of the screen
-            _player.Position = new Vector2(_player.Position.X, 0);
+        //Down Side
+        if (_player.Position.Y - _player.Height/2f < 0)
+            _player.Position = new Vector2(_player.Position.X, _player.Height/2f);
 
-        if (_player.Position.Y > _viewportHeight - _player.Texture.Height)
-            _player.Position = new Vector2(_player.Position.X, _viewportHeight - _player.Texture.Height);
+        //Up side
+        if (_player.Position.Y > _viewportHeight - _player.Height/2f)
+            _player.Position = new Vector2(_player.Position.X, _viewportHeight - _player.Height/2f);
     }
 }

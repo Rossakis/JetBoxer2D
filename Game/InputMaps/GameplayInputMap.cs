@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework.Input;
 using Super_Duper_Shooter.Engine.Extensions;
+using Super_Duper_Shooter.Engine.Input.Enums;
 using Super_Duper_Shooter.Engine.Input.InputTypes;
 using Super_Duper_Shooter.Engine.Input.Objects;
-using Super_Duper_Shooter.Enums;
 
 namespace Super_Duper_Shooter.Game.InputMaps
 {

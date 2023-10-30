@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Super_Duper_Shooter.Enums;
+using Super_Duper_Shooter.Engine.Input.Enums;
 
 namespace Super_Duper_Shooter.Engine.Input.Objects;
 

@@ -1,4 +1,4 @@
-﻿namespace Super_Duper_Shooter.Enums
+﻿namespace Super_Duper_Shooter.Game.Enums
 {
     public enum GameEvents
     {

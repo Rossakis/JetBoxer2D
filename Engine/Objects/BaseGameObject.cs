@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Super_Duper_Shooter.Enums;
+using Super_Duper_Shooter.Game.Enums;
 
 namespace Super_Duper_Shooter.Engine.Objects;
 
@@ -10,8 +10,10 @@ public class BaseGameObject
     protected Texture2D _texture;
     protected Vector2 _position;
     public Vector2 Position { get => _position; set => _position = value; }
-    public int Width;
-    public int Height;
+    public int Width { get; set; }
+    public int Height { get; set; }
+    
+    //Get the texture's center point, used when calling the Draw() method
     public Vector2 Centre => new Vector2(Width / 2f, Height / 2f);
     
     public int zIndex;
@@ -46,13 +48,5 @@ public class BaseGameObject
             spriteBatch.Draw(_texture, Position, Color.White);
         else
             throw new Exception($"{ToString()} texture field wasn't defined");
-    }
-
-    /// <summary>
-    /// Get the texture's center point, used when calling the Draw() method
-    /// </summary>
-    public virtual Vector2 CenterTexture()
-    {
-        return new Vector2(Width / 2f, Height / 2f);
     }
 }

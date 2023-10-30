@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Super_Duper_Shooter.Engine.Extensions;
 using Super_Duper_Shooter.Engine.Input;
 using Super_Duper_Shooter.Engine.States;
-using Super_Duper_Shooter.Enums;
+using Super_Duper_Shooter.Game.Enums;
 using Super_Duper_Shooter.Game.InputMaps;
 using Super_Duper_Shooter.Game.Objects;
 

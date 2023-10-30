@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Super_Duper_Shooter.Engine.Extensions;
 using Super_Duper_Shooter.Engine.States;
-using Super_Duper_Shooter.Enums;
+using Super_Duper_Shooter.Game.Enums;
 
 namespace Super_Duper_Shooter.Engine;
 
@@ -15,11 +15,6 @@ public class MainGame : Microsoft.Xna.Framework.Game
     //Window Scaling
     private RenderTarget2D renderTarget; //will hold the desired resolution target
     private Rectangle renderScaleRectangle; //will hold the scale rectangle
-    
-    // private const int DESIGNED_RESOLUTION_WIDTH = 1280;
-    // private const int DESIGNED_RESOLUTION_HEIGHT = 720;
-    // private const float DESIGNED_RESOLUTION_ASPECT_RATIO =
-    //     DESIGNED_RESOLUTION_WIDTH / (float) DESIGNED_RESOLUTION_HEIGHT;
     
     private int _initialResolutionWidth;
     private int _initialResolutionHeight;

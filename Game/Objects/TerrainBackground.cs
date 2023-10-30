@@ -39,7 +39,7 @@ public class TerrainBackground : BaseGameObject
                 var destinationRectangle =
                     new Rectangle(x, y, _texture.Width, _texture.Height);
                 _spriteBatch.Draw(_texture, destinationRectangle, sourceRectangle, Color.White, 0,
-                    CenterTexture(), SpriteEffects.None, zIndex);
+                    Centre, SpriteEffects.None, zIndex);
             }
         }
 
