@@ -33,6 +33,8 @@
     </ItemGroup>
     <ItemGroup>
         <Folder Include="AI\" />
+        <Folder Include="Content\Sounds\" />
+        <Folder Include="Game\Enums\" />
     </ItemGroup>
     <ItemGroup>
         <None Remove="Content\Content.mgcb" />

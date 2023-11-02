@@ -10,8 +10,6 @@ namespace Super_Duper_Shooter.Engine.Input;
 public class InputManager
 {
     private BaseInputMap _currentInputMap;
-
-    private ButtonInput _previousButtonState;//for GetButtonDown
     
     public InputManager(BaseInputMap inputMap)
     {

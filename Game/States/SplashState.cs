@@ -1,9 +1,10 @@
-﻿using Microsoft.Xna.Framework.Content;
+﻿using System.Collections.Generic;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Super_Duper_Shooter.Engine.Extensions;
 using Super_Duper_Shooter.Engine.Input;
+using Super_Duper_Shooter.Engine.Sound;
 using Super_Duper_Shooter.Engine.States;
-using Super_Duper_Shooter.Game.Enums;
 using Super_Duper_Shooter.Game.InputMaps;
 using Super_Duper_Shooter.Game.Objects;
 
@@ -12,22 +13,23 @@ namespace Super_Duper_Shooter.Game.States;
 public class SplashState : BaseGameState
 {
     private const string SplashScreen = "Backgrounds/Splash Screen";
-
-    public override void Initialize(Microsoft.Xna.Framework.Game game, ContentManager contentManager, int viewportWidth, int viewportHeight)
-    { 
-        base.Initialize(game, contentManager, viewportWidth, viewportHeight);
-    }
-
+    
     protected override void SetInputManager()
     {
         InputManager = new InputManager(new SplashInputMap());
     }
     
-    public override void Update()
+    protected override void SetSoundtrack()
     {
-        base.Update();
-        InputManager.UpdateInput();
+        //Sound
+        var splashSong = LoadSound(SoundLibrary.GetSong(GameSongs.SplashScreen)).CreateInstance();
+        SoundManager.SetSoundtrack(new List<SoundEffectInstance>{splashSong});
+        
+        _isSoundInitialized = true;
+    }
 
+    protected override void UpdateGameState()
+    {
         //If mouse gets moved, show it
         if (MouseInput.GetMouseAxis(MouseInputTypes.Horizontal) != 0 || MouseInput.GetMouseAxis(MouseInputTypes.Vertical) != 0)
             _game.IsMouseVisible = true;
@@ -43,13 +45,15 @@ public class SplashState : BaseGameState
         //OnNotify - Exit the game
         if (InputManager.GetButtonDown(SplashInputMap.ExitGame))
         {
-            NotifyEvent(GameEvents.GameQuit);
+            NotifyEvent(new BaseGameStateEvent.GameQuit());
         }
        
     }
 
     public override void LoadContent(SpriteBatch spriteBatch)
     {
+        SetSoundtrack();
+
         AddGameObject(new SplashImage(LoadTexture(SplashScreen)));
     }
 }

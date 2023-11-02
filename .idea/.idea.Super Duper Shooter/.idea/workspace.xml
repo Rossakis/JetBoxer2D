@@ -8,26 +8,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="918e4fcc-b4f8-4137-9d97-30dcba5635b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Effects/Fireball.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Gameplay/Gameplay Theme - 1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Gameplay/Gameplay Theme - 2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Gameplay/Gameplay Theme - 3.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Gameplay/Gameplay Theme - 4.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Gameplay/Gameplay Theme - 5.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Gameplay/Gameplay Theme - 6.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Sounds/Splash/Splash Screen.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Sounds/Gameplay/Gameplay Theme - 1.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Sounds/Gameplay/Gameplay Theme - 2.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Sounds/Gameplay/Gameplay Theme - 3.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Sounds/Gameplay/Gameplay Theme - 4.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Sounds/Gameplay/Gameplay Theme - 5.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Sounds/Gameplay/Gameplay Theme - 6.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Sounds/Splash/Splash Screen.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Sounds/Gameplay/Gameplay Theme - 1.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Sounds/Gameplay/Gameplay Theme - 2.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Sounds/Gameplay/Gameplay Theme - 3.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Sounds/Gameplay/Gameplay Theme - 4.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Sounds/Gameplay/Gameplay Theme - 5.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Sounds/Gameplay/Gameplay Theme - 6.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Sounds/Splash/Splash Screen.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Engine/Events/BaseGameStateEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Engine/Sound/SoundManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/Events/GameplayEvents.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/Sound/SoundLibrary.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Sounds/Gameplay/Gameplay Theme - 1.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Sounds/Gameplay/Gameplay Theme - 2.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Sounds/Gameplay/Gameplay Theme - 3.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Sounds/Gameplay/Gameplay Theme - 4.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Sounds/Gameplay/Gameplay Theme - 5.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Sounds/Gameplay/Gameplay Theme - 6.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Sounds/Splash/Splash Screen.xnb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Content.mgcb" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Content.mgcb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgstats" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgstats" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Input/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Input/InputManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Input/Objects/BaseInputAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Input/Objects/BaseInputAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Input/Objects/BaseInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Input/Objects/BaseInputMap.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/MainGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/MainGame.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Objects/BaseGameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Objects/BaseGameObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/States/BaseGameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/States/BaseGameState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enums/GameEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Enums/GameEvents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enums/InputDevices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Input/Enums/InputDevices.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/InputMaps/GameplayInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/InputMaps/GameplayInputMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/InputMaps/SplashInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/InputMaps/SplashInputMap.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Enums/GameEvents.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Objects/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Objects/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/States/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/States/GameplayState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/States/SplashState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/States/SplashState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Super Duper Shooter.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Super Duper Shooter.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/Super Duper Shooter.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/refint/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/Super Duper Shooter.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +176,12 @@
       <workItem from="1698243064807" duration="5370000" />
       <workItem from="1698612606389" duration="4262000" />
       <workItem from="1698674380937" duration="1069000" />
-      <workItem from="1698675757045" duration="7892000" />
+      <workItem from="1698675757045" duration="8139000" />
+      <workItem from="1698699173771" duration="624000" />
+      <workItem from="1698782417295" duration="10634000" />
+      <workItem from="1698832709151" duration="109000" />
+      <workItem from="1698949947528" duration="320000" />
+      <workItem from="1698950861630" duration="6769000" />
     </task>
     <servers />
   </component>

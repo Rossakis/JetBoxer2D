@@ -1,9 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Super_Duper_Shooter.Engine.Input;
+using Super_Duper_Shooter.Engine.Sound;
 using Super_Duper_Shooter.Engine.States;
+using Super_Duper_Shooter.Game.Events;
 using Super_Duper_Shooter.Game.InputMaps;
 using Super_Duper_Shooter.Game.Objects;
 
@@ -27,10 +32,37 @@ public class GameplayState : BaseGameState
         InputManager = new InputManager(new GameplayInputMap());
     }
     
-    public override void Update()
+    protected override void SetSoundtrack()
     {
-        base.Update();
-        InputManager.UpdateInput();
+        //Sound
+        var gameplaySong1 = LoadSound(SoundLibrary.GetSong(GameSongs.Gameplay1)).CreateInstance();
+        var gameplaySong2 = LoadSound(SoundLibrary.GetSong(GameSongs.Gameplay2)).CreateInstance();
+        var gameplaySong3 = LoadSound(SoundLibrary.GetSong(GameSongs.Gameplay3)).CreateInstance();
+        var gameplaySong4 = LoadSound(SoundLibrary.GetSong(GameSongs.Gameplay4)).CreateInstance();
+        var gameplaySong5 = LoadSound(SoundLibrary.GetSong(GameSongs.Gameplay5)).CreateInstance();
+        var gameplaySong6 = LoadSound(SoundLibrary.GetSong(GameSongs.Gameplay6)).CreateInstance();
+        
+        SoundManager.SetSoundtrack(new List<SoundEffectInstance>{
+            gameplaySong1, 
+            gameplaySong2, 
+            gameplaySong3, 
+            gameplaySong4, 
+            gameplaySong5, 
+            gameplaySong6
+        });
+        
+        var fireballSound = LoadSound(SoundLibrary.GetSfx(GameSFX.Fireball));
+        SoundManager.RegisterSound(new GameplayEvents.PlayerShoots(), fireballSound);
+        _isSoundInitialized = true;
+    }
+
+    protected override void UpdateGameState()
+    {
+        //OnNotify - Exit the game
+        if (InputManager.GetButtonDown(SplashInputMap.ExitGame))
+        {
+            NotifyEvent(new BaseGameStateEvent.GameQuit());
+        }
     }
 
     public override void Render(SpriteBatch spriteBatch)
@@ -41,7 +73,10 @@ public class GameplayState : BaseGameState
 
     public override void LoadContent(SpriteBatch spriteBatch)
     {
-        _player = new Player(Vector2.Zero, spriteBatch, _contentManager, InputManager)
+        //Sound
+        SetSoundtrack();
+                
+        _player = new Player(Vector2.Zero, spriteBatch, _contentManager, this)
             {zIndex = 1};
         _player.Position = new Vector2(_viewportWidth / 2f - _player.Texture.Width,
             _viewportHeight / 2f - _player.Texture.Height);

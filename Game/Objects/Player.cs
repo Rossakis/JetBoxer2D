@@ -7,7 +7,9 @@ using Super_Duper_Shooter.Engine.Animation;
 using Super_Duper_Shooter.Engine.Extensions;
 using Super_Duper_Shooter.Engine.Input;
 using Super_Duper_Shooter.Engine.Objects;
+using Super_Duper_Shooter.Game.Events;
 using Super_Duper_Shooter.Game.InputMaps;
+using Super_Duper_Shooter.Game.States;
 
 namespace Super_Duper_Shooter.Game.Objects;
 
@@ -41,6 +43,7 @@ public class Player : BaseGameObject
 
     private const float MoveSpeed = 500;
     private readonly InputManager _inputManager;
+    private readonly GameplayState _gameplayState;
 
     public Texture2D Texture => _texture;
 
@@ -48,14 +51,15 @@ public class Player : BaseGameObject
 
     private List<Projectile> Projectiles;
     private bool hasFiredLeft;
-    private bool hasFireRight;
+    private bool hasFiredRight;
 
-    public Player(Vector2 playerPos, SpriteBatch spriteBatch, ContentManager contentManager, InputManager inputManager)
+    public Player(Vector2 playerPos, SpriteBatch spriteBatch, ContentManager contentManager, GameplayState gameState)
     {
         Position = playerPos;
         _spriteBatch = spriteBatch;
         _contentManager = contentManager;
-        _inputManager = inputManager;
+        _gameplayState = gameState;
+        _inputManager = gameState.InputManager;
         
         //The texture will define the actual size of the player sprite
         _texture = contentManager.Load<Texture2D>(IdleSprite); //default texture
@@ -123,9 +127,7 @@ public class Player : BaseGameObject
                 ShootRight();
                 break;
         }
-
-        // if (Projectiles.Count <= 0)
-        //     return;
+        
         //Select only the projectiles still on the screen
         for (int i = 0; i <= Projectiles.Count - 1; i++)
         {
@@ -215,6 +217,8 @@ public class Player : BaseGameObject
             _contentManager, 2));
 
             hasFiredLeft = true;
+            
+            _gameplayState.NotifyEvent(new GameplayEvents.PlayerShoots());
         }
 
         if (_animator.HasEnded) //if the shooting animation ended, return to normal
@@ -230,20 +234,22 @@ public class Player : BaseGameObject
         _animator.IsFlipped = false;
         _animator.AnimationSpeed = 1.5f;
 
-        if (!hasFireRight)
+        if (!hasFiredRight)
         {
             Projectiles.Add(new Projectile(
                 new Vector2(Position.X + 25, Position.Y),
                 _spriteBatch,
                 _contentManager, 2));
 
-            hasFireRight = true;
+            hasFiredRight = true;
+
+            _gameplayState.NotifyEvent(new GameplayEvents.PlayerShoots());
         }
 
         if (_animator.HasEnded) //if the shooting animation ended, return to normal
         {
             SwitchState(PlayerState.Idle);
-            hasFireRight = false;
+            hasFiredRight = false;
         }
     }
 }

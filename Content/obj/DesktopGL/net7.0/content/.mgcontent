@@ -15,8 +15,24 @@
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Jet Boxer (Shoot Right).png</File>
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Effects/Energy Blast.png</File>
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Placeholder Texture.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Sounds/Effects/Fireball.wav</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Sounds/Gameplay/Gameplay Theme - 1.wav</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Sounds/Gameplay/Gameplay Theme - 2.wav</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Sounds/Gameplay/Gameplay Theme - 3.wav</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Sounds/Gameplay/Gameplay Theme - 4.wav</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Sounds/Gameplay/Gameplay Theme - 5.wav</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Sounds/Gameplay/Gameplay Theme - 6.wav</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Sounds/Splash/Splash Screen.wav</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Super_Duper_Shooter.Engine.Input;
 using Super_Duper_Shooter.Engine.Objects;
-using Super_Duper_Shooter.Game.Enums;
+using Super_Duper_Shooter.Engine.Sound;
 
 namespace Super_Duper_Shooter.Engine.States;
 
@@ -14,29 +15,32 @@ namespace Super_Duper_Shooter.Engine.States;
 /// </summary>
 public abstract class BaseGameState
 {
-    //All the gameObject present in this GameState
-    public List<BaseGameObject> GameObjects { get; set; }
-
-    protected InputManager InputManager { get; set; }
-    protected abstract void SetInputManager();
-
+    //All the BaseGameObjects present in this GameState
+    private readonly List<BaseGameObject> _gameObjects = new();
+    protected SoundManager SoundManager = new();
+    public InputManager InputManager { get; set; }
+    
     protected int _viewportWidth;
     protected int _viewportHeight;
 
+    protected bool _isSoundInitialized; 
+    
+    protected abstract void SetInputManager();
+    /// <summary>
+    /// To be loaded in the LoadContent() method
+    /// </summary>
+    protected abstract void SetSoundtrack();
+    protected abstract void UpdateGameState();
+    
+   
     //the name of the texture that will be shown if ContentManager doesn't find the desired texture
     private const string FallbackTexture = "Empty";
     
-    public event EventHandler<int> ResolutionChanged;//when resolution changes, switch sprites for animation (e.g. when resolution gets bigger, use 256px sprite and not 128px).
-    public void OnResolutionChanged(int resolutionWidth)
-    {
-        ResolutionChanged?.Invoke(this, resolutionWidth);
-    }
 
     //instead of using ContentManager's Load and Unload methods like singletons, 
     //we will make a local ContentManager for each BaseGameState instance in the game (e.g. GameplayState)
     protected ContentManager _contentManager;
     protected Microsoft.Xna.Framework.Game _game; //this game instance
-    // protected SpriteBatch _spriteBatch;
 
     /// <summary>
     /// Assign the MainGame's ContentManager this (local) one
@@ -49,7 +53,6 @@ public abstract class BaseGameState
         _viewportWidth = viewportWidth;
         _viewportHeight = viewportHeight;
 
-        GameObjects = new List<BaseGameObject>();
         SetInputManager();
     }
 
@@ -66,6 +69,7 @@ public abstract class BaseGameState
     public void UnloadContent()
     {
         _contentManager.Unload();
+        _isSoundInitialized = false;
     }
     
     //TODO:Both LoadContent() and UnloadContent() should be called though the currentGameState in the MainGame
@@ -78,7 +82,7 @@ public abstract class BaseGameState
     }
 
     public event EventHandler<BaseGameState> OnStateSwitched;
-    public event EventHandler<GameEvents> OnEventNotification;
+    public event EventHandler<BaseGameStateEvent> OnEventNotification;
 
     /// <summary>
     /// Invokes the <see cref="OnStateSwitched"/> event
@@ -94,26 +98,40 @@ public abstract class BaseGameState
     /// </summary>
     /// <param name="eventType"></param>
     /// <param name="argument">Specifies that if a caller does not provide a value for the "argument" parameter when calling the method, it defaults to "null".</param>
-    protected void NotifyEvent(GameEvents eventType, object argument = null)
+    public void NotifyEvent(BaseGameStateEvent eventType, object argument = null)
     {
         OnEventNotification?.Invoke(this, eventType);
 
-        foreach (var gameObject in GameObjects) gameObject.OnNotify(eventType);
+        foreach (var gameObject in _gameObjects) 
+            gameObject.OnNotify(eventType);
+        
+        SoundManager.OnNotify(eventType);
     }
 
     protected void AddGameObject(BaseGameObject gameObject)
     {
-        GameObjects.Add(gameObject);
+        _gameObjects.Add(gameObject);
     }
 
     protected void RemoveGameObject(BaseGameObject gameObject)
     {
-        GameObjects?.Remove(gameObject);
+        _gameObjects?.Remove(gameObject);
     }
 
-    public virtual void Update()
+    protected SoundEffect LoadSound(string soundName)
     {
-        foreach (var gameObject in GameObjects.OrderBy(gameObj => gameObj.zIndex)) 
+        return _contentManager.Load<SoundEffect>(soundName);
+    }
+    
+    public void Update()
+    {
+        UpdateGameState();
+        InputManager.UpdateInput();
+        
+        if(_isSoundInitialized)
+            SoundManager.PlaySoundtrack();
+        
+        foreach (var gameObject in _gameObjects.OrderBy(gameObj => gameObj.zIndex)) 
             gameObject.Update();
     }
     
@@ -122,7 +140,7 @@ public abstract class BaseGameState
     {
         //render gameObjects (using LINQ query) based on their zIndex, so that they
         //are shown in the correct order
-        foreach (var gameObject in GameObjects.OrderBy(gameObj => gameObj.zIndex)) 
+        foreach (var gameObject in _gameObjects.OrderBy(gameObj => gameObj.zIndex)) 
             gameObject.Render(spriteBatch);
     }
 }

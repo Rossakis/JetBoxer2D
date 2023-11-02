@@ -145,3 +145,51 @@
 /processorParam:TextureFormat=Color
 /build:Placeholder Texture.png
 
+#begin Sounds/Effects/Fireball.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Effects/Fireball.wav
+
+#begin Sounds/Gameplay/Gameplay Theme - 1.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Gameplay/Gameplay Theme - 1.wav
+
+#begin Sounds/Gameplay/Gameplay Theme - 2.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Gameplay/Gameplay Theme - 2.wav
+
+#begin Sounds/Gameplay/Gameplay Theme - 3.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Gameplay/Gameplay Theme - 3.wav
+
+#begin Sounds/Gameplay/Gameplay Theme - 4.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Gameplay/Gameplay Theme - 4.wav
+
+#begin Sounds/Gameplay/Gameplay Theme - 5.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Gameplay/Gameplay Theme - 5.wav
+
+#begin Sounds/Gameplay/Gameplay Theme - 6.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Gameplay/Gameplay Theme - 6.wav
+
+#begin Sounds/Splash/Splash Screen.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/Splash/Splash Screen.wav
+

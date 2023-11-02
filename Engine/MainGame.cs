@@ -2,7 +2,6 @@
 using Microsoft.Xna.Framework.Graphics;
 using Super_Duper_Shooter.Engine.Extensions;
 using Super_Duper_Shooter.Engine.States;
-using Super_Duper_Shooter.Game.Enums;
 
 namespace Super_Duper_Shooter.Engine;
 
@@ -127,11 +126,11 @@ public class MainGame : Microsoft.Xna.Framework.Game
         //now tied to the new game state, and not the previous one 
     }
 
-    private void CurrentGameState_OnEventNotification(object sender, GameEvents eventType)
+    private void CurrentGameState_OnEventNotification(object sender, BaseGameStateEvent eventType)
     {
         switch (eventType)
         {
-            case GameEvents.GameQuit:
+            case BaseGameStateEvent.GameQuit:
                 Exit();
                 break;
         }

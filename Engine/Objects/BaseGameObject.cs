@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Super_Duper_Shooter.Game.Enums;
+using Super_Duper_Shooter.Engine.States;
 
 namespace Super_Duper_Shooter.Engine.Objects;
 
@@ -18,8 +18,8 @@ public class BaseGameObject
     
     public int zIndex;
 
-    public event EventHandler<GameEvents> Notify;
-    public virtual void OnNotify(GameEvents eventType)
+    public event EventHandler<BaseGameStateEvent> Notify;
+    public virtual void OnNotify(BaseGameStateEvent eventType)
     {
         Notify?.Invoke(this, eventType);
     }
