@@ -102,6 +102,11 @@ public class Player : BaseGameObject
         Vector2.Normalize(_moveInput);
         
         _position = new Vector2(_position.X + MoveSpeed * Time.DeltaTime * _moveInput.X, _position.Y - MoveSpeed * Time.DeltaTime * _moveInput.Y);
+        
+        for (int i = 0; i <= Projectiles.Count - 1; i++)
+        {
+            Projectiles[i].Update();
+        }
     }
 
     public override void Render(SpriteBatch spriteBatch)
@@ -131,7 +136,7 @@ public class Player : BaseGameObject
         //Select only the projectiles still on the screen
         for (int i = 0; i <= Projectiles.Count - 1; i++)
         {
-            Projectiles[i].MoveUp();
+            Projectiles[i].Render(spriteBatch);
             
             if (Projectiles[i].Position.Y < -spriteBatch.GraphicsDevice.Viewport.Height)
             {
@@ -212,7 +217,7 @@ public class Player : BaseGameObject
         if(!hasFiredLeft)
         {
             Projectiles.Add(new Projectile(
-            new Vector2(Position.X - 25, Position.Y), 
+            new Vector2(Position.X - 25, Position.Y - _texture.Height / 2f), 
             _spriteBatch,
             _contentManager, 2));
 
@@ -237,7 +242,7 @@ public class Player : BaseGameObject
         if (!hasFiredRight)
         {
             Projectiles.Add(new Projectile(
-                new Vector2(Position.X + 25, Position.Y),
+                new Vector2(Position.X + 25, Position.Y - _texture.Height / 2f),
                 _spriteBatch,
                 _contentManager, 2));
 

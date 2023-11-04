@@ -9,7 +9,7 @@ public class BaseGameObject
 {
     protected Texture2D _texture;
     protected Vector2 _position;
-    public Vector2 Position { get => _position; set => _position = value; }
+    public virtual Vector2 Position { get => _position; set => _position = value; }
     public int Width { get; set; }
     public int Height { get; set; }
     

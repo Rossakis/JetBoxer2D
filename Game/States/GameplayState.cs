@@ -11,6 +11,7 @@ using Super_Duper_Shooter.Engine.States;
 using Super_Duper_Shooter.Game.Events;
 using Super_Duper_Shooter.Game.InputMaps;
 using Super_Duper_Shooter.Game.Objects;
+using Super_Duper_Shooter.Game.Particles;
 
 namespace Super_Duper_Shooter.Game.States;
 

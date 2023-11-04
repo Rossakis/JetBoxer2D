@@ -44,3 +44,4 @@
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net7.0/Content/Sounds/Gameplay/Gameplay Theme - 6.xnb
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net7.0/Content/Sounds/Splash/Splash Screen.xnb
 /Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net7.0/Content/Sounds/Effects/Fireball.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Debug/net7.0/Content/Effects/Spark.xnb

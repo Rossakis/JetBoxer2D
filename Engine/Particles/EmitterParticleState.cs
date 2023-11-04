@@ -4,7 +4,7 @@ using Super_Duper_Shooter.Engine.Extensions;
 
 namespace Super_Duper_Shooter.Engine.Particles;
 
-public abstract class BaseParticleEmitter
+public abstract class EmitterParticleState
 {
     public abstract int MinLifeSpan { get; }
     public abstract int MaxLifeSpan { get; }

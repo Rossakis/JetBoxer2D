@@ -1,0 +1,107 @@
+using System;
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using Super_Duper_Shooter.Engine.Objects;
+
+namespace Super_Duper_Shooter.Engine.Particles;
+
+/// <summary>
+/// Class responsible for emitting particles
+/// </summary>
+public class Emitter : BaseGameObject
+{
+    private LinkedList<Particle> _activeParticles = new();
+    private LinkedList<Particle> _inactiveParticles = new();
+    
+    public EmitterParticleState _emitterParticleState;
+    private IEmitterType _emitterType;
+    private int _nbParticleEmittedPerUpdate = 0;
+    private int _maxNbParticle = 0;
+
+    public bool IsAlive => _activeParticles.Count > 0;
+
+    public Emitter(Texture2D texture, Vector2 position, EmitterParticleState particleState, IEmitterType emitterType, int nbParticleEmittedPerUpdate, int maxNbParticle)
+    {
+        _texture = texture;
+        Position = position;
+        _emitterParticleState = particleState;
+        _emitterType = emitterType;
+        _nbParticleEmittedPerUpdate = nbParticleEmittedPerUpdate;
+        _maxNbParticle = maxNbParticle;
+    }
+
+    private void EmitNewParticle(Particle particle)
+    {
+        var lifespan = _emitterParticleState.GenerateLifespan();
+        var velocity = _emitterParticleState.GenerateVelocity();
+        var scale = _emitterParticleState.GenerateScale();
+        var rotation = _emitterParticleState.GenerateRotation();
+        var opacity = _emitterParticleState.GenerateOpacity();
+        var gravity = _emitterParticleState.Gravity;
+        var acceleration = _emitterParticleState.Acceleration;
+        var opacityFadingRate = _emitterParticleState.OpacityFadingRate;
+        
+        var direction = _emitterType.GetParticleDirection();
+        var position = _emitterType.GetParticlePosition(_position);
+        
+        particle.Activate(lifespan, position, direction, gravity, velocity, acceleration, scale, rotation, opacity, opacityFadingRate);
+        _activeParticles.AddLast(particle);
+    }
+
+    private void EmitParticles()
+    {
+        if(_activeParticles.Count >= _maxNbParticle)
+            return;
+
+        var maxAmountToBeGenerated = _maxNbParticle - _activeParticles.Count;
+        var neededParticles = Math.Min(maxAmountToBeGenerated, _nbParticleEmittedPerUpdate);
+        
+        //Reuse inactive particles first before creating new ones
+        var nbToReuse = Math.Min(_inactiveParticles.Count, neededParticles);
+        var nbToCreate = neededParticles - nbToReuse;
+
+        for (int i = 0; i < nbToReuse; i++)
+        {
+            var particleNode = _inactiveParticles.First;
+            EmitNewParticle(particleNode.Value);
+            _inactiveParticles.Remove(particleNode);
+        }
+ 
+        for (int i = 0; i < nbToCreate; i++)
+        {
+            EmitNewParticle(new Particle());
+        }
+    }
+
+    public override void Update()
+    {
+        EmitParticles();
+
+        var particleNode = _activeParticles.First;
+        while (particleNode != null)
+        {
+            var nextNode = particleNode.Next;
+            var stillAlive = particleNode.Value.Update();
+
+            if (!stillAlive)
+            {
+                _activeParticles.Remove(particleNode);
+                _inactiveParticles.AddLast(particleNode.Value);
+            }
+
+            particleNode = nextNode;
+        }
+    }
+
+    public override void Render(SpriteBatch spriteBatch)
+    {
+        var sourceRectangle = new Rectangle(0, 0, _texture.Width, _texture.Height);
+
+        foreach (var particle in _activeParticles)
+        {
+            //TODO: implement the rotation parameter once rotation function gets added to EmitterParticleState
+            spriteBatch.Draw(_texture, particle.Position, sourceRectangle, Color.White * particle.Opacity, 0.0f, new Vector2(0,0), particle.Scale, SpriteEffects.None, zIndex);
+        }
+    }
+}

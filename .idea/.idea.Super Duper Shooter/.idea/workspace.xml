@@ -8,15 +8,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="918e4fcc-b4f8-4137-9d97-30dcba5635b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Engine/Extensions/RandomNumberGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Engine/Particles/BaseParticleEmitter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Engine/Particles/Particle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Effects/Spark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Effects/Spark.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Effects/Spark.mgcontent" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Engine/Particles/ConeEmitter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Engine/Particles/Emitter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Engine/Particles/IEmitterType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/Particles/FlameSparkParticleState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game/Particles/FlameSparksEmitter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Effects/Spark.xnb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Super Duper Shooter/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Super Duper Shooter/xs/UserPrefs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Super Duper Shooter/xs/project-cache/Super Duper Shooter-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Super Duper Shooter/xs/project-cache/Super Duper Shooter-Debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Content.mgcb" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Content.mgcb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgcontent" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgstats" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgstats" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Objects/BaseGameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Objects/BaseGameObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Particles/BaseParticleEmitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Particles/EmitterParticleState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Objects/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Objects/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Objects/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Objects/Projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/States/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/States/GameplayState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/Super Duper Shooter.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/refint/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/Super Duper Shooter.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Content Builder File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,29 +85,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/giorgos_tsolakidis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/giorgos_tsolakidis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
-      &quot;/Users/giorgos_tsolakidis/.local/share/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/giorgos_tsolakidis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
+      "/Users/giorgos_tsolakidis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
+      "/Users/giorgos_tsolakidis/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Super Duper Shooter" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter" />
@@ -133,7 +167,8 @@
       <workItem from="1698949947528" duration="320000" />
       <workItem from="1698950861630" duration="6929000" />
       <workItem from="1699030652836" duration="106000" />
-      <workItem from="1699032775572" duration="4191000" />
+      <workItem from="1699032775572" duration="4327000" />
+      <workItem from="1699119034032" duration="7403000" />
     </task>
     <servers />
   </component>
