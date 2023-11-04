@@ -8,35 +8,467 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="918e4fcc-b4f8-4137-9d97-30dcba5635b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Effects/Spark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Effects/Spark.xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Effects/Spark.mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Engine/Particles/ConeEmitter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Engine/Particles/Emitter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Engine/Particles/IEmitterType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Particles/FlameSparkParticleState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Particles/FlameSparksEmitter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Effects/Spark.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Backgrounds/Barren.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Backgrounds/City Background.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Backgrounds/Empty.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Backgrounds/Pixel City.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Backgrounds/Splash Screen.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Backgrounds/splash.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Characters/Denji-Idle (1026 × 738).xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Characters/Jet Boxer (Idle).xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Characters/Jet Boxer (Move Right).xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Characters/Jet Boxer (Shoot Right).xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Characters/Jet Boxer - Idle (256px)-export.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Effects/Energy Blast.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Effects/Spark.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Placeholder Texture.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Sounds/Effects/Fireball.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Sounds/Gameplay/Gameplay Theme - 1.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Sounds/Gameplay/Gameplay Theme - 2.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Sounds/Gameplay/Gameplay Theme - 3.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Sounds/Gameplay/Gameplay Theme - 4.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Sounds/Gameplay/Gameplay Theme - 5.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Sounds/Gameplay/Gameplay Theme - 6.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Content/Sounds/Splash/Splash Screen.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Microsoft.CSharp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Microsoft.VisualBasic.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Microsoft.VisualBasic.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Microsoft.Win32.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Microsoft.Win32.Registry.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/MonoGame.Framework.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Super Duper Shooter" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Super Duper Shooter.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Super Duper Shooter.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Super Duper Shooter.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/Super Duper Shooter.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.AppContext.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Buffers.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Collections.Concurrent.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Collections.Immutable.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Collections.NonGeneric.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Collections.Specialized.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Collections.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.ComponentModel.Annotations.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.ComponentModel.DataAnnotations.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.ComponentModel.EventBasedAsync.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.ComponentModel.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.ComponentModel.TypeConverter.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.ComponentModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Configuration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Console.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Data.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Data.DataSetExtensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Diagnostics.Contracts.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Diagnostics.Debug.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Diagnostics.FileVersionInfo.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Diagnostics.Process.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Diagnostics.StackTrace.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Diagnostics.TextWriterTraceListener.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Diagnostics.Tools.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Diagnostics.TraceSource.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Diagnostics.Tracing.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Drawing.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Drawing.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Dynamic.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Formats.Asn1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Formats.Tar.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Globalization.Calendars.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Globalization.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Globalization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.IO.Compression.Brotli.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.IO.Compression.FileSystem.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.IO.Compression.ZipFile.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.IO.Compression.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.IO.FileSystem.AccessControl.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.IO.FileSystem.DriveInfo.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.IO.FileSystem.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.IO.FileSystem.Watcher.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.IO.FileSystem.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.IO.IsolatedStorage.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.IO.MemoryMappedFiles.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.IO.Pipes.AccessControl.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.IO.Pipes.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.IO.UnmanagedMemoryStream.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.IO.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Linq.Expressions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Linq.Parallel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Linq.Queryable.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Linq.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Memory.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.Http.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.Http.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.HttpListener.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.Mail.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.NameResolution.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.NetworkInformation.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.Ping.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.Quic.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.Requests.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.Security.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.ServicePoint.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.Sockets.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.WebClient.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.WebHeaderCollection.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.WebProxy.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.WebSockets.Client.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.WebSockets.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Numerics.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.ObjectModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Private.CoreLib.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Private.DataContractSerialization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Private.Uri.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Private.Xml.Linq.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Private.Xml.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Reflection.DispatchProxy.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Reflection.Emit.ILGeneration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Reflection.Emit.Lightweight.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Reflection.Emit.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Reflection.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Reflection.Metadata.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Reflection.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Reflection.TypeExtensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Reflection.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Resources.Reader.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Resources.ResourceManager.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Resources.Writer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Runtime.CompilerServices.VisualC.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Runtime.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Runtime.Handles.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Runtime.InteropServices.JavaScript.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Runtime.InteropServices.RuntimeInformation.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Runtime.InteropServices.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Runtime.Intrinsics.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Runtime.Loader.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Runtime.Numerics.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Runtime.Serialization.Formatters.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Runtime.Serialization.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Runtime.Serialization.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Runtime.Serialization.Xml.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Runtime.Serialization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Security.AccessControl.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Security.Claims.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Security.Cryptography.Algorithms.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Security.Cryptography.Cng.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Security.Cryptography.Csp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Security.Cryptography.Encoding.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Security.Cryptography.OpenSsl.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Security.Cryptography.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Security.Cryptography.X509Certificates.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Security.Cryptography.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Security.Principal.Windows.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Security.Principal.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Security.SecureString.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Security.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.ServiceModel.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.ServiceProcess.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Text.Encoding.CodePages.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Text.Encoding.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Text.Encoding.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Text.Encodings.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Text.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Text.RegularExpressions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Threading.Channels.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Threading.Overlapped.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Threading.Tasks.Dataflow.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Threading.Tasks.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Threading.Tasks.Parallel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Threading.Tasks.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Threading.Thread.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Threading.ThreadPool.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Threading.Timer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Threading.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Transactions.Local.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Transactions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.ValueTuple.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Web.HttpUtility.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Windows.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Xml.Linq.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Xml.ReaderWriter.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Xml.Serialization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Xml.XDocument.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Xml.XPath.XDocument.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Xml.XPath.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Xml.XmlDocument.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Xml.XmlSerializer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.Xml.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/System.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/WindowsBase.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/createdump" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/libSDL2.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/libSystem.Globalization.Native.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/libSystem.IO.Compression.Native.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/libSystem.Native.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/libSystem.Net.Security.Native.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/libSystem.Security.Cryptography.Native.Apple.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/libSystem.Security.Cryptography.Native.OpenSsl.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/libclrgc.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/libclrjit.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/libcoreclr.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/libhostfxr.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/libhostpolicy.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/libmscordaccore.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/libmscordbi.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/libopenal.1.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/mscorlib.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/netstandard.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Backgrounds/Barren.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Backgrounds/City Background.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Backgrounds/Empty.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Backgrounds/Pixel City.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Backgrounds/Splash Screen.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Backgrounds/splash.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Characters/Denji-Idle (1026 × 738).xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Characters/Jet Boxer (Idle).xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Characters/Jet Boxer (Move Right).xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Characters/Jet Boxer (Shoot Right).xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Characters/Jet Boxer - Idle (256px)-export.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Effects/Energy Blast.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Effects/Spark.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Placeholder Texture.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Sounds/Effects/Fireball.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Sounds/Gameplay/Gameplay Theme - 1.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Sounds/Gameplay/Gameplay Theme - 2.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Sounds/Gameplay/Gameplay Theme - 3.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Sounds/Gameplay/Gameplay Theme - 4.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Sounds/Gameplay/Gameplay Theme - 5.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Sounds/Gameplay/Gameplay Theme - 6.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Content/Sounds/Splash/Splash Screen.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Microsoft.CSharp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Microsoft.VisualBasic.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Microsoft.VisualBasic.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Microsoft.Win32.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Microsoft.Win32.Registry.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/MonoGame.Framework.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Super Duper Shooter" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Super Duper Shooter.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Super Duper Shooter.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Super Duper Shooter.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/Super Duper Shooter.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.AppContext.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Buffers.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Collections.Concurrent.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Collections.Immutable.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Collections.NonGeneric.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Collections.Specialized.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Collections.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.ComponentModel.Annotations.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.ComponentModel.DataAnnotations.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.ComponentModel.EventBasedAsync.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.ComponentModel.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.ComponentModel.TypeConverter.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.ComponentModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Configuration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Console.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Data.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Data.DataSetExtensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Diagnostics.Contracts.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Diagnostics.Debug.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Diagnostics.FileVersionInfo.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Diagnostics.Process.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Diagnostics.StackTrace.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Diagnostics.TextWriterTraceListener.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Diagnostics.Tools.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Diagnostics.TraceSource.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Diagnostics.Tracing.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Drawing.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Drawing.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Dynamic.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Formats.Asn1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Formats.Tar.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Globalization.Calendars.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Globalization.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Globalization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.IO.Compression.Brotli.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.IO.Compression.FileSystem.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.IO.Compression.ZipFile.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.IO.Compression.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.IO.FileSystem.AccessControl.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.IO.FileSystem.DriveInfo.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.IO.FileSystem.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.IO.FileSystem.Watcher.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.IO.FileSystem.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.IO.IsolatedStorage.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.IO.MemoryMappedFiles.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.IO.Pipes.AccessControl.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.IO.Pipes.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.IO.UnmanagedMemoryStream.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.IO.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Linq.Expressions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Linq.Parallel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Linq.Queryable.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Linq.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Memory.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.Http.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.Http.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.HttpListener.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.Mail.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.NameResolution.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.NetworkInformation.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.Ping.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.Quic.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.Requests.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.Security.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.ServicePoint.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.Sockets.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.WebClient.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.WebHeaderCollection.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.WebProxy.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.WebSockets.Client.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.WebSockets.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Net.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Numerics.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.ObjectModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Private.CoreLib.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Private.DataContractSerialization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Private.Uri.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Private.Xml.Linq.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Private.Xml.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Reflection.DispatchProxy.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Reflection.Emit.ILGeneration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Reflection.Emit.Lightweight.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Reflection.Emit.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Reflection.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Reflection.Metadata.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Reflection.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Reflection.TypeExtensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Reflection.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Resources.Reader.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Resources.ResourceManager.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Resources.Writer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Runtime.CompilerServices.VisualC.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Runtime.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Runtime.Handles.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Runtime.InteropServices.JavaScript.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Runtime.InteropServices.RuntimeInformation.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Runtime.InteropServices.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Runtime.Intrinsics.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Runtime.Loader.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Runtime.Numerics.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Runtime.Serialization.Formatters.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Runtime.Serialization.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Runtime.Serialization.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Runtime.Serialization.Xml.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Runtime.Serialization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Security.AccessControl.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Security.Claims.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Security.Cryptography.Algorithms.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Security.Cryptography.Cng.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Security.Cryptography.Csp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Security.Cryptography.Encoding.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Security.Cryptography.OpenSsl.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Security.Cryptography.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Security.Cryptography.X509Certificates.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Security.Cryptography.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Security.Principal.Windows.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Security.Principal.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Security.SecureString.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Security.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.ServiceModel.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.ServiceProcess.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Text.Encoding.CodePages.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Text.Encoding.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Text.Encoding.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Text.Encodings.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Text.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Text.RegularExpressions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Threading.Channels.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Threading.Overlapped.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Threading.Tasks.Dataflow.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Threading.Tasks.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Threading.Tasks.Parallel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Threading.Tasks.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Threading.Thread.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Threading.ThreadPool.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Threading.Timer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Threading.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Transactions.Local.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Transactions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.ValueTuple.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Web.HttpUtility.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Windows.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Xml.Linq.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Xml.ReaderWriter.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Xml.Serialization.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Xml.XDocument.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Xml.XPath.XDocument.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Xml.XPath.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Xml.XmlDocument.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Xml.XmlSerializer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.Xml.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/System.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/WindowsBase.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/createdump" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/libSDL2.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/libSystem.Globalization.Native.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/libSystem.IO.Compression.Native.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/libSystem.Native.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/libSystem.Net.Security.Native.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/libSystem.Security.Cryptography.Native.Apple.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/libSystem.Security.Cryptography.Native.OpenSsl.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/libclrgc.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/libclrjit.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/libcoreclr.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/libhostfxr.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/libhostpolicy.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/libmscordaccore.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/libmscordbi.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/libopenal.1.dylib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/mscorlib.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Release/net7.0/osx-x64/publish/netstandard.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Super Duper Shooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Super Duper Shooter/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Super Duper Shooter/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Super Duper Shooter/xs/project-cache/Super Duper Shooter-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Super Duper Shooter/xs/project-cache/Super Duper Shooter-Debug.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Content.mgcb" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Content.mgcb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgstats" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgstats" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Objects/BaseGameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Objects/BaseGameObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Particles/BaseParticleEmitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Particles/EmitterParticleState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Objects/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Objects/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Objects/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Objects/Projectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/States/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/States/GameplayState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Backgrounds/Barren.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Backgrounds/City Background.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Backgrounds/Empty.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Backgrounds/Pixel City.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Backgrounds/Splash Screen.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Backgrounds/splash.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Denji-Idle (1026 × 738).xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Jet Boxer (Idle).xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Jet Boxer (Move Right).xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Jet Boxer (Shoot Right).xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Characters/Jet Boxer - Idle (256px)-export.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Effects/Energy Blast.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Content/Placeholder Texture.xnb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MonoGame.Framework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Vertical Shooter" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Vertical Shooter.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Vertical Shooter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Vertical Shooter.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Vertical Shooter.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-x64/native/libSDL2-2.0.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/linux-x64/native/libopenal.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx/native/libSDL2.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/osx/native/libopenal.1.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-x64/native/SDL2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-x64/native/soft_oal.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-x86/native/SDL2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/runtimes/win-x86/native/soft_oal.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/Super Duper Shooter.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/Super Duper Shooter.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/refint/Super Duper Shooter.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/Super Duper Shooter.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
@@ -85,29 +517,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/giorgos_tsolakidis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
-      "/Users/giorgos_tsolakidis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
-      "/Users/giorgos_tsolakidis/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/giorgos_tsolakidis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/giorgos_tsolakidis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
+      &quot;/Users/giorgos_tsolakidis/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Super Duper Shooter" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/bin/Debug/net6.0/Super Duper Shooter" />
@@ -168,7 +600,8 @@
       <workItem from="1698950861630" duration="6929000" />
       <workItem from="1699030652836" duration="106000" />
       <workItem from="1699032775572" duration="4327000" />
-      <workItem from="1699119034032" duration="7403000" />
+      <workItem from="1699119034032" duration="8491000" />
+      <workItem from="1699137686688" duration="83000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,223 @@
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Backgrounds/Barren.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Backgrounds/City Background.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Backgrounds/Empty.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Backgrounds/Pixel City.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Backgrounds/Splash Screen.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Backgrounds/splash.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Characters/Denji-Idle (1026 × 738).xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Characters/Jet Boxer (Idle).xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Characters/Jet Boxer (Move Right).xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Characters/Jet Boxer (Shoot Right).xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Characters/Jet Boxer - Idle (256px)-export.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Effects/Energy Blast.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Effects/Spark.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Placeholder Texture.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Sounds/Effects/Fireball.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Sounds/Gameplay/Gameplay Theme - 1.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Sounds/Gameplay/Gameplay Theme - 2.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Sounds/Gameplay/Gameplay Theme - 3.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Sounds/Gameplay/Gameplay Theme - 4.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Sounds/Gameplay/Gameplay Theme - 5.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Sounds/Gameplay/Gameplay Theme - 6.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Content/Sounds/Splash/Splash Screen.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Super Duper Shooter
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Super Duper Shooter.deps.json
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Super Duper Shooter.runtimeconfig.json
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Super Duper Shooter.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Super Duper Shooter.pdb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/MonoGame.Framework.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/libSDL2.dylib
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/libopenal.1.dylib
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Microsoft.CSharp.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Microsoft.VisualBasic.Core.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Microsoft.VisualBasic.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Microsoft.Win32.Primitives.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/Microsoft.Win32.Registry.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.AppContext.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Buffers.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Collections.Concurrent.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Collections.Immutable.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Collections.NonGeneric.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Collections.Specialized.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Collections.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.ComponentModel.Annotations.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.ComponentModel.DataAnnotations.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.ComponentModel.EventBasedAsync.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.ComponentModel.Primitives.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.ComponentModel.TypeConverter.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.ComponentModel.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Configuration.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Console.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Core.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Data.Common.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Data.DataSetExtensions.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Data.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Diagnostics.Contracts.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Diagnostics.Debug.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Diagnostics.DiagnosticSource.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Diagnostics.FileVersionInfo.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Diagnostics.Process.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Diagnostics.StackTrace.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Diagnostics.TextWriterTraceListener.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Diagnostics.Tools.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Diagnostics.TraceSource.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Diagnostics.Tracing.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Drawing.Primitives.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Drawing.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Dynamic.Runtime.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Formats.Asn1.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Formats.Tar.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Globalization.Calendars.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Globalization.Extensions.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Globalization.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.IO.Compression.Brotli.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.IO.Compression.FileSystem.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.IO.Compression.ZipFile.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.IO.Compression.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.IO.FileSystem.AccessControl.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.IO.FileSystem.DriveInfo.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.IO.FileSystem.Primitives.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.IO.FileSystem.Watcher.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.IO.FileSystem.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.IO.IsolatedStorage.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.IO.MemoryMappedFiles.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.IO.Pipes.AccessControl.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.IO.Pipes.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.IO.UnmanagedMemoryStream.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.IO.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Linq.Expressions.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Linq.Parallel.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Linq.Queryable.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Linq.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Memory.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.Http.Json.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.Http.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.HttpListener.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.Mail.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.NameResolution.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.NetworkInformation.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.Ping.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.Primitives.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.Quic.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.Requests.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.Security.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.ServicePoint.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.Sockets.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.WebClient.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.WebHeaderCollection.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.WebProxy.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.WebSockets.Client.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.WebSockets.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Net.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Numerics.Vectors.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Numerics.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.ObjectModel.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Private.CoreLib.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Private.DataContractSerialization.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Private.Uri.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Private.Xml.Linq.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Private.Xml.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Reflection.DispatchProxy.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Reflection.Emit.ILGeneration.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Reflection.Emit.Lightweight.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Reflection.Emit.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Reflection.Extensions.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Reflection.Metadata.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Reflection.Primitives.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Reflection.TypeExtensions.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Reflection.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Resources.Reader.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Resources.ResourceManager.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Resources.Writer.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Runtime.CompilerServices.Unsafe.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Runtime.CompilerServices.VisualC.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Runtime.Extensions.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Runtime.Handles.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Runtime.InteropServices.JavaScript.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Runtime.InteropServices.RuntimeInformation.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Runtime.InteropServices.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Runtime.Intrinsics.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Runtime.Loader.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Runtime.Numerics.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Runtime.Serialization.Formatters.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Runtime.Serialization.Json.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Runtime.Serialization.Primitives.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Runtime.Serialization.Xml.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Runtime.Serialization.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Runtime.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Security.AccessControl.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Security.Claims.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Security.Cryptography.Algorithms.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Security.Cryptography.Cng.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Security.Cryptography.Csp.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Security.Cryptography.Encoding.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Security.Cryptography.OpenSsl.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Security.Cryptography.Primitives.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Security.Cryptography.X509Certificates.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Security.Cryptography.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Security.Principal.Windows.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Security.Principal.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Security.SecureString.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Security.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.ServiceModel.Web.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.ServiceProcess.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Text.Encoding.CodePages.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Text.Encoding.Extensions.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Text.Encoding.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Text.Encodings.Web.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Text.Json.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Text.RegularExpressions.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Threading.Channels.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Threading.Overlapped.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Threading.Tasks.Dataflow.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Threading.Tasks.Extensions.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Threading.Tasks.Parallel.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Threading.Tasks.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Threading.Thread.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Threading.ThreadPool.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Threading.Timer.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Threading.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Transactions.Local.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Transactions.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.ValueTuple.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Web.HttpUtility.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Web.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Windows.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Xml.Linq.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Xml.ReaderWriter.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Xml.Serialization.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Xml.XDocument.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Xml.XPath.XDocument.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Xml.XPath.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Xml.XmlDocument.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Xml.XmlSerializer.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.Xml.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/System.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/WindowsBase.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/mscorlib.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/netstandard.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/createdump
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/libSystem.Globalization.Native.dylib
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/libSystem.IO.Compression.Native.dylib
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/libSystem.Native.dylib
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/libSystem.Net.Security.Native.dylib
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/libSystem.Security.Cryptography.Native.Apple.dylib
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/libSystem.Security.Cryptography.Native.OpenSsl.dylib
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/libclrgc.dylib
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/libclrjit.dylib
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/libcoreclr.dylib
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/libhostfxr.dylib
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/libhostpolicy.dylib
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/libmscordaccore.dylib
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/bin/Release/net7.0/osx-x64/libmscordbi.dylib
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/obj/Release/net7.0/osx-x64/Super Duper Shooter.csproj.AssemblyReference.cache
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/obj/Release/net7.0/osx-x64/Super Duper Shooter.GeneratedMSBuildEditorConfig.editorconfig
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/obj/Release/net7.0/osx-x64/Super Duper Shooter.AssemblyInfoInputs.cache
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/obj/Release/net7.0/osx-x64/Super Duper Shooter.AssemblyInfo.cs
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/obj/Release/net7.0/osx-x64/Super Duper Shooter.csproj.CoreCompileInputs.cache
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/obj/Release/net7.0/osx-x64/Super Duper Shooter.csproj.CopyComplete
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/obj/Release/net7.0/osx-x64/Super Duper Shooter.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/obj/Release/net7.0/osx-x64/refint/Super Duper Shooter.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/obj/Release/net7.0/osx-x64/Super Duper Shooter.pdb
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/obj/Release/net7.0/osx-x64/Super Duper Shooter.genruntimeconfig.cache
+/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/obj/Release/net7.0/osx-x64/ref/Super Duper Shooter.dll
