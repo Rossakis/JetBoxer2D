@@ -25,9 +25,9 @@ public enum PlayerState
 
 public class Player : BaseGameObject
 {
-    private SpriteBatch _spriteBatch;
-    private ContentManager _contentManager; //to load animation textures
-    public PlayerState CurrentState;
+    private readonly SpriteBatch _spriteBatch;
+    private readonly ContentManager _contentManager; //to load animation textures
+    private PlayerState CurrentState;
 
     private AnimationPlayer _animator;
 
@@ -49,13 +49,21 @@ public class Player : BaseGameObject
 
     private Vector2 _moveInput;// (horizontal, vertical)
 
-    private List<Projectile> Projectiles;
-    private bool hasFiredLeft;
-    private bool hasFiredRight;
+    private List<Projectile> _projectiles;
+    private bool _hasFiredLeft;
+    private bool _hasFiredRight;
+
+    //Player attack animation acceleration
+    private const float StartAnimationSpeed = 1f;
+    private const float MaxAnimationSpeed = 12f;//max 10x animation acceleration
+    private float _currentAnimationSpeed;
+    private readonly float _animationSpeedBuff = 0.5f;//each time player attacks, increment animation speed by this
+    private float _lastAttackedTime;
+    private const float MaxNonAttackingTime = 0.5f;//if player wasn't attacking for this long, reset animation speed
 
     public Player(Vector2 playerPos, SpriteBatch spriteBatch, ContentManager contentManager, GameplayState gameState)
     {
-        Position = playerPos;
+        _position = playerPos;
         _spriteBatch = spriteBatch;
         _contentManager = contentManager;
         _gameplayState = gameState;
@@ -67,8 +75,8 @@ public class Player : BaseGameObject
         Height = Texture.Height;
         _moveInput = Vector2.Zero;
         _animator = new AnimationPlayer(_spriteBatch, this);
-        Projectiles = new List<Projectile>();
-        
+        _currentAnimationSpeed = StartAnimationSpeed;
+        _projectiles = new List<Projectile>();
         
         SetAnimations();
         SwitchState(PlayerState.Idle); //default state
@@ -103,10 +111,19 @@ public class Player : BaseGameObject
         
         _position = new Vector2(_position.X + MoveSpeed * Time.DeltaTime * _moveInput.X, _position.Y - MoveSpeed * Time.DeltaTime * _moveInput.Y);
         
-        for (int i = 0; i <= Projectiles.Count - 1; i++)
+        for (int i = 0; i <= _projectiles.Count - 1; i++)
         {
-            Projectiles[i].Update();
+            _projectiles[i].Update();
         }
+        
+        //Animation speed
+        if(Time.TotalSeconds - _lastAttackedTime >= MaxNonAttackingTime)
+        {
+            _currentAnimationSpeed = StartAnimationSpeed;
+            _lastAttackedTime = 0f;
+        }
+
+        Console.WriteLine($"Animation Speed: {_currentAnimationSpeed}");
     }
 
     public override void Render(SpriteBatch spriteBatch)
@@ -134,15 +151,15 @@ public class Player : BaseGameObject
         }
         
         //Select only the projectiles still on the screen
-        for (int i = 0; i <= Projectiles.Count - 1; i++)
+        for (int i = 0; i <= _projectiles.Count - 1; i++)
         {
-            Projectiles[i].Render(spriteBatch);
+            _projectiles[i].Render(spriteBatch);
             
-            if (Projectiles[i].Position.Y < -spriteBatch.GraphicsDevice.Viewport.Height)
+            if (_projectiles[i].Position.Y < -spriteBatch.GraphicsDevice.Viewport.Height)
             {
                 // Add the index of the item to be removed
                 Console.WriteLine("Projectile was deleted");
-                Projectiles.RemoveAt(i);
+                _projectiles.RemoveAt(i);
             }
         }
     }
@@ -212,16 +229,20 @@ public class Player : BaseGameObject
     {
         _animator.Play(_shooting);
         _animator.IsFlipped = true;
-        _animator.AnimationSpeed = 1.5f;
+        _animator.AnimationSpeed = _currentAnimationSpeed; 
         
-        if(!hasFiredLeft)
+        if(!_hasFiredLeft)
         {
-            Projectiles.Add(new Projectile(
+            _projectiles.Add(new Projectile(
             new Vector2(Position.X - 25, Position.Y - _texture.Height / 2f), 
             _spriteBatch,
             _contentManager, 2));
 
-            hasFiredLeft = true;
+            _hasFiredLeft = true;
+            
+            if(_currentAnimationSpeed < MaxAnimationSpeed)
+                _currentAnimationSpeed += _animationSpeedBuff;
+            _lastAttackedTime = Time.TotalSeconds;
             
             _gameplayState.NotifyEvent(new GameplayEvents.PlayerShoots());
         }
@@ -229,7 +250,7 @@ public class Player : BaseGameObject
         if (_animator.HasEnded) //if the shooting animation ended, return to normal
         {
             SwitchState(PlayerState.Idle);
-            hasFiredLeft = false;
+            _hasFiredLeft = false;
         }
     }
     
@@ -237,24 +258,28 @@ public class Player : BaseGameObject
     {
         _animator.Play(_shooting);
         _animator.IsFlipped = false;
-        _animator.AnimationSpeed = 1.5f;
+        _animator.AnimationSpeed = _currentAnimationSpeed;
 
-        if (!hasFiredRight)
+        if (!_hasFiredRight)
         {
-            Projectiles.Add(new Projectile(
+            _projectiles.Add(new Projectile(
                 new Vector2(Position.X + 25, Position.Y - _texture.Height / 2f),
                 _spriteBatch,
                 _contentManager, 2));
-
-            hasFiredRight = true;
-
+            
+            _hasFiredRight = true;
+            
+            if(_currentAnimationSpeed < MaxAnimationSpeed)
+                _currentAnimationSpeed += _animationSpeedBuff;
+            _lastAttackedTime = Time.TotalSeconds;
+            
             _gameplayState.NotifyEvent(new GameplayEvents.PlayerShoots());
         }
-
+        
         if (_animator.HasEnded) //if the shooting animation ended, return to normal
         {
             SwitchState(PlayerState.Idle);
-            hasFiredRight = false;
+            _hasFiredRight = false;
         }
     }
 }

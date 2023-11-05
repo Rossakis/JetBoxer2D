@@ -91,8 +91,6 @@ public class GameplayState : BaseGameState
 
     private void KeepPlayerInBounds()
     {
-        //We subtract from the player position either "player.Texture.Width" or "player.Texture.Height" due to the player sprite being centered
-        
         //Left Side
         if (_player.Position.X - _player.Width/2f < 0)
             _player.Position = new Vector2(_player.Width/2f, _player.Position.Y);

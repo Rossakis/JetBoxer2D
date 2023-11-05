@@ -2,11 +2,11 @@ using System;
 using Microsoft.Xna.Framework;
 using Super_Duper_Shooter.Engine.Extensions;
 
-namespace Super_Duper_Shooter.Engine.Particles;
+namespace Super_Duper_Shooter.Engine.Particles.EmitterTypes;
 
 public class ConeEmitter : IEmitterType
 {
-    public Vector2 Direction { get; }
+    public Vector2 Direction { get; private set; }
     public float Spread { get; }
 
     private RandomNumberGenerator _random = new ();
@@ -32,6 +32,8 @@ public class ConeEmitter : IEmitterType
 
     public Vector2 GetParticlePosition(Vector2 emitterPosition)
     {
+        // return the same position for this type of emitter, but otherwise we could tweak this to start particles a bit further
+        // away from the center of the cone.
         var x = emitterPosition.X;
         var y = emitterPosition.Y;
 

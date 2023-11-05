@@ -10,14 +10,13 @@ namespace Super_Duper_Shooter.Game.Objects;
 
 public class Projectile : BaseGameObject
 {
-    //private const float MoveSpeed = 350;
     private const float Acceleration = 20f;
 
     private const string DefaultSprite = "Placeholder Texture";
     private const string MoveAnimation = "Effects/Energy Blast";
     private const string FlameSpark = "Effects/Spark";
 
-    private float currentSpeed = 0;
+    private float _currentSpeed;
 
     public override Vector2 Position
     {
@@ -38,6 +37,7 @@ public class Projectile : BaseGameObject
         _texture = contentManager.Load<Texture2D>(DefaultSprite);
         _position = position;
         this.zIndex = zIndex;
+        _currentSpeed = 0;
         
         _animationPlayer = new AnimationPlayer(spriteBatch, this);
         _moveAnimation = new AnimationClip(contentManager.Load<Texture2D>(MoveAnimation), 0.1f, true);
@@ -50,8 +50,8 @@ public class Projectile : BaseGameObject
     {
         _flameEmitter.Update();
         
-        Position = new Vector2(Position.X, Position.Y - currentSpeed * Time.DeltaTime);
-        currentSpeed += Acceleration;
+        Position = new Vector2(Position.X, Position.Y - _currentSpeed * Time.DeltaTime);
+        _currentSpeed += Acceleration;
     }
 
     public override void Render(SpriteBatch spriteBatch)

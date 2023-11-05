@@ -1,3 +1,4 @@
+using System;
 using Microsoft.Xna.Framework;
 
 namespace Super_Duper_Shooter.Engine.Extensions;
@@ -22,9 +23,12 @@ public class Time
     }
 
     public static float DeltaTime { get; private set; }
+    public static TimeSpan GameTime { get; private set; }
+    public static float TotalSeconds => (float)GameTime.TotalSeconds;
 
     public static void Update(GameTime gameTime)
     {
         DeltaTime = (float) gameTime.ElapsedGameTime.TotalSeconds;
+        GameTime = gameTime.TotalGameTime;
     }
 }

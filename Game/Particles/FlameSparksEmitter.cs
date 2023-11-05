@@ -1,6 +1,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Super_Duper_Shooter.Engine.Particles;
+using Super_Duper_Shooter.Engine.Particles.EmitterTypes;
 
 namespace Super_Duper_Shooter.Game.Particles;
 

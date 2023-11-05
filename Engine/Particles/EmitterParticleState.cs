@@ -6,9 +6,15 @@ namespace Super_Duper_Shooter.Engine.Particles;
 
 public abstract class EmitterParticleState
 {
+    // how long a particle can live
     public abstract int MinLifeSpan { get; }
     public abstract int MaxLifeSpan { get; }
     
+    // defines how the particles will move. Velocity and its deviation define the particle's initial velocity
+    // then each update, we
+    //  - increase velocity by acceleration
+    //  - increase direction by gravity
+    //  - multiply direction by velocity
     public abstract float Velocity { get; }
     public abstract float VelocityDeviation { get; }
     public abstract float Acceleration { get; }

@@ -15,7 +15,8 @@ public class Particle
     private Vector2 _direction;
     private float _velocity;
     private float _acceleration;
-    private float _rotation;//TODO: add continuous rotation function to the particle
+    //TODO: add continuous rotation function to the particle
+    private float _rotation;
     private float _opacityFadingRate;
     
     public Vector2 Position { get; set; }
@@ -40,8 +41,10 @@ public class Particle
         Opacity = opacity;
     }
 
+    //returns false when particle dies
     public bool Update()
     {
+        // TODO: update rotation and scale
         _velocity *= _acceleration;
         _direction += _gravity;//particle slowly turns towards the gravity force
 
@@ -50,8 +53,7 @@ public class Particle
         Opacity *= _opacityFadingRate;
         
         _age++;
-        
-        return _age < _lifespan;//returns false when particle dies
+        return _age < _lifespan;
     }
 
 }

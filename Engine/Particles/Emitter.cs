@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Super_Duper_Shooter.Engine.Objects;
+using Super_Duper_Shooter.Engine.Particles.EmitterTypes;
 
 namespace Super_Duper_Shooter.Engine.Particles;
 
@@ -20,6 +21,8 @@ public class Emitter : BaseGameObject
     private int _maxNbParticle = 0;
 
     public bool IsAlive => _activeParticles.Count > 0;
+    private bool _active = true;
+    public int Age { get; set; }
 
     public Emitter(Texture2D texture, Vector2 position, EmitterParticleState particleState, IEmitterType emitterType, int nbParticleEmittedPerUpdate, int maxNbParticle)
     {
@@ -29,6 +32,7 @@ public class Emitter : BaseGameObject
         _emitterType = emitterType;
         _nbParticleEmittedPerUpdate = nbParticleEmittedPerUpdate;
         _maxNbParticle = maxNbParticle;
+        Age = 0;
     }
 
     private void EmitNewParticle(Particle particle)
@@ -51,6 +55,7 @@ public class Emitter : BaseGameObject
 
     private void EmitParticles()
     {
+        // make sure we're not at max particles
         if(_activeParticles.Count >= _maxNbParticle)
             return;
 
@@ -76,7 +81,10 @@ public class Emitter : BaseGameObject
 
     public override void Update()
     {
-        EmitParticles();
+        if (_active)
+        {
+            EmitParticles();
+        }
 
         var particleNode = _activeParticles.First;
         while (particleNode != null)
@@ -92,6 +100,13 @@ public class Emitter : BaseGameObject
 
             particleNode = nextNode;
         }
+
+        Age++;
+    }
+    
+    public void Deactivate()
+    {
+        _active = false;
     }
 
     public override void Render(SpriteBatch spriteBatch)
