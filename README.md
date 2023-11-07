@@ -13,7 +13,7 @@
 - Objects and States, which are necessary for creating the game's underlying systems (e.g. transition from SplashState to GameplayState).
 
 - Custom Extensions, that can be used to ease the development hassle during the production of the game engine. For example, a wrapper class for Monogame's mouse input, called MouseInput, is used by the Input System to help in mouse input handling.
-- 
+  
 
 https://github.com/Rossakis/JetBoxer2D/assets/70864643/c3277572-b19d-4cc9-b7fa-f66a01e6e0c1
 
