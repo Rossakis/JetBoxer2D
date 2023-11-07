@@ -1,9 +1,9 @@
 ﻿using System;
+using JetBoxer2D.Engine.Events;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Super_Duper_Shooter.Engine.States;
 
-namespace Super_Duper_Shooter.Engine.Objects;
+namespace JetBoxer2D.Engine.Objects;
 
 public class BaseGameObject
 {

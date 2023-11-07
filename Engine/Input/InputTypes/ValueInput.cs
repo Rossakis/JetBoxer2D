@@ -1,7 +1,7 @@
 using System;
-using Super_Duper_Shooter.Engine.Input.Objects;
+using JetBoxer2D.Engine.Input.Objects;
 
-namespace Super_Duper_Shooter.Engine.Input.InputTypes;
+namespace JetBoxer2D.Engine.Input.InputTypes;
 
 //Input that varies between a singular value (e.g. from -1 to 1 or from 0 to 1, etc...)
 public class ValueInput : BaseInput

@@ -1,4 +1,4 @@
-namespace Super_Duper_Shooter.Engine.Input.Enums
+namespace JetBoxer2D.Engine.Input.Enums
 {
     /// <summary>
     /// The types of Input Devices supported by this game

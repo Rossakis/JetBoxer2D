@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Super_Duper_Shooter.Engine.Sound;
+namespace JetBoxer2D.Game.Sound;
 
 public enum GameSongs
 {

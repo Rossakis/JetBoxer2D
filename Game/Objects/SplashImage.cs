@@ -1,7 +1,7 @@
-﻿using Microsoft.Xna.Framework.Graphics;
-using Super_Duper_Shooter.Engine.Objects;
+﻿using JetBoxer2D.Engine.Objects;
+using Microsoft.Xna.Framework.Graphics;
 
-namespace Super_Duper_Shooter.Game.Objects;
+namespace JetBoxer2D.Game.Objects;
 
 public class SplashImage : BaseGameObject
 {

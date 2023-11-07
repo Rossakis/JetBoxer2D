@@ -1,5 +1,5 @@
-﻿using Super_Duper_Shooter.Engine;
-using Super_Duper_Shooter.Game.States;
+﻿using JetBoxer2D.Engine;
+using JetBoxer2D.Game.States;
 
 //Window resolution in pixels
 const int Width = 1280;

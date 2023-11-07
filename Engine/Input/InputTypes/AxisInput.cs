@@ -1,7 +1,7 @@
+using JetBoxer2D.Engine.Input.Objects;
 using Microsoft.Xna.Framework;
-using Super_Duper_Shooter.Engine.Input.Objects;
 
-namespace Super_Duper_Shooter.Engine.Input.InputTypes;
+namespace JetBoxer2D.Engine.Input.InputTypes;
 
 public class AxisInput : BaseInput
 {

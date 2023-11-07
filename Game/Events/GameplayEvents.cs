@@ -1,6 +1,6 @@
-using Super_Duper_Shooter.Engine.States;
+using JetBoxer2D.Engine.Events;
 
-namespace Super_Duper_Shooter.Game.Events;
+namespace JetBoxer2D.Game.Events;
 
 public class GameplayEvents : BaseGameStateEvent
 {

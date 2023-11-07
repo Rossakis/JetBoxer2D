@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Xna.Framework;
 
-namespace Super_Duper_Shooter.Engine.Extensions;
+namespace JetBoxer2D.Engine.Extensions;
 
 /// <summary>
 /// A singleton oriented class that gives to the DeltaTime of the game to other classes

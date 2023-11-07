@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/splash.png</SourceFile>
+  <SourceFile>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Backgrounds/splash.png</SourceFile>
   <SourceTime>2023-09-19T20:44:13.1933469+03:00</SourceTime>
-  <DestFile>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/bin/DesktopGL/content/Backgrounds/splash.xnb</DestFile>
-  <DestTime>2023-10-30T17:14:34.4704768+02:00</DestTime>
+  <DestFile>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/bin/DesktopGL/content/Backgrounds/splash.xnb</DestFile>
+  <DestTime>2023-11-07T20:53:44.5033941+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T14:44:56+03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

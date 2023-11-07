@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using JetBoxer2D.Engine.Events;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using Super_Duper_Shooter.Engine.Input;
-using Super_Duper_Shooter.Engine.Objects;
-using Super_Duper_Shooter.Engine.Sound;
+using JetBoxer2D.Engine.Input;
+using JetBoxer2D.Engine.Objects;
+using JetBoxer2D.Engine.Sound;
 
-namespace Super_Duper_Shooter.Engine.States;
+namespace JetBoxer2D.Engine.States;
 
 /// <summary>
 /// Base state of the game that classes like SplashState or GameplayState can inherit

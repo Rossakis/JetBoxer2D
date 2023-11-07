@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lgpLCIGejIOc+Gn5DleKthKwjRmUK5OvCStYW3giNPzVNmJ8GEYWZe4pBNDRw5h6Sw7wHRYTddXa4t8YZUsyCg==",
+  "dgSpecHash": "52JLV9RUTptO9K9aw6VsQ+I567yw8+K6cLeZNec3nXLBQeqPxh60eGGTejuJCirrHYLMhr+MoIkvNisrmgn17Q==",
   "success": true,
-  "projectFilePath": "/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Super Duper Shooter.csproj",
+  "projectFilePath": "/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/JetBoxer2D.csproj",
   "expectedPackageFiles": [
     "/Users/giorgos_tsolakidis/.nuget/packages/monogame.content.builder.task/3.8.1.303/monogame.content.builder.task.3.8.1.303.nupkg.sha512",
     "/Users/giorgos_tsolakidis/.nuget/packages/monogame.framework.desktopgl/3.8.1.303/monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"

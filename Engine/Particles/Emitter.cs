@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
+using JetBoxer2D.Engine.Objects;
+using JetBoxer2D.Engine.Particles.EmitterTypes;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Super_Duper_Shooter.Engine.Objects;
-using Super_Duper_Shooter.Engine.Particles.EmitterTypes;
 
-namespace Super_Duper_Shooter.Engine.Particles;
+namespace JetBoxer2D.Engine.Particles;
 
 /// <summary>
 /// Class responsible for emitting particles

@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
+using JetBoxer2D.Engine.Events;
 using Microsoft.Xna.Framework.Audio;
-using Super_Duper_Shooter.Engine.States;
 
-namespace Super_Duper_Shooter.Engine.Sound;
+namespace JetBoxer2D.Engine.Sound;
 
 public class SoundManager
 {

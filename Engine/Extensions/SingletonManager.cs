@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 
-namespace Super_Duper_Shooter.Engine.Extensions;
+namespace JetBoxer2D.Engine.Extensions;
 
 /// <summary>
 /// Initialize all the singletons from here for code readability

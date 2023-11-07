@@ -1,10 +1,10 @@
 using System;
+using JetBoxer2D.Engine.Extensions;
+using JetBoxer2D.Engine.Objects;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Super_Duper_Shooter.Engine.Extensions;
-using Super_Duper_Shooter.Engine.Objects;
 
-namespace Super_Duper_Shooter.Engine.Animation;
+namespace JetBoxer2D.Engine.Animation;
 
 public class AnimationPlayer : BaseGameObject
 {

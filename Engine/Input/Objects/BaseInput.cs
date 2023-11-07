@@ -1,4 +1,4 @@
-namespace Super_Duper_Shooter.Engine.Input.Objects;
+namespace JetBoxer2D.Engine.Input.Objects;
 
 /// <summary>
 /// Each BaseInputAction will have its own BaseInput, for example MoveHorizontal (BaseInputAction) will have two inputs

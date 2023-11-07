@@ -1,9 +1,10 @@
-﻿using Microsoft.Xna.Framework;
+﻿using JetBoxer2D.Engine.Events;
+using JetBoxer2D.Engine.Extensions;
+using JetBoxer2D.Engine.States;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Super_Duper_Shooter.Engine.Extensions;
-using Super_Duper_Shooter.Engine.States;
 
-namespace Super_Duper_Shooter.Engine;
+namespace JetBoxer2D.Engine;
 
 public class MainGame : Microsoft.Xna.Framework.Game
 {

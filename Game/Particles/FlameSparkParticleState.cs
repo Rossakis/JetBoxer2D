@@ -1,7 +1,7 @@
+using JetBoxer2D.Engine.Particles;
 using Microsoft.Xna.Framework;
-using Super_Duper_Shooter.Engine.Particles;
 
-namespace Super_Duper_Shooter.Game.Particles;
+namespace JetBoxer2D.Game.Particles;
 
 public class FlameSparkParticleState : EmitterParticleState
 {

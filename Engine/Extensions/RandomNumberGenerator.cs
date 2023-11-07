@@ -1,6 +1,6 @@
 using System;
 
-namespace Super_Duper_Shooter.Engine.Extensions;
+namespace JetBoxer2D.Engine.Extensions;
 
 /// <summary>
 /// A helper class, to help us use Random generator with float numbers more easily

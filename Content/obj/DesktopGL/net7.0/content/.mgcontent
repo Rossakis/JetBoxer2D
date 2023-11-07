@@ -4,28 +4,30 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/Barren.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/City Background.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/Empty.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/Pixel City.jpg</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/Splash Screen.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/splash.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Jet Boxer (Idle).png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Jet Boxer (Move Right).png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Characters/Jet Boxer (Shoot Right).png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Effects/Energy Blast.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Effects/Spark.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Placeholder Texture.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Sounds/Effects/Fireball.wav</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Sounds/Gameplay/Gameplay Theme - 1.wav</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Sounds/Gameplay/Gameplay Theme - 2.wav</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Sounds/Gameplay/Gameplay Theme - 3.wav</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Sounds/Gameplay/Gameplay Theme - 4.wav</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Sounds/Gameplay/Gameplay Theme - 5.wav</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Sounds/Gameplay/Gameplay Theme - 6.wav</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Sounds/Splash/Splash Screen.wav</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Backgrounds/Barren.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Backgrounds/City Background.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Backgrounds/Empty.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Backgrounds/Pixel City.jpg</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Backgrounds/Splash Screen.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Backgrounds/splash.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Characters/Jet Boxer (Idle).png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Characters/Jet Boxer (Move Right).png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Characters/Jet Boxer (Shoot Left).png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Characters/Jet Boxer (Shoot Right).png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Effects/Energy Blast.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Effects/Spark.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Placeholder Texture.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Effects/Fireball.wav</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 1.wav</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 2.wav</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 3.wav</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 4.wav</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 5.wav</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 6.wav</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Splash/Splash Screen.wav</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

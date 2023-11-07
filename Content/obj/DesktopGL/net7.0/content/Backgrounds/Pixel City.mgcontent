@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/Backgrounds/Pixel City.jpg</SourceFile>
+  <SourceFile>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Backgrounds/Pixel City.jpg</SourceFile>
   <SourceTime>2022-06-04T22:17:21.9781823+03:00</SourceTime>
-  <DestFile>/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Content/bin/DesktopGL/content/Backgrounds/Pixel City.xnb</DestFile>
-  <DestTime>2023-10-30T17:14:34.1973581+02:00</DestTime>
+  <DestFile>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/bin/DesktopGL/content/Backgrounds/Pixel City.xnb</DestFile>
+  <DestTime>2023-11-07T20:53:44.2932202+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T14:44:56+03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

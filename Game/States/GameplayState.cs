@@ -1,19 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
+using JetBoxer2D.Engine.Events;
+using JetBoxer2D.Engine.Input;
+using JetBoxer2D.Engine.Sound;
+using JetBoxer2D.Engine.States;
+using JetBoxer2D.Game.Events;
+using JetBoxer2D.Game.InputMaps;
+using JetBoxer2D.Game.Objects;
+using JetBoxer2D.Game.Sound;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using Super_Duper_Shooter.Engine.Input;
-using Super_Duper_Shooter.Engine.Sound;
-using Super_Duper_Shooter.Engine.States;
-using Super_Duper_Shooter.Game.Events;
-using Super_Duper_Shooter.Game.InputMaps;
-using Super_Duper_Shooter.Game.Objects;
-using Super_Duper_Shooter.Game.Particles;
 
-namespace Super_Duper_Shooter.Game.States;
+namespace JetBoxer2D.Game.States;
 
 public class GameplayState : BaseGameState
 {

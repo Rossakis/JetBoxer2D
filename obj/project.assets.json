@@ -107,11 +107,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Super Duper Shooter.csproj",
-      "projectName": "Super Duper Shooter",
-      "projectPath": "/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/Super Duper Shooter.csproj",
+      "projectUniqueName": "/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/JetBoxer2D.csproj",
+      "projectName": "JetBoxer2D",
+      "projectPath": "/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/JetBoxer2D.csproj",
       "packagesPath": "/Users/giorgos_tsolakidis/.nuget/packages/",
-      "outputPath": "/Users/giorgos_tsolakidis/Documents/GitHub/Super Duper Shooter/obj/",
+      "outputPath": "/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/giorgos_tsolakidis/.nuget/NuGet/NuGet.Config"

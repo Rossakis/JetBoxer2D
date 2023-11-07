@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 
-namespace Super_Duper_Shooter.Engine.Particles.EmitterTypes;
+namespace JetBoxer2D.Engine.Particles.EmitterTypes;
 
 public interface IEmitterType
 {

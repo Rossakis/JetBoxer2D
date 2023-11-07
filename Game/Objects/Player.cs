@@ -1,17 +1,17 @@
 using System;
 using System.Collections.Generic;
+using JetBoxer2D.Engine.Animation;
+using JetBoxer2D.Engine.Extensions;
+using JetBoxer2D.Engine.Input;
+using JetBoxer2D.Engine.Objects;
+using JetBoxer2D.Game.Events;
+using JetBoxer2D.Game.InputMaps;
+using JetBoxer2D.Game.States;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using Super_Duper_Shooter.Engine.Animation;
-using Super_Duper_Shooter.Engine.Extensions;
-using Super_Duper_Shooter.Engine.Input;
-using Super_Duper_Shooter.Engine.Objects;
-using Super_Duper_Shooter.Game.Events;
-using Super_Duper_Shooter.Game.InputMaps;
-using Super_Duper_Shooter.Game.States;
 
-namespace Super_Duper_Shooter.Game.Objects;
+namespace JetBoxer2D.Game.Objects;
 
 public enum PlayerState
 {
@@ -36,10 +36,12 @@ public class Player : BaseGameObject
 
     private const string IdleSprite = "Characters/Jet Boxer (Idle)";
     private const string MovingSprite = "Characters/Jet Boxer (Move Right)";
-    private const string ShootingSprite = "Characters/Jet Boxer (Shoot Right)";
+    private const string ShootRightSprite = "Characters/Jet Boxer (Shoot Right)";
+    private const string ShootLeftSprite = "Characters/Jet Boxer (Shoot Left)";
     private AnimationClip _idle;
     private AnimationClip _moving;
-    private AnimationClip _shooting;
+    private AnimationClip _shootRight;
+    private AnimationClip _shootLeft;
 
     private const float MoveSpeed = 500;
     private readonly InputManager _inputManager;
@@ -50,9 +52,17 @@ public class Player : BaseGameObject
     private Vector2 _moveInput;// (horizontal, vertical)
 
     private List<Projectile> _projectiles;
+    
+    //Make sure player fires only once
     private bool _hasFiredLeft;
     private bool _hasFiredRight;
-
+    
+    //If player tries to shoot right whilst already shooting left (and vice-versa), switch to the 
+    //desired shooting state once the animation ends (e.g. Change from ShootingRight to ShootingLeft, once
+    //Shooting Right animation ends)
+    private bool _fireRightLater;
+    private bool _fireLeftLater;
+    
     //Player attack animation acceleration
     private const float StartAnimationSpeed = 1f;
     private const float MaxAnimationSpeed = 12f;//max 10x animation acceleration
@@ -86,7 +96,8 @@ public class Player : BaseGameObject
     {
         _idle = new AnimationClip(_contentManager.Load<Texture2D>(IdleSprite), 80, 96, 0.1f, true);
         _moving = new AnimationClip(_contentManager.Load<Texture2D>(MovingSprite), 80, 96, 0.1f, true);
-        _shooting = new AnimationClip(_contentManager.Load<Texture2D>(ShootingSprite), 80, 96, 0.1f, false);
+        _shootRight = new AnimationClip(_contentManager.Load<Texture2D>(ShootRightSprite), 80, 96, 0.1f, false);
+        _shootLeft = new AnimationClip(_contentManager.Load<Texture2D>(ShootLeftSprite), 80, 96, 0.1f, false);
     }
     public override void Update()
     {
@@ -227,16 +238,16 @@ public class Player : BaseGameObject
 
     private void ShootLeft()
     {
-        _animator.Play(_shooting);
-        _animator.IsFlipped = true;
+        _animator.Play(_shootLeft);
+        _animator.IsFlipped = false;
         _animator.AnimationSpeed = _currentAnimationSpeed; 
         
         if(!_hasFiredLeft)
         {
             _projectiles.Add(new Projectile(
-            new Vector2(Position.X - 25, Position.Y - _texture.Height / 2f), 
-            _spriteBatch,
-            _contentManager, 2));
+                new Vector2(Position.X - 25, Position.Y - _texture.Height / 2f), 
+                _spriteBatch,
+                _contentManager, 2));
 
             _hasFiredLeft = true;
             
@@ -246,17 +257,27 @@ public class Player : BaseGameObject
             
             _gameplayState.NotifyEvent(new GameplayEvents.PlayerShoots());
         }
-
-        if (_animator.HasEnded) //if the shooting animation ended, return to normal
+        //if player pressed to fire the other shooting button, switch it once this one ends
+        if(!_fireRightLater && _inputManager.GetButtonDown(GameplayInputMap.ShootRight))
+            _fireRightLater = true;
+        
+        if (_animator.NormalizedTime >= 1f) //if the shooting animation ended, return to normal
         {
-            SwitchState(PlayerState.Idle);
+            if(!_fireRightLater)
+                SwitchState(PlayerState.Idle);
+            else
+            {
+                SwitchState(PlayerState.ShootRight);
+                _fireRightLater = false;
+            }
+
             _hasFiredLeft = false;
         }
     }
     
     private void ShootRight()
     {
-        _animator.Play(_shooting);
+        _animator.Play(_shootRight);
         _animator.IsFlipped = false;
         _animator.AnimationSpeed = _currentAnimationSpeed;
 
@@ -276,9 +297,20 @@ public class Player : BaseGameObject
             _gameplayState.NotifyEvent(new GameplayEvents.PlayerShoots());
         }
         
-        if (_animator.HasEnded) //if the shooting animation ended, return to normal
+        //if player pressed to fire the other shooting button, switch it once this one ends
+        if(!_fireLeftLater && _inputManager.GetButtonDown(GameplayInputMap.ShootLeft))
+            _fireLeftLater = true;
+        
+        if (_animator.NormalizedTime >= 1f) //if the shooting animation ended, return to normal
         {
-            SwitchState(PlayerState.Idle);
+            if(!_fireLeftLater)
+                SwitchState(PlayerState.Idle);
+            else
+            {
+                SwitchState(PlayerState.ShootLeft);
+                _fireLeftLater = false;
+            }
+            
             _hasFiredRight = false;
         }
     }

@@ -1,7 +1,7 @@
+using JetBoxer2D.Engine.Objects;
 using Microsoft.Xna.Framework.Graphics;
-using Super_Duper_Shooter.Engine.Objects;
 
-namespace Super_Duper_Shooter.Engine.Animation;
+namespace JetBoxer2D.Engine.Animation;
 
 /// <summary>
 /// This class is created in order to process png sprite sheets in the form of a single horizontal line

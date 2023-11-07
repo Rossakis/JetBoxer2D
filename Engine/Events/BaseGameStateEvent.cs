@@ -1,4 +1,4 @@
-namespace Super_Duper_Shooter.Engine.States;
+namespace JetBoxer2D.Engine.Events;
 
 public class BaseGameStateEvent
 {

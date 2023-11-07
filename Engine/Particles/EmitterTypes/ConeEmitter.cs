@@ -1,8 +1,8 @@
 using System;
+using JetBoxer2D.Engine.Extensions;
 using Microsoft.Xna.Framework;
-using Super_Duper_Shooter.Engine.Extensions;
 
-namespace Super_Duper_Shooter.Engine.Particles.EmitterTypes;
+namespace JetBoxer2D.Engine.Particles.EmitterTypes;
 
 public class ConeEmitter : IEmitterType
 {

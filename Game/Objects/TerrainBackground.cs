@@ -1,9 +1,9 @@
 using System;
+using JetBoxer2D.Engine.Objects;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Super_Duper_Shooter.Engine.Objects;
 
-namespace Super_Duper_Shooter.Game.Objects;
+namespace JetBoxer2D.Game.Objects;
 
 public class TerrainBackground : BaseGameObject
 {

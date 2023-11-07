@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Xna.Framework;
 
-namespace Super_Duper_Shooter.Engine.Physics;
+namespace JetBoxer2D.Engine.Physics;
 
 public class Collider
 {

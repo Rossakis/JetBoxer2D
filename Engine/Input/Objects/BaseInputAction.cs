@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using Super_Duper_Shooter.Engine.Input.Enums;
-using Super_Duper_Shooter.Engine.Input.InputTypes;
+using JetBoxer2D.Engine.Input.Enums;
+using JetBoxer2D.Engine.Input.InputTypes;
 
-namespace Super_Duper_Shooter.Engine.Input.Objects;
+namespace JetBoxer2D.Engine.Input.Objects;
 
 public class BaseInputAction
 {

@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 
-namespace Super_Duper_Shooter.Engine.Particles;
+namespace JetBoxer2D.Engine.Particles;
 
 /// <summary>
 /// A class used by the ParticleEmitterState to draw particle effects on the screen

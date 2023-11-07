@@ -1,9 +1,9 @@
+using JetBoxer2D.Engine.Particles;
+using JetBoxer2D.Engine.Particles.EmitterTypes;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Super_Duper_Shooter.Engine.Particles;
-using Super_Duper_Shooter.Engine.Particles.EmitterTypes;
 
-namespace Super_Duper_Shooter.Game.Particles;
+namespace JetBoxer2D.Game.Particles;
 
 public class FlameSparksEmitter : Emitter
 {

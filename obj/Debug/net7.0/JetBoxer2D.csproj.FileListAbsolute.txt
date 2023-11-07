@@ -1,0 +1,48 @@
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Characters/Denji-Idle (1026 × 738).xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Characters/Jet Boxer - Idle (256px)-export.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Backgrounds/Barren.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Backgrounds/City Background.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Backgrounds/Empty.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Backgrounds/Pixel City.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Backgrounds/Splash Screen.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Backgrounds/splash.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Characters/Jet Boxer (Idle).xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Characters/Jet Boxer (Move Right).xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Characters/Jet Boxer (Shoot Right).xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Effects/Energy Blast.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Effects/Spark.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Placeholder Texture.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Sounds/Effects/Fireball.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Sounds/Gameplay/Gameplay Theme - 1.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Sounds/Gameplay/Gameplay Theme - 2.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Sounds/Gameplay/Gameplay Theme - 3.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Sounds/Gameplay/Gameplay Theme - 4.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Sounds/Gameplay/Gameplay Theme - 5.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Sounds/Gameplay/Gameplay Theme - 6.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Sounds/Splash/Splash Screen.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/JetBoxer2D
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/JetBoxer2D.deps.json
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/JetBoxer2D.runtimeconfig.json
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/JetBoxer2D.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/JetBoxer2D.pdb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/MonoGame.Framework.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/runtimes/linux-x64/native/libSDL2-2.0.so.0
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/runtimes/linux-x64/native/libopenal.so.1
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/runtimes/osx/native/libSDL2.dylib
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/runtimes/osx/native/libopenal.1.dylib
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/runtimes/win-x64/native/SDL2.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/runtimes/win-x64/native/soft_oal.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/runtimes/win-x86/native/SDL2.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/runtimes/win-x86/native/soft_oal.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/obj/Debug/net7.0/JetBoxer2D.csproj.AssemblyReference.cache
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/obj/Debug/net7.0/JetBoxer2D.GeneratedMSBuildEditorConfig.editorconfig
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/obj/Debug/net7.0/JetBoxer2D.AssemblyInfoInputs.cache
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/obj/Debug/net7.0/JetBoxer2D.AssemblyInfo.cs
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/obj/Debug/net7.0/JetBoxer2D.csproj.CoreCompileInputs.cache
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/obj/Debug/net7.0/JetBoxer2D.csproj.CopyComplete
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/obj/Debug/net7.0/JetBoxer2D.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/obj/Debug/net7.0/refint/JetBoxer2D.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/obj/Debug/net7.0/JetBoxer2D.pdb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/obj/Debug/net7.0/JetBoxer2D.genruntimeconfig.cache
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/obj/Debug/net7.0/ref/JetBoxer2D.dll
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Characters/Jet Boxer (Shoot Left).xnb

@@ -1,7 +1,7 @@
 using System;
 using Microsoft.Xna.Framework.Input;
 
-namespace Super_Duper_Shooter.Engine.Extensions;
+namespace JetBoxer2D.Engine.Extensions;
 
 /// <summary>
 /// A wrapper class for Mouse Input, so that we input information from it in the same way we do for Keyboard and Gamepad

@@ -1,11 +1,10 @@
 using System;
 using System.Collections.Generic;
+using JetBoxer2D.Engine.Input.Enums;
+using JetBoxer2D.Engine.Input.Objects;
 using Microsoft.Xna.Framework;
-using Super_Duper_Shooter.Engine.Input.Enums;
-using Super_Duper_Shooter.Engine.Input.InputTypes;
-using Super_Duper_Shooter.Engine.Input.Objects;
 
-namespace Super_Duper_Shooter.Engine.Input;
+namespace JetBoxer2D.Engine.Input;
 
 public class InputManager
 {

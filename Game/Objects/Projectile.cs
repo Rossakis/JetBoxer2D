@@ -1,12 +1,12 @@
+using JetBoxer2D.Engine.Animation;
+using JetBoxer2D.Engine.Extensions;
+using JetBoxer2D.Engine.Objects;
+using JetBoxer2D.Game.Particles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using Super_Duper_Shooter.Engine.Animation;
-using Super_Duper_Shooter.Engine.Extensions;
-using Super_Duper_Shooter.Engine.Objects;
-using Super_Duper_Shooter.Game.Particles;
 
-namespace Super_Duper_Shooter.Game.Objects;
+namespace JetBoxer2D.Game.Objects;
 
 public class Projectile : BaseGameObject
 {
