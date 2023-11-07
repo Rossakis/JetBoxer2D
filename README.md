@@ -7,6 +7,8 @@
 
 - Dynamic Input System that supports concurrent input from both gamepad, keyboard, and mouse, via a single InputManager with methods such as GetButtonDown(InputAction). Each InputAction (e.g. ShootRight) is created in such a way that you can map to it Gamepad-Right Trigger, Gamepad-A Button, Keyboard-Space Key, and Mouse-Right Click *at the same time*, meaning that any one of those input types will trigger the ShootRight InputAction.
 
+- Animation System, which can turn a single sprite sheet into loopable (or not) animation, with adjustable speed, size, and methods to retrieve useful information about the current animation, such as its NormalizedTime and whether it ended.
+
 - Particle System, which you can use to create custom game effects such as explosions or fire trails.
 
 - Physics Colliders, for detecting the collisions between the game objects in the game.
