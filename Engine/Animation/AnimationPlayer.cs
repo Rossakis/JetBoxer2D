@@ -19,7 +19,8 @@ public class AnimationPlayer : BaseGameObject
     public float NormalizedTime { get; private set; } //E.g. 0.5f would be considered the animation at its half time
     public bool IsFlipped { get; set; }
     public bool IsStopped { get; set; }
-    public bool HasEnded { get; private set; }
+    public bool HasEnded => NormalizedTime >= 1f;
+    public float Rotation { get; set; }
 
 
     public AnimationPlayer(SpriteBatch spriteBatch, BaseGameObject animatedGameObj)
@@ -75,15 +76,13 @@ public class AnimationPlayer : BaseGameObject
         if (IsFlipped)
         {
             _spriteBatch.Draw(animation.Texture, destinationRectangle, sourceRectangle, Color.White, 
-                0, animation.Centre, SpriteEffects.FlipHorizontally, 1);
+                Rotation, animation.Centre, SpriteEffects.FlipHorizontally, 1);
         }
         else
         {
             _spriteBatch.Draw(animation.Texture, destinationRectangle, sourceRectangle, Color.White, 
-                0, animation.Centre, SpriteEffects.None, 1);
+                Rotation, animation.Centre, SpriteEffects.None, 1);
         }
-        
-        HasEnded = _currentFrame >= animation.AmountOfFrames;
     }
 
     //Calculate the normalizedTime of the animation

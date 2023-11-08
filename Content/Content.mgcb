@@ -85,7 +85,7 @@
 /processorParam:TextureFormat=Color
 /build:Backgrounds/splash.png
 
-#begin Characters/Jet Boxer (Idle).png
+#begin Characters/Jet Boxer - Idle (Rotated).png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -95,9 +95,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Characters/Jet Boxer (Idle).png
+/build:Characters/Jet Boxer - Idle (Rotated).png
 
-#begin Characters/Jet Boxer (Move Right).png
+#begin Characters/Jet Boxer - Move Right (Rotated).png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -107,9 +107,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Characters/Jet Boxer (Move Right).png
+/build:Characters/Jet Boxer - Move Right (Rotated).png
 
-#begin Characters/Jet Boxer (Shoot Left).png
+#begin Characters/Jet Boxer - Shoot Left (Rotated).png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -119,9 +119,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Characters/Jet Boxer (Shoot Left).png
+/build:Characters/Jet Boxer - Shoot Left (Rotated).png
 
-#begin Characters/Jet Boxer (Shoot Right).png
+#begin Characters/Jet Boxer - Shoot Right (Rotated).png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -131,7 +131,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:Characters/Jet Boxer (Shoot Right).png
+/build:Characters/Jet Boxer - Shoot Right (Rotated).png
 
 #begin Effects/Energy Blast.png
 /importer:TextureImporter

@@ -1,3 +1,4 @@
+using System;
 using JetBoxer2D.Engine.Animation;
 using JetBoxer2D.Engine.Extensions;
 using JetBoxer2D.Engine.Objects;
@@ -17,6 +18,8 @@ public class Projectile : BaseGameObject
     private const string FlameSpark = "Effects/Spark";
 
     private float _currentSpeed;
+    private Vector2 _direction;
+    private float _rotation;
 
     public override Vector2 Position
     {
@@ -32,16 +35,19 @@ public class Projectile : BaseGameObject
     
     private FlameSparksEmitter _flameEmitter;
     
-    public Projectile(Vector2 position, SpriteBatch spriteBatch, ContentManager contentManager, int zIndex)
+    public Projectile(Vector2 position, float rotation, SpriteBatch spriteBatch, ContentManager contentManager, int zIndex)
     {
         _texture = contentManager.Load<Texture2D>(DefaultSprite);
         _position = position;
+        _rotation = rotation;
+        _direction = new((float)Math.Cos(rotation), (float) Math.Sin(rotation));
         this.zIndex = zIndex;
         _currentSpeed = 0;
         
         _animationPlayer = new AnimationPlayer(spriteBatch, this);
         _moveAnimation = new AnimationClip(contentManager.Load<Texture2D>(MoveAnimation), 0.1f, true);
-
+        _animationPlayer.Rotation = _rotation;
+        
         _flameEmitter = new FlameSparksEmitter(contentManager.Load<Texture2D>(FlameSpark), _position);
     }
     
@@ -50,14 +56,15 @@ public class Projectile : BaseGameObject
     {
         _flameEmitter.Update();
         
-        Position = new Vector2(Position.X, Position.Y - _currentSpeed * Time.DeltaTime);
+        //Position = new Vector2(Position.X, Position.Y - _currentSpeed * Time.DeltaTime) * _direction;
+        Position += _currentSpeed * Time.DeltaTime * _direction;
         _currentSpeed += Acceleration;
     }
 
     public override void Render(SpriteBatch spriteBatch)
     {
         _flameEmitter.Render(spriteBatch);
-
+        
         _animationPlayer.Play(_moveAnimation);
     }
 }

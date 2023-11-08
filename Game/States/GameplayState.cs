@@ -24,7 +24,7 @@ public class GameplayState : BaseGameState
     public override void Initialize(Microsoft.Xna.Framework.Game game, ContentManager contentManager, int viewportWidth, int viewportHeight)
     {
         base.Initialize(game, contentManager, viewportWidth, viewportHeight);
-        game.IsMouseVisible = false;
+        game.IsMouseVisible = true;
     }
 
     protected override void SetInputManager()

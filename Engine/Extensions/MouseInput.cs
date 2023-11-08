@@ -1,4 +1,5 @@
 using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
 
 namespace JetBoxer2D.Engine.Extensions;
@@ -103,6 +104,15 @@ public class MouseInput
         };
     }
 
+    /// <summary>
+    /// Returns the mouse's position on the screen viewport.
+    /// </summary>
+    /// <returns></returns>
+    public static Vector2 GetMouseScreenPosition()
+    {
+        return _instance._currentMouseState.Position.ToVector2();
+        //return Mouse.GetState().Position.ToVector2();
+    }
     /// <summary>
     /// Returns value from 0 to the screen viewport's max width or height. For example, if
     /// viewport width is 720px, the value mouse horizontal position will vary from 0 to 720

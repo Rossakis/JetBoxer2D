@@ -10,6 +10,7 @@ using JetBoxer2D.Game.States;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 
 namespace JetBoxer2D.Game.Objects;
 
@@ -34,10 +35,10 @@ public class Player : BaseGameObject
     //The sprite that will be shown by default if no animation is yet set
     private const string DefaultSprite = "Placeholder Texture";
 
-    private const string IdleSprite = "Characters/Jet Boxer (Idle)";
-    private const string MovingSprite = "Characters/Jet Boxer (Move Right)";
-    private const string ShootRightSprite = "Characters/Jet Boxer (Shoot Right)";
-    private const string ShootLeftSprite = "Characters/Jet Boxer (Shoot Left)";
+    private const string IdleSprite = "Characters/Jet Boxer - Idle (Rotated)";
+    private const string MovingSprite = "Characters/Jet Boxer - Move Right (Rotated)";
+    private const string ShootRightSprite = "Characters/Jet Boxer - Shoot Right (Rotated)";
+    private const string ShootLeftSprite = "Characters/Jet Boxer - Shoot Left (Rotated)";
     private AnimationClip _idle;
     private AnimationClip _moving;
     private AnimationClip _shootRight;
@@ -94,10 +95,10 @@ public class Player : BaseGameObject
     
     private void SetAnimations()//based on the resolution, accordingly sized sprites will be rendered
     {
-        _idle = new AnimationClip(_contentManager.Load<Texture2D>(IdleSprite), 80, 96, 0.1f, true);
-        _moving = new AnimationClip(_contentManager.Load<Texture2D>(MovingSprite), 80, 96, 0.1f, true);
-        _shootRight = new AnimationClip(_contentManager.Load<Texture2D>(ShootRightSprite), 80, 96, 0.1f, false);
-        _shootLeft = new AnimationClip(_contentManager.Load<Texture2D>(ShootLeftSprite), 80, 96, 0.1f, false);
+        _idle = new AnimationClip(_contentManager.Load<Texture2D>(IdleSprite), 96, 80, 0.1f, true);
+        _moving = new AnimationClip(_contentManager.Load<Texture2D>(MovingSprite), 96, 80, 0.1f, true);
+        _shootRight = new AnimationClip(_contentManager.Load<Texture2D>(ShootRightSprite), 96, 80, 0.1f, false);
+        _shootLeft = new AnimationClip(_contentManager.Load<Texture2D>(ShootLeftSprite), 96, 80, 0.1f, false);
     }
     public override void Update()
     {
@@ -133,8 +134,12 @@ public class Player : BaseGameObject
             _currentAnimationSpeed = StartAnimationSpeed;
             _lastAttackedTime = 0f;
         }
+        
+        var mouseDir = MouseInput.GetMouseScreenPosition() - _position;
+        _animator.Rotation = MathHelper.Clamp((float)Math.Atan2(mouseDir.Y, mouseDir.X), -5, 5);
+        MathHelper.Clamp(_animator.Rotation, 0, 1);
 
-        Console.WriteLine($"Animation Speed: {_currentAnimationSpeed}");
+        Console.WriteLine($"Rotation: {_animator.Rotation}");
     }
 
     public override void Render(SpriteBatch spriteBatch)
@@ -245,7 +250,7 @@ public class Player : BaseGameObject
         if(!_hasFiredLeft)
         {
             _projectiles.Add(new Projectile(
-                new Vector2(Position.X - 25, Position.Y - _texture.Height / 2f), 
+                _position, _animator.Rotation, 
                 _spriteBatch,
                 _contentManager, 2));
 
@@ -261,7 +266,7 @@ public class Player : BaseGameObject
         if(!_fireRightLater && _inputManager.GetButtonDown(GameplayInputMap.ShootRight))
             _fireRightLater = true;
         
-        if (_animator.NormalizedTime >= 1f) //if the shooting animation ended, return to normal
+        if (_animator.HasEnded) //if the shooting animation ended, return to normal
         {
             if(!_fireRightLater)
                 SwitchState(PlayerState.Idle);
@@ -284,7 +289,7 @@ public class Player : BaseGameObject
         if (!_hasFiredRight)
         {
             _projectiles.Add(new Projectile(
-                new Vector2(Position.X + 25, Position.Y - _texture.Height / 2f),
+                _position, _animator.Rotation,
                 _spriteBatch,
                 _contentManager, 2));
             
@@ -301,7 +306,7 @@ public class Player : BaseGameObject
         if(!_fireLeftLater && _inputManager.GetButtonDown(GameplayInputMap.ShootLeft))
             _fireLeftLater = true;
         
-        if (_animator.NormalizedTime >= 1f) //if the shooting animation ended, return to normal
+        if (_animator.HasEnded) //if the shooting animation ended, return to normal
         {
             if(!_fireLeftLater)
                 SwitchState(PlayerState.Idle);
