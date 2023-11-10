@@ -1,6 +1,6 @@
 # JetBoxer2D
 
-**JetBox2D** is both a lightweight _2D engine_ for creating C# games, based on the Monogame framework (https://github.com/MonoGame/MonoGame), and a game sample called JetBoxer that showcases its usage.
+**JetBox2D** contains both a lightweight _2D engine_ for creating C# games, based on the Monogame framework (https://github.com/MonoGame/MonoGame), and a game sample called JetBoxer that showcases its usage.
 
 
 ## The JetBox2D engine contains the following: ##
