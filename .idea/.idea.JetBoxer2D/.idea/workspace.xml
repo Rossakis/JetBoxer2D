@@ -9,51 +9,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="918e4fcc-b4f8-4137-9d97-30dcba5635b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Characters/Jet Boxer - Idle (Rotated).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Characters/Jet Boxer - Move Right (Rotated).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Characters/Jet Boxer - Shoot Left (Rotated).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Characters/Jet Boxer - Shoot Right (Rotated).png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Jet Boxer - Idle (Rotated).xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Jet Boxer - Shoot Left (Rotated).xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Jet Boxer - Shoot Right (Rotated).xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Characters/Jet Boxer - Idle (Rotated).mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Characters/Jet Boxer - Shoot Left (Rotated).mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Characters/Jet Boxer - Shoot Right (Rotated).mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Characters/Jet Boxer - Idle (Rotated).xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Characters/Jet Boxer - Shoot Left (Rotated).xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Characters/Jet Boxer - Shoot Right (Rotated).xnb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JetBoxer2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JetBoxer2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Jet Boxer (Idle).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Jet Boxer (Move Right).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Jet Boxer (Shoot Left).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Characters/Jet Boxer (Shoot Right).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Content.mgcb" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Content.mgcb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Jet Boxer (Idle).xnb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Jet Boxer (Move Right).xnb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Jet Boxer (Shoot Left).xnb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Jet Boxer (Shoot Right).xnb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgstats" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgstats" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Characters/Jet Boxer (Idle).mgcontent" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Characters/Jet Boxer (Move Right).mgcontent" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Characters/Jet Boxer (Shoot Left).mgcontent" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Characters/Jet Boxer (Shoot Right).mgcontent" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Animation/AnimationPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Animation/AnimationPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Engine/Extensions/MouseInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Extensions/MouseInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/MainGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/MainGame.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Objects/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Objects/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Objects/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Objects/Projectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/States/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/States/GameplayState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Characters/Jet Boxer (Idle).xnb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Characters/Jet Boxer (Move Right).xnb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Characters/Jet Boxer (Shoot Left).xnb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Characters/Jet Boxer (Shoot Right).xnb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/JetBoxer2D.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/JetBoxer2D.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/JetBoxer2D.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/JetBoxer2D.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/JetBoxer2D.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/JetBoxer2D.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/JetBoxer2D.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/JetBoxer2D.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/JetBoxer2D.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/JetBoxer2D.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/JetBoxer2D.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/JetBoxer2D.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/refint/JetBoxer2D.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/JetBoxer2D.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,6 +169,7 @@
       <workItem from="1699210417172" duration="7486000" />
       <workItem from="1699383523549" duration="1914000" />
       <workItem from="1699387368049" duration="6263000" />
+      <workItem from="1699435665591" duration="1050000" />
     </task>
     <servers />
   </component>

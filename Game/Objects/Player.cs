@@ -136,8 +136,7 @@ public class Player : BaseGameObject
         }
         
         var mouseDir = MouseInput.GetMouseScreenPosition() - _position;
-        _animator.Rotation = MathHelper.Clamp((float)Math.Atan2(mouseDir.Y, mouseDir.X), -5, 5);
-        MathHelper.Clamp(_animator.Rotation, 0, 1);
+        _animator.Rotation = (float)Math.Atan2(mouseDir.Y, mouseDir.X);
 
         Console.WriteLine($"Rotation: {_animator.Rotation}");
     }
@@ -171,7 +170,8 @@ public class Player : BaseGameObject
         {
             _projectiles[i].Render(spriteBatch);
             
-            if (_projectiles[i].Position.Y < -spriteBatch.GraphicsDevice.Viewport.Height)
+            if (_projectiles[i].Position.Y < -spriteBatch.GraphicsDevice.Viewport.Height 
+                || _projectiles[i].LifeSpan >= Projectile.MaxLifeSpan)
             {
                 // Add the index of the item to be removed
                 Console.WriteLine("Projectile was deleted");

@@ -80,7 +80,7 @@ public class MainGame : Microsoft.Xna.Framework.Game
         GraphicsDevice.Clear(Color.CornflowerBlue);
 
         //Render the current GameState's gameObjects
-        spriteBatch.Begin();
+        spriteBatch.Begin(samplerState: SamplerState.PointWrap);
         currentGameState.Render(spriteBatch);
         spriteBatch.End();
 

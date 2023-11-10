@@ -20,6 +20,8 @@ public class Projectile : BaseGameObject
     private float _currentSpeed;
     private Vector2 _direction;
     private float _rotation;
+    public float LifeSpan { get; set; }
+    public const float MaxLifeSpan = 3.5f;
 
     public override Vector2 Position
     {
@@ -59,6 +61,7 @@ public class Projectile : BaseGameObject
         //Position = new Vector2(Position.X, Position.Y - _currentSpeed * Time.DeltaTime) * _direction;
         Position += _currentSpeed * Time.DeltaTime * _direction;
         _currentSpeed += Acceleration;
+        LifeSpan += Time.DeltaTime;
     }
 
     public override void Render(SpriteBatch spriteBatch)
