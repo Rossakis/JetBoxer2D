@@ -46,3 +46,5 @@
 /Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Characters/Jet Boxer - Shoot Left (Rotated).xnb
 /Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Characters/Jet Boxer - Shoot Right (Rotated).xnb
 /Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Characters/Jet Boxer - Move Right (Rotated).xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Characters/Enemy/Red Triangle.xnb
+/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/bin/Debug/net7.0/Content/Characters/Enemy/Red Triangle-Default Texture.xnb

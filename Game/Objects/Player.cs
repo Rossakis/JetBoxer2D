@@ -4,13 +4,13 @@ using JetBoxer2D.Engine.Animation;
 using JetBoxer2D.Engine.Extensions;
 using JetBoxer2D.Engine.Input;
 using JetBoxer2D.Engine.Objects;
+using JetBoxer2D.Engine.States;
 using JetBoxer2D.Game.Events;
 using JetBoxer2D.Game.InputMaps;
 using JetBoxer2D.Game.States;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 
 namespace JetBoxer2D.Game.Objects;
 
@@ -28,7 +28,8 @@ public class Player : BaseGameObject
 {
     private readonly SpriteBatch _spriteBatch;
     private readonly ContentManager _contentManager; //to load animation textures
-    private PlayerState CurrentState;
+    private PlayerState _currentState;
+    private BaseGameState _gameState;
 
     private AnimationPlayer _animator;
 
@@ -46,7 +47,6 @@ public class Player : BaseGameObject
 
     private const float MoveSpeed = 500;
     private readonly InputManager _inputManager;
-    private readonly GameplayState _gameplayState;
 
     public Texture2D Texture => _texture;
 
@@ -72,12 +72,12 @@ public class Player : BaseGameObject
     private float _lastAttackedTime;
     private const float MaxNonAttackingTime = 0.5f;//if player wasn't attacking for this long, reset animation speed
 
-    public Player(Vector2 playerPos, SpriteBatch spriteBatch, ContentManager contentManager, GameplayState gameState)
+    public Player(Vector2 playerPos, SpriteBatch spriteBatch, ContentManager contentManager, BaseGameState gameState)
     {
         _position = playerPos;
         _spriteBatch = spriteBatch;
         _contentManager = contentManager;
-        _gameplayState = gameState;
+        _gameState = gameState;
         _inputManager = gameState.InputManager;
         
         //The texture will define the actual size of the player sprite
@@ -100,6 +100,7 @@ public class Player : BaseGameObject
         _shootRight = new AnimationClip(_contentManager.Load<Texture2D>(ShootRightSprite), 96, 80, 0.1f, false);
         _shootLeft = new AnimationClip(_contentManager.Load<Texture2D>(ShootLeftSprite), 96, 80, 0.1f, false);
     }
+    
     public override void Update()
     {
         //Horizontal Input
@@ -137,8 +138,6 @@ public class Player : BaseGameObject
         
         var mouseDir = MouseInput.GetMouseScreenPosition() - _position;
         _animator.Rotation = (float)Math.Atan2(mouseDir.Y, mouseDir.X);
-
-        Console.WriteLine($"Rotation: {_animator.Rotation}");
     }
 
     public override void Render(SpriteBatch spriteBatch)
@@ -146,7 +145,7 @@ public class Player : BaseGameObject
         if (_animator == null)
             throw new Exception($"Animation player wasn't defined");
         
-        switch (CurrentState)
+        switch (_currentState)
         {
             case PlayerState.Idle:
                 Idle();
@@ -174,7 +173,6 @@ public class Player : BaseGameObject
                 || _projectiles[i].LifeSpan >= Projectile.MaxLifeSpan)
             {
                 // Add the index of the item to be removed
-                Console.WriteLine("Projectile was deleted");
                 _projectiles.RemoveAt(i);
             }
         }
@@ -185,7 +183,7 @@ public class Player : BaseGameObject
         if(_animator != null)
             _animator.IsStopped = true;
         
-        CurrentState = state;
+        _currentState = state;
 
         if(_animator != null)
             _animator.IsStopped = false;
@@ -260,7 +258,7 @@ public class Player : BaseGameObject
                 _currentAnimationSpeed += _animationSpeedBuff;
             _lastAttackedTime = Time.TotalSeconds;
             
-            _gameplayState.NotifyEvent(new GameplayEvents.PlayerShoots());
+            _gameState.NotifyEvent(new GameplayEvents.PlayerShoots());
         }
         //if player pressed to fire the other shooting button, switch it once this one ends
         if(!_fireRightLater && _inputManager.GetButtonDown(GameplayInputMap.ShootRight))
@@ -299,7 +297,7 @@ public class Player : BaseGameObject
                 _currentAnimationSpeed += _animationSpeedBuff;
             _lastAttackedTime = Time.TotalSeconds;
             
-            _gameplayState.NotifyEvent(new GameplayEvents.PlayerShoots());
+            _gameState.NotifyEvent(new GameplayEvents.PlayerShoots());
         }
         
         //if player pressed to fire the other shooting button, switch it once this one ends

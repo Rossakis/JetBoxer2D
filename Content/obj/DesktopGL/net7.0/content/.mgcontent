@@ -10,6 +10,8 @@
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Backgrounds/Pixel City.jpg</File>
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Backgrounds/Splash Screen.png</File>
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Backgrounds/splash.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Characters/Enemy/Red Triangle-Default Texture.png</File>
+    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Characters/Enemy/Red Triangle.png</File>
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Characters/Jet Boxer - Idle (Rotated).png</File>
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Characters/Jet Boxer - Move Right (Rotated).png</File>
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Characters/Jet Boxer - Shoot Left (Rotated).png</File>
@@ -27,6 +29,8 @@
     <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Splash/Splash Screen.wav</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

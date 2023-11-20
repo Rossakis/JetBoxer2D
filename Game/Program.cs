@@ -5,5 +5,5 @@ using JetBoxer2D.Game.States;
 const int Width = 1280;
 const int Height = 720;
 
-using var game = new MainGame(Width, Height, new SplashState());
+using var game = new MainGame(Width, Height, new GameplayState());
 game.Run();
