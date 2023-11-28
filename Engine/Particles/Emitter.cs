@@ -14,7 +14,7 @@ public class Emitter : BaseGameObject
 {
     private LinkedList<Particle> _activeParticles = new();
     private LinkedList<Particle> _inactiveParticles = new();
-    
+
     public EmitterParticleState _emitterParticleState;
     private IEmitterType _emitterType;
     private int _nbParticleEmittedPerUpdate = 0;
@@ -23,16 +23,21 @@ public class Emitter : BaseGameObject
     public bool IsAlive => _activeParticles.Count > 0;
     private bool _active = true;
     public int Age { get; set; }
+    public float Rotation { get; set; }
 
-    public Emitter(Texture2D texture, Vector2 position, EmitterParticleState particleState, IEmitterType emitterType, int nbParticleEmittedPerUpdate, int maxNbParticle)
+    public Emitter(Texture2D texture, Vector2 position, float rotation, EmitterParticleState particleState,
+        IEmitterType emitterType,
+        int nbParticleEmittedPerUpdate, int maxNbParticle)
     {
         _texture = texture;
         Position = position;
+        Rotation = rotation;
         _emitterParticleState = particleState;
         _emitterType = emitterType;
         _nbParticleEmittedPerUpdate = nbParticleEmittedPerUpdate;
         _maxNbParticle = maxNbParticle;
-        Age = 0;
+        Rotation =
+            Age = 0;
     }
 
     private void EmitNewParticle(Particle particle)
@@ -45,46 +50,41 @@ public class Emitter : BaseGameObject
         var gravity = _emitterParticleState.Gravity;
         var acceleration = _emitterParticleState.Acceleration;
         var opacityFadingRate = _emitterParticleState.OpacityFadingRate;
-        
+
         var direction = _emitterType.GetParticleDirection();
         var position = _emitterType.GetParticlePosition(_position);
-        
-        particle.Activate(lifespan, position, direction, gravity, velocity, acceleration, scale, rotation, opacity, opacityFadingRate);
+
+        particle.Activate(lifespan, position, direction, gravity, velocity, acceleration, scale, rotation, opacity,
+            opacityFadingRate);
         _activeParticles.AddLast(particle);
     }
 
     private void EmitParticles()
     {
         // make sure we're not at max particles
-        if(_activeParticles.Count >= _maxNbParticle)
+        if (_activeParticles.Count >= _maxNbParticle)
             return;
 
         var maxAmountToBeGenerated = _maxNbParticle - _activeParticles.Count;
         var neededParticles = Math.Min(maxAmountToBeGenerated, _nbParticleEmittedPerUpdate);
-        
+
         //Reuse inactive particles first before creating new ones
         var nbToReuse = Math.Min(_inactiveParticles.Count, neededParticles);
         var nbToCreate = neededParticles - nbToReuse;
 
-        for (int i = 0; i < nbToReuse; i++)
+        for (var i = 0; i < nbToReuse; i++)
         {
             var particleNode = _inactiveParticles.First;
             EmitNewParticle(particleNode.Value);
             _inactiveParticles.Remove(particleNode);
         }
- 
-        for (int i = 0; i < nbToCreate; i++)
-        {
-            EmitNewParticle(new Particle());
-        }
+
+        for (var i = 0; i < nbToCreate; i++) EmitNewParticle(new Particle());
     }
 
     public override void Update()
     {
-        if (_active)
-        {
-            EmitParticles();
-        }
+        if (_active) EmitParticles();
 
         var particleNode = _activeParticles.First;
         while (particleNode != null)
@@ -103,7 +103,7 @@ public class Emitter : BaseGameObject
 
         Age++;
     }
-    
+
     public void Deactivate()
     {
         _active = false;
@@ -112,11 +112,11 @@ public class Emitter : BaseGameObject
     public override void Render(SpriteBatch spriteBatch)
     {
         var sourceRectangle = new Rectangle(0, 0, _texture.Width, _texture.Height);
+        var rotationAngle = (float) (Math.PI / 2f - Rotation);
 
         foreach (var particle in _activeParticles)
-        {
             //TODO: implement the rotation parameter once rotation function gets added to EmitterParticleState
-            spriteBatch.Draw(_texture, particle.Position, sourceRectangle, Color.White * particle.Opacity, 0.0f, new Vector2(0,0), particle.Scale, SpriteEffects.None, zIndex);
-        }
+            spriteBatch.Draw(_texture, particle.Position, sourceRectangle, Color.White * particle.Opacity,
+                rotationAngle, new Vector2(0, 0), particle.Scale, SpriteEffects.None, zIndex);
     }
 }

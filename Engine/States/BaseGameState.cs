@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework.Graphics;
 using JetBoxer2D.Engine.Input;
 using JetBoxer2D.Engine.Objects;
 using JetBoxer2D.Engine.Sound;
+using Microsoft.Xna.Framework;
 
 namespace JetBoxer2D.Engine.States;
 
@@ -20,39 +21,44 @@ public abstract class BaseGameState
     private readonly List<BaseGameObject> _gameObjects = new();
     protected SoundManager SoundManager = new();
     public InputManager InputManager { get; set; }
-    
+
     protected int _viewportWidth;
     protected int _viewportHeight;
+    public GraphicsDeviceManager Graphics;
 
-    protected bool _isSoundInitialized; 
-    
+    protected bool _isSoundInitialized;
+
     protected abstract void SetInputManager();
+
     /// <summary>
     /// To be loaded in the LoadContent() method
     /// </summary>
     protected abstract void SetSoundtrack();
+
     protected abstract void UpdateGameState();
-    
-   
+
+
     //the name of the texture that will be shown if ContentManager doesn't find the desired texture
     private const string FallbackTexture = "Empty";
-    
+
 
     //instead of using ContentManager's Load and Unload methods like singletons, 
     //we will make a local ContentManager for each BaseGameState instance in the game (e.g. GameplayState)
     protected ContentManager _contentManager;
-    protected Microsoft.Xna.Framework.Game _game; //this game instance
+    protected Microsoft.Xna.Framework.Game Game; //this game instance
 
     /// <summary>
     /// Assign the MainGame's ContentManager this (local) one
     /// </summary>
     /// <param name="contentManager"></param>
-    public virtual void Initialize(Microsoft.Xna.Framework.Game game, ContentManager contentManager, int viewportWidth, int viewportHeight)
+    public virtual void Initialize(Microsoft.Xna.Framework.Game game, GraphicsDeviceManager graphics,
+        ContentManager contentManager)
     {
-        _game = game;
+        Game = game;
+        Graphics = graphics;
         _contentManager = contentManager;
-        _viewportWidth = viewportWidth;
-        _viewportHeight = viewportHeight;
+        _viewportWidth = Graphics.GraphicsDevice.Viewport.Width;
+        _viewportHeight = Graphics.GraphicsDevice.Viewport.Height;
 
         SetInputManager();
     }
@@ -72,7 +78,7 @@ public abstract class BaseGameState
         _contentManager.Unload();
         _isSoundInitialized = false;
     }
-    
+
     //TODO:Both LoadContent() and UnloadContent() should be called though the currentGameState in the MainGame
     protected Texture2D LoadTexture(string textureName)
     {
@@ -103,9 +109,9 @@ public abstract class BaseGameState
     {
         OnEventNotification?.Invoke(this, eventType);
 
-        foreach (var gameObject in _gameObjects) 
+        foreach (var gameObject in _gameObjects)
             gameObject.OnNotify(eventType);
-        
+
         SoundManager.OnNotify(eventType);
     }
 
@@ -123,25 +129,25 @@ public abstract class BaseGameState
     {
         return _contentManager.Load<SoundEffect>(soundName);
     }
-    
+
     public void Update()
     {
         UpdateGameState();
         InputManager.UpdateInput();
-        
-        if(_isSoundInitialized)
-            SoundManager.PlaySoundtrack();
-        
-        foreach (var gameObject in _gameObjects.OrderBy(gameObj => gameObj.zIndex)) 
+
+        // if(_isSoundInitialized)
+        //     SoundManager.PlaySoundtrack();
+
+        foreach (var gameObject in _gameObjects.OrderBy(gameObj => gameObj.zIndex))
             gameObject.Update();
     }
-    
+
     //To be called from the Draw() method
     public virtual void Render(SpriteBatch spriteBatch)
     {
         //render gameObjects (using LINQ query) based on their zIndex, so that they
         //are shown in the correct order
-        foreach (var gameObject in _gameObjects.OrderBy(gameObj => gameObj.zIndex)) 
+        foreach (var gameObject in _gameObjects.OrderBy(gameObj => gameObj.zIndex))
             gameObject.Render(spriteBatch);
     }
 }

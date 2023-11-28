@@ -3,6 +3,7 @@ using JetBoxer2D.Engine.Extensions;
 using JetBoxer2D.Engine.States;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 
 namespace JetBoxer2D.Engine;
 
@@ -15,7 +16,7 @@ public class MainGame : Microsoft.Xna.Framework.Game
     //Window Scaling
     private RenderTarget2D renderTarget; //will hold the desired resolution target
     private Rectangle renderScaleRectangle; //will hold the scale rectangle
-    
+
     private int _initialResolutionWidth;
     private int _initialResolutionHeight;
     private float _initialResolutionAspectRatio;
@@ -25,11 +26,11 @@ public class MainGame : Microsoft.Xna.Framework.Game
     {
         Content.RootDirectory = "Content";
         graphics = new GraphicsDeviceManager(this);
-        
+
         _initialResolutionWidth = width;
         _initialResolutionHeight = height;
         _initialResolutionAspectRatio = width / (float) height;
-        
+
         _initialGameState = initialGameState;
 
         //Responsible for initializing and updating many singleton classes such as Time and MouseInput
@@ -43,14 +44,14 @@ public class MainGame : Microsoft.Xna.Framework.Game
         graphics.PreferredBackBufferHeight = _initialResolutionHeight;
         graphics.IsFullScreen = false;
         graphics.ApplyChanges();
-        
+
         renderTarget = new RenderTarget2D(graphics.GraphicsDevice,
             _initialResolutionWidth, _initialResolutionHeight,
             false, SurfaceFormat.Color, DepthFormat.None, 0,
             RenderTargetUsage.DiscardContents);
 
         renderScaleRectangle = GetScaleRectangle();
-        
+
         base.Initialize();
     }
 
@@ -68,6 +69,15 @@ public class MainGame : Microsoft.Xna.Framework.Game
 
     protected override void Update(GameTime gameTime)
     {
+        // // Check the device for Player One
+        // GamePadCapabilities capabilities = GamePad.GetCapabilities(
+        //     PlayerIndex.One);
+        //     
+        // // If there's a controller attached, handle it
+        // if (capabilities.IsConnected)
+        // {
+        // }
+
         SingletonManager.UpdateSingletons(gameTime);
         currentGameState?.Update();
 
@@ -149,8 +159,7 @@ public class MainGame : Microsoft.Xna.Framework.Game
 
         currentGameState = gameState;
 
-        currentGameState.Initialize(this, Content, graphics.GraphicsDevice.Viewport.Width,
-            graphics.GraphicsDevice.Viewport.Height); //Setup up the ContentManager of the currentGameState
+        currentGameState.Initialize(this, graphics, Content); //Setup up the ContentManager of the currentGameState
         currentGameState.LoadContent(spriteBatch);
 
         currentGameState.OnStateSwitched += CurrentGameState_OnStateSwitched;

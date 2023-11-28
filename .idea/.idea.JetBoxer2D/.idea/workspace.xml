@@ -9,36 +9,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="918e4fcc-b4f8-4137-9d97-30dcba5635b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/Characters/Enemy/Red Triangle-Default Texture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/Characters/Enemy/Red Triangle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Enemy/Red Triangle-Default Texture.xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/bin/DesktopGL/Content/Characters/Enemy/Red Triangle.xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Characters/Enemy/Red Triangle-Default Texture.mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/Characters/Enemy/Red Triangle.mgcontent" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game/Objects/RedTriangle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Characters/Enemy/Red Triangle-Default Texture.xnb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/Debug/net7.0/Content/Characters/Enemy/Red Triangle.xnb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Engine/Interfaces/IDamageable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.JetBoxer2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.JetBoxer2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Content.mgcb" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Content.mgcb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgcontent" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgcontent" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgstats" beforeDir="false" afterPath="$PROJECT_DIR$/Content/obj/DesktopGL/net7.0/content/.mgstats" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Extensions/MouseInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Extensions/MouseInput.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Engine/Input/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Input/InputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Input/InputTypes/ValueInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Input/InputTypes/ValueInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/MainGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/MainGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Objects/BaseGameObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Objects/BaseGameObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Particles/Emitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Particles/Emitter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/Particles/Particle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/Particles/Particle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Engine/States/BaseGameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Engine/States/BaseGameState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Events/GameplayEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Events/GameplayEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/InputMaps/GameplayInputMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/InputMaps/GameplayInputMap.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/Objects/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Objects/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Objects/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Objects/Projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Objects/RedTriangle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Objects/RedTriangle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/Particles/FlameSparksEmitter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/Particles/FlameSparksEmitter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Game/States/GameplayState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/States/GameplayState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game/States/SplashState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game/States/SplashState.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/JetBoxer2D.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/JetBoxer2D.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/JetBoxer2D.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/JetBoxer2D.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/Super Duper Shooter.runtimeconfig.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/JetBoxer2D.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/JetBoxer2D.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/JetBoxer2D.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/JetBoxer2D.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/JetBoxer2D.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/JetBoxer2D.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/JetBoxer2D.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/JetBoxer2D.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/JetBoxer2D.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/JetBoxer2D.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/refint/JetBoxer2D.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/JetBoxer2D.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,15 +55,12 @@
     <setting file="file://$PROJECT_DIR$/Engine/Input/InputTypes/AxisInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Engine/Input/InputTypes/ButtonInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Engine/Input/InputTypes/ValueInput.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Game/GameObjects/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Game/GameStates/GameplayState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Game/GameStates/SplashState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Game/InputMaps/GameplayInputMap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Game/InputMaps/SplashInputMap.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Downloads/Animation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/777f4218e4a0469dbc075c5f54bf5f721c5a00/61/662530e9/Buttons.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/777f4218e4a0469dbc075c5f54bf5f721c5a00/63/04aff20a/Keys.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/777f4218e4a0469dbc075c5f54bf5f721c5a00/68/2bc84dbf/Texture.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/777f4218e4a0469dbc075c5f54bf5f721c5a00/6a/3866308a/GamePadThumbSticks.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -85,31 +77,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "rider.code.cleanup.on.save": "true",
-    "rider.code.cleanup.on.save.profile": "Built-in: Reformat & Apply Syntax Style",
-    "settings.editor.selected.configurable": "actions.on.save",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;rider.code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;rider.code.cleanup.on.save.profile&quot;: &quot;Built-in: Reformat &amp; Apply Syntax Style&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/giorgos_tsolakidis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
-      "/Users/giorgos_tsolakidis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
-      "/Users/giorgos_tsolakidis/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/giorgos_tsolakidis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/giorgos_tsolakidis/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
+      &quot;/Users/giorgos_tsolakidis/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="JetBoxer2D" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -197,6 +189,9 @@
       <workItem from="1699710357589" duration="43000" />
       <workItem from="1699797619011" duration="293000" />
       <workItem from="1700489453092" duration="9377000" />
+      <workItem from="1701092627920" duration="378000" />
+      <workItem from="1701093366403" duration="6921000" />
+      <workItem from="1701122246576" duration="9074000" />
     </task>
     <servers />
   </component>

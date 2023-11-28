@@ -9,19 +9,33 @@ public class BaseGameObject
 {
     protected Texture2D _texture;
     protected Vector2 _position;
-    public virtual Vector2 Position { get => _position; set => _position = value; }
+
+    public virtual Vector2 Position
+    {
+        get => _position;
+        set => _position = value;
+    }
+
     public int Width { get; set; }
     public int Height { get; set; }
-    
+
     //Get the texture's center point, used when calling the Draw() method
-    public Vector2 Centre => new Vector2(Width / 2f, Height / 2f);
-    
+    public Vector2 Centre => new(Width / 2f, Height / 2f);
+
     public int zIndex;
 
     public event EventHandler<BaseGameStateEvent> Notify;
+
     public virtual void OnNotify(BaseGameStateEvent eventType)
     {
         Notify?.Invoke(this, eventType);
+    }
+
+    public event EventHandler<BaseGameStateEvent> OnObjectChanged;
+
+    public void SendEvent(BaseGameStateEvent e)
+    {
+        OnObjectChanged?.Invoke(this, e);
     }
 
     protected virtual void OnEnable()
@@ -34,9 +48,8 @@ public class BaseGameObject
 
     public virtual void Update()
     {
-        
     }
-    
+
     /// <summary>
     /// Render this gameObject's sprites
     /// </summary>

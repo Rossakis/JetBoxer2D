@@ -8,7 +8,6 @@ namespace JetBoxer2D.Engine.Extensions;
 /// A wrapper class for Mouse Input, so that we input information from it in the same way we do for Keyboard and Gamepad
 ///classes (e.g. Mouse.IsButtonDown(MouseButton.RightButton)
 /// </summary>
-
 public enum MouseInputTypes
 {
     None,
@@ -16,7 +15,7 @@ public enum MouseInputTypes
     MiddleButton,
     LeftButton,
     Horizontal,
-    Vertical,
+    Vertical
 }
 
 public class MouseInput
@@ -89,19 +88,25 @@ public class MouseInput
     }
 
     /// <summary>
-    /// Returns value between -1 and 1, based on the mouse's movement to the left or right. Returns 0 when mouse is stationary
+    /// Returns value between -1 and 1, based on the mouse's Horizontal or Vertical movement. Returns 0 when mouse is stationary
     /// </summary>
     /// <param name="mouseDelta">The type of mouse axis input</param>
     /// <returns></returns>
-    public static int GetMouseAxis(MouseInputTypes mouseDelta)
+    public static float GetMouseAxis(MouseInputTypes mouseDelta)
     {
-        return mouseDelta switch
+        switch (mouseDelta)
         {
-            //Clamp the delta value of mouse from -1 to 1, calculated by the difference from its previous position
-            MouseInputTypes.Horizontal => Math.Clamp(_instance._currentMouseState.X - _instance._previousMouseState.X, -1, 1),
-            MouseInputTypes.Vertical => Math.Clamp(-1*(_instance._currentMouseState.Y - _instance._previousMouseState.Y), -1, 1),
-            _ => 0
-        };
+            case MouseInputTypes.Horizontal:
+                return _instance._currentMouseState.X -
+                       _instance._previousMouseState.X;
+            case MouseInputTypes.Vertical:
+                return -(_instance._currentMouseState.Y -
+                         _instance._previousMouseState.Y);
+            case MouseInputTypes.None:
+                break;
+        }
+
+        return 0;
     }
 
     /// <summary>
@@ -111,8 +116,8 @@ public class MouseInput
     public static Vector2 GetMouseScreenPosition()
     {
         return _instance._currentMouseState.Position.ToVector2();
-        //return Mouse.GetState().Position.ToVector2();
     }
+
     /// <summary>
     /// Returns value from 0 to the screen viewport's max width or height. For example, if
     /// viewport width is 720px, the value mouse horizontal position will vary from 0 to 720

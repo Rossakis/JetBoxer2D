@@ -1,7 +1,10 @@
 using System;
 using JetBoxer2D.Engine.Animation;
+using JetBoxer2D.Engine.Events;
 using JetBoxer2D.Engine.Extensions;
+using JetBoxer2D.Engine.Interfaces;
 using JetBoxer2D.Engine.Objects;
+using JetBoxer2D.Game.Events;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
@@ -21,20 +24,27 @@ public class RedTriangle : BaseGameObject
 
     private float _rotation;
     private float _direction;
-    private const float Velocity = 200;
-    private float _acceleration;
+
+    private const int InitialVelocity = 200;
+    private const int Acceleration = 3;
+    private float _currentVelocity = InitialVelocity;
 
     private Vector2 _targetDist;
     private Vector2 _targetDir;
 
     //if enemy is at minimum Distance the player, stop following him and just follow the previously established direction
-    private const int MinDistance = 100;
+    private const int MinDistance = 125;
     private bool _isCloseEnough;
 
     private const float
         DriftTime = 0.75f; //if player dodges the enemy, how long the enemy will continue to drift in previous direction
 
     private float _timer;
+
+    // enemy will flash white when hit
+    private int _hitAt = 0;
+    private int _life = 100;
+
 
     public RedTriangle(ContentManager contentManager, SpriteBatch spriteBatch, Player playerTarget)
     {
@@ -50,6 +60,7 @@ public class RedTriangle : BaseGameObject
     public override void Update()
     {
         FollowPlayer();
+        _currentVelocity += Acceleration;
     }
 
     public override void Render(SpriteBatch spriteBatch)
@@ -66,14 +77,14 @@ public class RedTriangle : BaseGameObject
     private void FollowPlayer()
     {
         if (_targetDir.Y > 0) //Player is lower than the enemy
-            _position.Y += _targetDir.Y * Velocity * Time.DeltaTime;
+            _position.Y += _targetDir.Y * _currentVelocity * Time.DeltaTime;
         else if (_targetDir.Y < 0) //Player is higher
-            _position.Y -= _targetDir.Y * -Velocity * Time.DeltaTime;
+            _position.Y -= _targetDir.Y * -_currentVelocity * Time.DeltaTime;
 
         if (_targetDir.X > 0) //Player is to the right
-            _position.X += _targetDir.X * Velocity * Time.DeltaTime;
+            _position.X += _targetDir.X * _currentVelocity * Time.DeltaTime;
         else if (_targetDir.X < 0) //Player is to the left
-            _position.X -= _targetDir.X * -Velocity * Time.DeltaTime;
+            _position.X -= _targetDir.X * -_currentVelocity * Time.DeltaTime;
     }
 
     //Called by the current Game State
@@ -95,9 +106,27 @@ public class RedTriangle : BaseGameObject
             {
                 _isCloseEnough = false;
                 _timer = 0f;
+                _currentVelocity = InitialVelocity; //reset speed
             }
         }
 
         _targetDir = Vector2.Normalize(_targetDist);
+    }
+
+    private void JustHit(IDamageable o)
+    {
+        _hitAt = 0;
+        _life -= o.Damage;
+    }
+
+    public override void OnNotify(BaseGameStateEvent gameEvent)
+    {
+        switch (gameEvent)
+        {
+            case GameplayEvents.EnemyHitBy m:
+                JustHit(m.HitBy);
+                SendEvent(new GameplayEvents.EnemyLostLife(_life));
+                break;
+        }
     }
 }

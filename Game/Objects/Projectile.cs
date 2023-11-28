@@ -34,31 +34,31 @@ public class Projectile : BaseGameObject
 
     private AnimationPlayer _animationPlayer;
     private AnimationClip _moveAnimation;
-    
+
     private FlameSparksEmitter _flameEmitter;
-    
-    public Projectile(Vector2 position, float rotation, SpriteBatch spriteBatch, ContentManager contentManager, int zIndex)
+
+    public Projectile(Vector2 position, float rotation, SpriteBatch spriteBatch, ContentManager contentManager,
+        int zIndex)
     {
         _texture = contentManager.Load<Texture2D>(DefaultSprite);
         _position = position;
         _rotation = rotation;
-        _direction = new((float)Math.Cos(rotation), (float) Math.Sin(rotation));
+        _direction = new Vector2((float) Math.Cos(rotation), (float) Math.Sin(rotation));
         this.zIndex = zIndex;
         _currentSpeed = 0;
-        
+
         _animationPlayer = new AnimationPlayer(spriteBatch, this);
         _moveAnimation = new AnimationClip(contentManager.Load<Texture2D>(MoveAnimation), 0.1f, true);
         _animationPlayer.Rotation = _rotation;
-        
-        _flameEmitter = new FlameSparksEmitter(contentManager.Load<Texture2D>(FlameSpark), _position);
+
+        _flameEmitter = new FlameSparksEmitter(contentManager.Load<Texture2D>(FlameSpark), _position, _rotation);
     }
-    
+
 
     public override void Update()
     {
         _flameEmitter.Update();
-        
-        //Position = new Vector2(Position.X, Position.Y - _currentSpeed * Time.DeltaTime) * _direction;
+
         Position += _currentSpeed * Time.DeltaTime * _direction;
         _currentSpeed += Acceleration;
         LifeSpan += Time.DeltaTime;
@@ -67,7 +67,7 @@ public class Projectile : BaseGameObject
     public override void Render(SpriteBatch spriteBatch)
     {
         _flameEmitter.Render(spriteBatch);
-        
+
         _animationPlayer.Play(_moveAnimation);
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using JetBoxer2D.Engine.Events;
 using JetBoxer2D.Engine.Input;
 using JetBoxer2D.Engine.States;
@@ -21,10 +22,10 @@ public class GameplayState : BaseGameState
     private Player _player;
     private RedTriangle _redTriangle;
 
-    public override void Initialize(Microsoft.Xna.Framework.Game game, ContentManager contentManager, int viewportWidth,
-        int viewportHeight)
+    public override void Initialize(Microsoft.Xna.Framework.Game game, GraphicsDeviceManager graphics,
+        ContentManager contentManager)
     {
-        base.Initialize(game, contentManager, viewportWidth, viewportHeight);
+        base.Initialize(game, graphics, contentManager);
         game.IsMouseVisible = true;
     }
 
@@ -66,6 +67,8 @@ public class GameplayState : BaseGameState
             NotifyEvent(new BaseGameStateEvent.GameQuit());
 
         _redTriangle?.SetPlayerPosition(_player.Position);
+
+        Game.IsMouseVisible = false;
     }
 
     public override void Render(SpriteBatch spriteBatch)
@@ -82,17 +85,13 @@ public class GameplayState : BaseGameState
 
         _player = new Player(Vector2.Zero, spriteBatch, _contentManager, this)
             {zIndex = 1};
-
         _player.Position = new Vector2(_viewportWidth / 2f - _player.Texture.Width,
             _viewportHeight / 2f - _player.Texture.Height);
-
-
         AddGameObject(_player);
 
         _redTriangle = new RedTriangle(_contentManager, spriteBatch, _player)
             {zIndex = 1};
         _redTriangle.Position = Vector2.Zero;
-
         AddGameObject(_redTriangle);
 
         //Set the background's depth layer
