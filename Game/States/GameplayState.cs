@@ -68,7 +68,7 @@ public class GameplayState : BaseGameState
 
         _redTriangle?.SetPlayerPosition(_player.Position);
 
-        Game.IsMouseVisible = false;
+        Game.IsMouseVisible = true;
     }
 
     public override void Render(SpriteBatch spriteBatch)

@@ -75,8 +75,8 @@ public class Player : BaseGameObject
 
     private Vector2
         _rotationTarget; //player will rotate towards this target, which simulates a cursor when using a gamepad
-
-    private const float RotationSpeed = 1000f;
+    private Vector2 _prevRotationTarget;
+    private const float RotationSpeed = 50f;
 
     public Player(Vector2 playerPos, SpriteBatch spriteBatch, ContentManager contentManager, BaseGameState gameState)
     {
@@ -346,12 +346,17 @@ public class Player : BaseGameObject
         if (_lookInput.Y != 0f) //vertical
             _rotationTarget.Y -= _lookInput.Y * RotationSpeed;
 
-        if (_lookInput == Vector2.Zero) _rotationTarget = Centre;
+        if (_lookInput == Vector2.Zero && _rotationTarget == Vector2.Zero)
+            _rotationTarget = Centre;
+        else if (_lookInput == Vector2.Zero && _rotationTarget != Vector2.Zero)
+            _rotationTarget = _prevRotationTarget;
 
         _rotationTarget.X = Math.Clamp(_rotationTarget.X, -5000f, _gameState.Graphics.PreferredBackBufferWidth + 5000f);
         _rotationTarget.Y =
             Math.Clamp(_rotationTarget.Y, -5000f, _gameState.Graphics.PreferredBackBufferHeight + 5000f);
 
         _animator.Rotation = (float) Math.Atan2(_rotationTarget.Y, _rotationTarget.X);
+
+        _prevRotationTarget = _rotationTarget;
     }
 }
