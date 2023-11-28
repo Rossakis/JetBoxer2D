@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "52JLV9RUTptO9K9aw6VsQ+I567yw8+K6cLeZNec3nXLBQeqPxh60eGGTejuJCirrHYLMhr+MoIkvNisrmgn17Q==",
+  "dgSpecHash": "NISN8BgEIaUwEV8NNfMlH8z6vG8s0nmVu8rOxckSkEOvRgG9Owse0rdnuZKcYGvXLhmy1utigfCVKHE8UBqbsA==",
   "success": true,
-  "projectFilePath": "/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/JetBoxer2D.csproj",
+  "projectFilePath": "C:\\Users\\Student\\Documents\\GitHub\\JetBoxer2D\\JetBoxer2D.csproj",
   "expectedPackageFiles": [
-    "/Users/giorgos_tsolakidis/.nuget/packages/monogame.content.builder.task/3.8.1.303/monogame.content.builder.task.3.8.1.303.nupkg.sha512",
-    "/Users/giorgos_tsolakidis/.nuget/packages/monogame.framework.desktopgl/3.8.1.303/monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+    "C:\\Users\\Student\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\Student\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
   ],
   "logs": []
 }

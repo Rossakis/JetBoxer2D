@@ -4,29 +4,29 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Backgrounds/Barren.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Backgrounds/City Background.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Backgrounds/Empty.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Backgrounds/Pixel City.jpg</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Backgrounds/Splash Screen.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Backgrounds/splash.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Characters/Enemy/Red Triangle-Default Texture.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Characters/Enemy/Red Triangle.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Characters/Jet Boxer - Idle (Rotated).png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Characters/Jet Boxer - Move Right (Rotated).png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Characters/Jet Boxer - Shoot Left (Rotated).png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Characters/Jet Boxer - Shoot Right (Rotated).png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Effects/Energy Blast.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Effects/Spark.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Placeholder Texture.png</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Effects/Fireball.wav</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 1.wav</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 2.wav</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 3.wav</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 4.wav</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 5.wav</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 6.wav</File>
-    <File>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Splash/Splash Screen.wav</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Backgrounds/Barren.png</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Backgrounds/City Background.png</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Backgrounds/Empty.png</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Backgrounds/Pixel City.jpg</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Backgrounds/Splash Screen.png</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Backgrounds/splash.png</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Characters/Enemy/Red Triangle-Default Texture.png</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Characters/Enemy/Red Triangle.png</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Characters/Jet Boxer - Idle (Rotated).png</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Characters/Jet Boxer - Move Right (Rotated).png</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Characters/Jet Boxer - Shoot Left (Rotated).png</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Characters/Jet Boxer - Shoot Right (Rotated).png</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Effects/Energy Blast.png</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Effects/Spark.png</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Placeholder Texture.png</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Sounds/Effects/Fireball.wav</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 1.wav</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 2.wav</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 3.wav</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 4.wav</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 5.wav</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 6.wav</File>
+    <File>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Sounds/Splash/Splash Screen.wav</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 2.wav</SourceFile>
-  <SourceTime>2023-10-31T23:23:00.5120149+02:00</SourceTime>
-  <DestFile>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/bin/DesktopGL/content/Sounds/Gameplay/Gameplay Theme - 2.xnb</DestFile>
-  <DestTime>2023-11-07T20:53:45.1343529+02:00</DestTime>
+  <SourceFile>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Sounds/Gameplay/Gameplay Theme - 2.wav</SourceFile>
+  <SourceTime>2023-11-28T12:57:48.9342201+02:00</SourceTime>
+  <DestFile>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/bin/DesktopGL/content/Sounds/Gameplay/Gameplay Theme - 2.xnb</DestFile>
+  <DestTime>2023-11-28T13:41:25.0890173+02:00</DestTime>
   <Importer>WavImporter</Importer>
   <ImporterTime>2022-07-26T14:44:56+03:00</ImporterTime>
   <Processor>SoundEffectProcessor</Processor>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/Characters/Jet Boxer - Shoot Right (Rotated).png</SourceFile>
-  <SourceTime>2023-11-08T01:37:19.140873+02:00</SourceTime>
-  <DestFile>/Users/giorgos_tsolakidis/Documents/GitHub/JetBoxer2D/Content/bin/DesktopGL/content/Characters/Jet Boxer - Shoot Right (Rotated).xnb</DestFile>
-  <DestTime>2023-11-08T01:40:41.0019611+02:00</DestTime>
+  <SourceFile>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/Characters/Jet Boxer - Shoot Right (Rotated).png</SourceFile>
+  <SourceTime>2023-11-28T12:57:48.8833412+02:00</SourceTime>
+  <DestFile>C:/Users/Student/Documents/GitHub/JetBoxer2D/Content/bin/DesktopGL/content/Characters/Jet Boxer - Shoot Right (Rotated).xnb</DestFile>
+  <DestTime>2023-11-28T13:41:20.4072086+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T14:44:56+03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
