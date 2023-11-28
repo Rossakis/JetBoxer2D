@@ -346,9 +346,9 @@ public class Player : BaseGameObject
         if (_lookInput.Y != 0f) //vertical
             _rotationTarget.Y -= _lookInput.Y * RotationSpeed;
 
-        if (_lookInput == Vector2.Zero && _rotationTarget == Vector2.Zero)
+        if (_lookInput == Vector2.Zero && _rotationTarget == Vector2.Zero)//when rotationTarget is first initialized, set its position to the player's centre
             _rotationTarget = Centre;
-        else if (_lookInput == Vector2.Zero && _rotationTarget != Vector2.Zero)
+        else if (_lookInput == Vector2.Zero && _rotationTarget != Vector2.Zero)//when rotationTarget was already used, but now we have no input, set its position to the previous position
             _rotationTarget = _prevRotationTarget;
 
         _rotationTarget.X = Math.Clamp(_rotationTarget.X, -5000f, _gameState.Graphics.PreferredBackBufferWidth + 5000f);
