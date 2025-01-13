@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JetBoxer2D")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1e36ee4cc0f80f8e6c1014c4129d45c28f40214")]
 [assembly: System.Reflection.AssemblyProductAttribute("JetBoxer2D")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JetBoxer2D")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

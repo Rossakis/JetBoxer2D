@@ -210,7 +210,7 @@ public class GameplayInputMap : BaseInputMap
     {
         // Check if the key exists in the dictionary
         if (inputDict.TryGetValue(InputDevices.Keyboard, out var value))
-            return (Keys) value; // Return the value associated with the key
+            return (Keys)value; // Return the value associated with the key
 
         return Keys.None;
     }
@@ -218,7 +218,7 @@ public class GameplayInputMap : BaseInputMap
     private MouseInputTypes GetInputFromMouse(Dictionary<InputDevices, Enum> inputDict)
     {
         if (inputDict.TryGetValue(InputDevices.Mouse, out var value))
-            return (MouseInputTypes) value;
+            return (MouseInputTypes)value;
 
         return MouseInputTypes.None;
     }
@@ -226,7 +226,7 @@ public class GameplayInputMap : BaseInputMap
     private Buttons GetInputFromGamepad(Dictionary<InputDevices, Enum> inputDict)
     {
         if (inputDict.TryGetValue(InputDevices.Gamepad, out var value))
-            return (Buttons) value;
+            return (Buttons)value;
 
         return Buttons.None;
     }
@@ -539,7 +539,7 @@ public class GameplayInputMap : BaseInputMap
     #endregion
 
     /// <summary>
-    /// Remap the an Input Action Dictionary key's value
+    /// Remap an Input Action Dictionary key's value
     /// </summary>
     public override void RemapInputAction(Dictionary<InputDevices, List<Enum>> inputActionDict, InputDevices inputType,
         List<Enum> newInput)

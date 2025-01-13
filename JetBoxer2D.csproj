@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net7.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
         <RollForward>Major</RollForward>
         <PublishReadyToRun>false</PublishReadyToRun>
         <TieredCompilation>false</TieredCompilation>
@@ -13,7 +13,7 @@
         <ApplicationIcon>Icon.ico</ApplicationIcon>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-      <WarningLevel>4</WarningLevel>
+        <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
         <None Remove="Icon.ico" />
@@ -29,12 +29,15 @@
         <EmbeddedResource Include="Icon.bmp" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
         <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.1.303" />
+        <PackageReference Include="MonoGame.Extended" Version="4.0.4" />
+        <PackageReference Include="MonoGame.Extended.Content.Pipeline" Version="4.0.4" />
+        <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
+        <PackageReference Include="MonoGame.Framework.WindowsDX" Version="3.8.1.303" />
     </ItemGroup>
     <ItemGroup>
-        <Folder Include="AI\" />
         <Folder Include="Content\Sounds\" />
+        <Folder Include="Engine\AI\" />
         <Folder Include="Game\Enums\" />
     </ItemGroup>
     <ItemGroup>

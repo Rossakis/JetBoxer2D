@@ -3,7 +3,7 @@ using JetBoxer2D.Engine.Extensions;
 using JetBoxer2D.Engine.States;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
+using MonoGame.Extended.Input;
 
 namespace JetBoxer2D.Engine;
 
@@ -29,7 +29,7 @@ public class MainGame : Microsoft.Xna.Framework.Game
 
         _initialResolutionWidth = width;
         _initialResolutionHeight = height;
-        _initialResolutionAspectRatio = width / (float) height;
+        _initialResolutionAspectRatio = width / (float)height;
 
         _initialGameState = initialGameState;
 
@@ -108,20 +108,20 @@ public class MainGame : Microsoft.Xna.Framework.Game
     private Rectangle GetScaleRectangle()
     {
         var variance = 0.5;
-        var actualAspectRatio = Window.ClientBounds.Width / (float) Window.ClientBounds.Height;
+        var actualAspectRatio = Window.ClientBounds.Width / (float)Window.ClientBounds.Height;
 
         Rectangle scaleRectangle;
 
         if (actualAspectRatio <= _initialResolutionAspectRatio)
         {
-            var presentHeight = (int) (Window.ClientBounds.Width / _initialResolutionAspectRatio + variance);
+            var presentHeight = (int)(Window.ClientBounds.Width / _initialResolutionAspectRatio + variance);
             var barHeight = (Window.ClientBounds.Height - presentHeight) / 2;
 
             scaleRectangle = new Rectangle(0, barHeight, Window.ClientBounds.Width, presentHeight);
         }
         else
         {
-            var presentWidth = (int) (Window.ClientBounds.Height * _initialResolutionAspectRatio + variance);
+            var presentWidth = (int)(Window.ClientBounds.Height * _initialResolutionAspectRatio + variance);
             var barWidth = (Window.ClientBounds.Width - presentWidth) / 2;
 
             scaleRectangle = new Rectangle(barWidth, 0, presentWidth, Window.ClientBounds.Height);
